@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ipapel.png">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>Financiamentos</title>
+</head>
+
+<body>
+    <div class="tableForm">
+        <table>
+            <thead>
+                <th>
+                    <label>Valor Financiado</label>
+                    <label>Número de Parcelas</label>
+                    <label>Juros ao mês</label>
+                    <label>Montante Final</label>
+                    <label>Valor das Parcelas</label>
+                </th>
+                <th>
+                    <label></label>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <form>
+                        <td>
+                            <input type="number" placeholder="Valor Financiado" id="valorFinanciado" />
+                            <input type="number" placeholder="Número de Parcelas" id="numeroParcelas" />
+                            <input type="number" placeholder="% Juros am" id="porcentagemJuros" />
+                            <input type="text" placeholder="Montante" id="montanteFinal" disabled="" />
+                            <input type="text" placeholder="Valor das Parcelas" id="valorParcelas" disabled="" />
+                        </td>
+                        <td>
+                            <input type="submit" value="Adicionar" id="botao" />
+                        </td>
+                    </form>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="tableResult">
+        <table>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <template id="templateLinhas">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
+    </div>
+    <div class="leArquivo">
+        <input type="file" id="abrir" accept=".txt,.csv"/>
+        <input type="button" id="salvar" value="Salvar" onclick="salvarArquivo()"/>
+    </div>
+    <script src="tabela_arquivo.js"></script>
+</body>
+
+</html>
