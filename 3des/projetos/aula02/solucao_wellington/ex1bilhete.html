@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>Gera Jogos SENA</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <label> Quantidade de jogos [1 ou 2] e números [de 6 a 15]:</label>
+        <input type="text" id="entrada" placeholder="Ex: 2 7 [2 jogos de 7 números]" />
+        <button onclick="geraJogos()">Gera Jogos</button>
+    </div>
+    <div class="conteudo" id="saida"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"></script>
+    <script src="ex1bilhete.js"></script>
+</body>
+
+</html>
