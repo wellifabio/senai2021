@@ -1,0 +1,2 @@
+1 - Criar um TAP (Termo de Abertura do Projeto) fictício utilizando o MS Word
+1 - Desenvolver um FrontEnd onde o usuário preencha um formulário e clique em um botão que Gere o TAP em formato PDF.
