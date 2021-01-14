@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ipapel.png">
+    <link rel="stylesheet" type="text/css" href="tap.css" />
+    <title>Gerador de TAP</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h3>Gerador de TAP (Termo de Abertura do Projeto)</h3>
+        <label>Título do Projeto ou resumo do Objetivo</label>
+        <textarea id="titulo" placeholder="Digite o título e/ou um breve resumo"></textarea>
+        <label>Patrocinadores (separados por vírgulas):</label>
+        <textarea id="patrocinadores" placeholder="Patrocinadores"></textarea>
+        <label>Desenvolvedores (separados por vírgulas):</label>
+        <textarea id="executores" placeholder="Executores, Principais recursos humanos"></textarea>
+        <label>Gerente do Projeto (separados por vírgulas):</label>
+        <textarea id="gerentes" placeholder="Gerente ou gerentes do projeto"></textarea>
+        <label>Cliente do Projeto (separados por vírgulas):</label>
+        <textarea id="clientes" placeholder="Cliente ou clientes do projeto"></textarea>
+        <label>Prazo ou data de entrega do projeto:</label>
+        <textarea id="prazo"
+            placeholder="Datas 'inicia e final' ou tempo 'meses, semanas ou dias' ou data de entrega.">prazo</textarea>
+        <button id="btGerarTAP" onclick="preencher()">Autopreencher com exemplo</button>
+        <button id="btGerarTAP" onclick="gerarTAP()">Gerar TAP</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"></script>
+    <script src="tap.js"></script>
+</body>
+
+</html>

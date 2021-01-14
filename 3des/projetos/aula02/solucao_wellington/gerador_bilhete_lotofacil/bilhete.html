@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico.png">
     <link rel="stylesheet" type="text/css" href="bilhete.css" />
     <title>Gera Jogos SENA</title>
 </head>
@@ -13,21 +14,16 @@
         <div class="conteudo" id="corpo">
             <label> Digite os números ou gere jogos aleatórios:</label>
             <input type="text" oninput="verificarMinimoSeis()" id="jogo1"
-                placeholder="Digite os números separados por espaços ex: 05 08 10 14 16 55" />
+                placeholder="Separe com espaços Ex: 01 04 05 06 08 13 14 15 17 18 19 20 22 24 25" />
             <input type="text" oninput="verificarMinimoSeis()" id="jogo2"
-                placeholder="Digite os números separados por espaços ex: 01 08 12 14 17 56" />
+                placeholder="Separe com espaços Ex: 01 04 05 07 09 10 14 16 18 19 20 22 23 24 25" />
             <label> Escolha quantos números:
                 <select id="qtdNum">
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
                     <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                </select>
                 </select>
             </label>
             <button onclick="geraJogos()">Gera Jogos</button>
