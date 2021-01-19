@@ -1,0 +1,11 @@
+1 - Faça uma pesquisa na web sobre pelo menos 2 projetos semelhantes.
+Utilizando o editor de textos Word, desenvolva duas matrizes SWOT desta pesquisa.
+Comparando os projetos encontrados com o que está desenvolvendo.
+
+2 - Desenvolva um formulários (Front-End) onde o usuário preencha o:
+- Titulo do Projeto
+- Título do Projeto Analizado
+- Os 4 campos da matriz SWOT (Forças, Fraquesas, Oportunidades e Ameaças)
+
+3 - Ao clicar em um botão "Download da Matrix em PDF" que fará download de um arquivo PDF
+Contendo a Matriz conforme exempo neste diretório:

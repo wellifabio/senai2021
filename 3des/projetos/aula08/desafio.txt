@@ -1,0 +1,9 @@
+Ferramentas
+Excel
+Ms Project
+Monday.com
+Gráfico GANT
+
+1 - Desenvolva uma ferramenta front-end capas de fazer um cronograma (Gráfico Gantt).
+Recebendo as tarefas, prazos e recursos humanos como entrada.
+E permitindo que o usuário faça download do cronograma em PDF
