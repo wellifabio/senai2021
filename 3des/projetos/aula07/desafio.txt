@@ -1,0 +1,8 @@
+Pesquisa web sobre Container e Docker
+- O que é?
+- Por que?
+- Onde se aplica?
+Sua pesquisa deve responder a estas questões "Com suas próprias palavras"
+Cite as fontes.
+
+Resultado em PDF, postado em seu GitHub ou Google Drive com acesso público.
