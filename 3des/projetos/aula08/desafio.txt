@@ -2,13 +2,13 @@ Ferramentas
 Excel
 Ms Project
 Monday.com
-Gráfico GANT
+Gráfico GANTT
 
 1 - Desenvolva o seguinte cronograma utilizando o Excel.
 
 Tema: Casamento da Mona Lisa com Alfredo
 Atividades:
-- Alugar um salão
+- Alugar um Salão
 - Contratar Buffet
 - Decorar Salão
 - Contratar Som e Iluminação
@@ -19,7 +19,7 @@ Atividades:
 Pessoas envolvidas.
 - Mona Lisa
 - Alfredo
-- Serimonialista
+- Cerimonialista
 - Casamenteira
 - Pai do noivo
 - Mãe do noivo
@@ -27,6 +27,5 @@ Pessoas envolvidas.
 - Mãe da noiva
 OBS: A data do casamento será daqui a 60 dias.
 
-2 - Desenvolva uma ferramenta front-end capas de fazer um cronograma (Gráfico Gantt).
-Recebendo as tarefas, prazos e recursos humanos como entrada.
-E permitindo que o usuário faça download do cronograma em PDF
+2 - Desenvolva uma ferramenta front-end capaz de fazer um cronograma (Gráfico Gantt).
+Recebendo as tarefas, prazos e recursos humanos como entrada e permitindo que o usuário faça download do cronograma em PDF.
