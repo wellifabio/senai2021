@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.png">
+    <link rel="stylesheet" type="text/css" href="cronograma.css" />
+    <title>Gerador de Cronograma (Gantt)</title>
+</head>
+
+<body onload="getInicialConfig()">
+    <div class="geral">
+        <h3>Crie seu cronograma adicionando suas atividades (Gráfico Gantt)</h3>
+        <div class='faixa'>
+            <div class='faixa'>
+                <div class='campo'>
+                    <label>Breve descrição da atividade:</label>
+                    <textarea id="atividade" placeholder="Breve descrição"></textarea>
+                </div>
+                <div class='campo'>
+                    <label>Responsável:</label>
+                    <textarea id="recurso" placeholder="Pessoa ou equipe responsável"></textarea>
+                </div>
+                <div class='campo'>
+                    <label>Início:</label>
+                    <input type="number" id="inicio"/>
+                </div>
+                <div class='campo'>
+                    <label>Duração:</label>
+                    <input type="number" id="duracao"/>
+                </div>
+                <div class='campo'>
+                    <label>Status:</label>
+                    <select id="status">
+                        <option value="planejado">Planejado</option>
+                        <option value="execucao">Em execução</option>
+                        <option value="atrasado">Em atraso</option>
+                        <option value="concluido">Concluído</option>
+                    </select>
+                </div>
+            </div>
+            <div class='coluna'>
+                <button id="adicionar" onclick="adicionar()">Adicionar Atividade</button>
+            </div>
+        </div>
+        <div id="gantt">
+        </div>
+    </div>
+    <div id="modal">
+        <div id="modal-box">
+            <div class='faixa' style="padding:10px;">
+                <label>Duração do Projeto:</label>
+                <input type="number" id="prazo" placeholder="Dias" />
+                <button id="configurar" onclick="criarCronograma()">Configurar</button>
+            </div>
+            <div class='faixa' style="padding:10px;">
+                <input type="file" id="abrir" accept=".txt,.csv"/>
+                <button id="carregar" onclick="carregarCSV()">Carregar CSV</button>
+            </div>
+        </div>
+    </div>
+    <script src="cronograma.js"></script>
+</body>
+
+</html>
