@@ -25,7 +25,7 @@ Pessoas envolvidas.
 - Mãe do noivo
 - Pai da noiva
 - Mãe da noiva
-OBS: A data do casamento será daqui a 60 dias.
+OBS: A data do casamento será daqui a 90 dias.
 
 2 - Desenvolva uma ferramenta front-end capaz de fazer um cronograma (Gráfico Gantt).
 Recebendo as tarefas, prazos e recursos humanos como entrada e permitindo que o usuário faça download do cronograma em PDF.

@@ -1,6 +1,7 @@
 const modal = document.getElementById("modal");
 const gantt = document.getElementById("gantt");
 const prazo = document.getElementById("prazo");
+const titulo = document.getElementById("titulo");
 const atividade = document.getElementById("atividade");
 const recurso = document.getElementById("recurso");
 const inicio = document.getElementById("inicio");
@@ -9,10 +10,12 @@ const status = document.getElementById("status");
 var tipo = "Dias";
 var colunas = 1;
 
+//Função que abre o modal com solicitando as informações iniciais
 function getInicialConfig() {
     modal.setAttribute("style", "display:flex;")
 }
 
+//Função que cria a estrutura básica do crinograma
 function criarCronograma() {
     if (prazo.value !== '' && prazo.value > 0) {
         if (prazo.value > 31) {
@@ -25,29 +28,40 @@ function criarCronograma() {
         } else {
             colunas = prazo.value;
         }
+        tit = document.createElement("h3");
         table = document.createElement("table");
         thead = document.createElement("thead");
         tr1 = document.createElement("tr");
+        tit.innerHTML = titulo.value;
         tr1.innerHTML = "<th rowspan='2'>Atividades</th><th rowspan='2'>Recursos</th><th rowspan='2'>Ini.</th><th rowspan='2'>Dur.</th><th rowspan='2'>Stat.</th><th colspan='" + colunas + "'>" + tipo + "</th>";
         tr2 = document.createElement("tr");
         for (i = 1; i <= colunas; i++) {
             tr2.innerHTML += "<th>" + i + "</th>";
         }
+        tr2.innerHTML += "<th><label>Ações</label></th>";
         tbody = document.createElement("tbody");
         tbody.setAttribute("id", "corpo");
+        btFaixa = document.createElement("div");
+        btFaixa.setAttribute("class","faixa");
         btSalvar = document.createElement("button");
         btSalvar.setAttribute("onclick", "salvarCSV()");
         btSalvar.innerHTML = "Salvar em CSV";
         btPrint = document.createElement("button");
         btPrint.setAttribute("onclick", "imprimir()");
         btPrint.innerHTML = "Imprimir";
+        btReset = document.createElement("button");
+        btReset.setAttribute("onclick", "document.location.reload(true);");
+        btReset.innerHTML = "Reiniciar";
+        btFaixa.appendChild(btSalvar);
+        btFaixa.appendChild(btPrint);
+        btFaixa.appendChild(btReset);
         thead.appendChild(tr1);
         thead.appendChild(tr2);
         table.appendChild(thead);
         table.appendChild(tbody);
+        gantt.appendChild(tit);
         gantt.appendChild(table);
-        gantt.appendChild(btSalvar);
-        gantt.appendChild(btPrint);
+        gantt.appendChild(btFaixa);
         duracao.setAttribute("placeholder", tipo);
         switch (tipo) {
             case "Dias": inicio.setAttribute("placeholder", "Dia"); break;
@@ -60,6 +74,7 @@ function criarCronograma() {
     }
 }
 
+//Funcão que adiciona atividades ao projeto
 function adicionar() {
     const corpo = document.getElementById("corpo");
     if (atividade.value != '' && recurso.value != '' && inicio.value != '' && duracao.value != '') {
@@ -74,6 +89,7 @@ function adicionar() {
                     tr.innerHTML += "<td class='tdbranco'></td>";
                 }
             }
+            tr.innerHTML += "<td class='acoes'><input type='button' value=' * ' onclick='editar(this)'><input type='button' value=' - ' onclick='excluir(this)'></td>";
             corpo.appendChild(tr);
         } else {
             alert("O início da atividade a a duração devem estar dentro do cronograma.");
@@ -83,6 +99,7 @@ function adicionar() {
     }
 }
 
+//Função que imprime o gráfico em PDF
 function imprimir() {
     if (true) {
         window.print();
@@ -92,6 +109,7 @@ function imprimir() {
     }
 }
 
+//Função que faz download dos dados em um arquivo CDV separado por ";"
 function salvarCSV() {
     if (corpo.getElementsByTagName("tr").length > 0) {
         let a = document.createElement("a");
@@ -105,7 +123,7 @@ function salvarCSV() {
 
 //Função que percorre o corpo da tabela e converte o resultado em CSV
 function tbodyToCSV(tbody) {
-    let csv = prazo.value + "\r\n";
+    let csv = prazo.value + ";"+titulo.value+"\r\n";
     let linhas = tbody.getElementsByTagName("tr");
     if (linhas.length > 0) {
         for (let lin = 0; lin < linhas.length; lin++) {
@@ -129,7 +147,8 @@ function carregarCSV() {
             arquivoLido.onload = function(fileLoadedEvent){
                 let text = fileLoadedEvent.target.result;
                 let row = text.split("\r\n");
-                prazo.value = row[0];
+                prazo.value = row[0].split(";")[0];
+                titulo.value = row[0].split(";")[1];
                 criarCronograma();
                 //Preenche o gráfico linha por linha
                 for(i = 1; i < row.length; i++){
@@ -143,6 +162,7 @@ function carregarCSV() {
                             tr.innerHTML += "<td class='tdbranco'></td>";
                         }
                     }
+                    tr.innerHTML += "<td class='acoes'><input type='button' value=' * ' onclick='editar(this)'><input type='button' value=' - ' onclick='excluir(this)'></td>";
                     corpo.appendChild(tr); 
                 }
             }
@@ -153,4 +173,19 @@ function carregarCSV() {
     } else {
         alert("Arquivo(s) não suportado(s)");
     }
+}
+
+//Função que exclui elementos da tabela
+function excluir(e){
+    e.parentNode.parentNode.remove();
+}
+
+//Função que edita as linhas da tabela
+function editar(e){
+    atividade.value = e.parentNode.parentNode.cells[0].innerHTML;
+    recurso.value = e.parentNode.parentNode.cells[1].innerHTML;
+    inicio.value = e.parentNode.parentNode.cells[2].innerHTML;
+    duracao.value = e.parentNode.parentNode.cells[3].innerHTML;
+    status.value = e.parentNode.parentNode.cells[4].innerHTML;
+    e.parentNode.parentNode.remove();
 }

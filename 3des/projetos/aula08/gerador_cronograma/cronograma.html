@@ -11,7 +11,7 @@
 
 <body onload="getInicialConfig()">
     <div class="geral">
-        <h3>Crie seu cronograma adicionando suas atividades (Gráfico Gantt)</h3>
+        <h4>Crie seu cronograma adicionando suas atividades (Gráfico Gantt)</h4>
         <div class='faixa'>
             <div class='faixa'>
                 <div class='campo'>
@@ -50,6 +50,10 @@
     <div id="modal">
         <div id="modal-box">
             <div class='faixa' style="padding:10px;">
+                <label>Duração do Projeto:</label>
+                <input type="text" id="titulo" placeholder="Título do Projeto" />
+            </div>            
+            <div class='faixa' style="padding-left:10px;padding-right:10px;">
                 <label>Duração do Projeto:</label>
                 <input type="number" id="prazo" placeholder="Dias" />
                 <button id="configurar" onclick="criarCronograma()">Configurar</button>

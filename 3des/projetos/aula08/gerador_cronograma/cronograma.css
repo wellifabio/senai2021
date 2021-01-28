@@ -34,6 +34,14 @@ textarea{
     border-radius: 4px;
 }
 
+input[type=text]{
+    width: 220px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 input[type=number]{
     width: 70px;
     height: 30px;
@@ -48,6 +56,17 @@ input[type=file]{
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+input[type=button]{
+    width: 25px;
+    height: 20px;
+    margin: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #b30;
+    color: #fff;
+    cursor:pointer;
 }
 
 select{
@@ -68,6 +87,17 @@ button{
     cursor:pointer;
 }
 
+td{
+    max-width: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+#gantt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #modal{
     display:none;
     background: rgba(0,0,0,0.8);
@@ -80,7 +110,7 @@ button{
 
 #modal-box{
     width: 400px;
-    height: 130px;
+    height: 180px;
     left: 50%;
     top: 50%;
     margin-left: -15%;
@@ -95,21 +125,31 @@ button{
     position: absolute;
 }
 
+.acoes{
+    width: 20px;
+    background-color: #fff;
+    display: inline;
+}
 .tdbranco{
     width: 20px;
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 .planejado{
     width: 20px;
     background-color: rgb(24, 154, 225);
+    border: 1px solid #003;
 }
 .execucao{
     width: 20px;
-    background-color: #ff0;
+    background-color: rgb(238, 190, 0);
+    border: 2px solid #996;
 }
 .atrasado{
     width: 20px;
     background-color: rgb(202, 52, 32);
+    border: 2px solid #600;
 }
 .concluido{
     width: 20px;
@@ -119,6 +159,6 @@ button{
 @media print{
     @page {size: landscape}
     @media print {
-        h3, button, label, input, textarea, select {display:none;}
+        h4, button, label, input, textarea, select {display:none;}
     }
 }

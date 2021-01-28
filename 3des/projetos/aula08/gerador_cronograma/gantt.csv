@@ -1,0 +1,17 @@
+90;Casamento da Mona Lisa com Alfredo
+Escolher e Convidar Padrinhos;Mona Lisa e Alfredo;1;1;concluido;
+Adquirir/Comprar alianças;Alfredo;1;2;concluido;
+Planejar Lua de mel;Mona Lisa com Alfredo;1;2;planejado;
+Alugar um Salão;Casamenteira;1;1;planejado;
+Contratar Buffet;Casamenteira;2;1;planejado;
+Contratar Decoração;Casamenteira;3;1;planejado;
+Aprovar: Salão, Buffet e Decoração;Pais da Noiva;4;1;atrasado;
+Aprovar: Salão, Buffet e Decoração;Mona Lisa e Alfredo;5;1;execucao;
+Contratar Som e Iluminação;Casamenteira;5;1;execucao;
+Aprovar: Som e Iluminação;Mona Lisa com Alfredo;5;1;planejado;
+Fazer a lista de convidades;Mona Lisa com Alfredo;5;3;planejado;
+Contratar Pastor;Mona Lisa com Alfredo;5;4;execucao;
+Conferir preparativos da cerimônia;Cerimonialista;9;1;planejado;
+Ensaio geral do casamento;Todos;10;1;planejado;
+Dia do casamento;Todos;10;1;planejado;
+Lua de Mel;Mona Lisa e Alfredo;11;2;planejado;
