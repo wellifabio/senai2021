@@ -1,0 +1,18 @@
+4. HTML
+4.1. Definição (Hyper text market language)
+4.2. Validação de código pelo W3C
+4.3. Elementos da linguagem
+4.3.1. Html
+4.3.2. Head
+4.3.3. Title
+4.3.4. Body e seus atributos
+4.3.5. Metas tag
+4.3.6. Comentários
+4.4. Semântica dos elementos
+4.5. Elementos para manipulação de textos
+4.5.1. Fonte
+4.5.2. Estilos de formatação (b, strong, I, em, sub, sup)
+4.5.3. Parágrafo
+4.5.4. Elementos de cabeçalho (h1 até h6)
+4.5.5. Quebra de linha
+4.5.6. Alinhamentos
