@@ -1,0 +1,13 @@
+systeminfo
+taskkill /f /im notepad.exe
+ipconfig
+ping
+dir
+cd
+mkdir
+copy
+copy con
+move
+rd
+del
+ren
