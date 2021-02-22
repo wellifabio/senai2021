@@ -1,11 +1,8 @@
-Síntese da aula?
-
-1 - Quem foi Holerit?
-2 - Qual a diferença entre Hertz e Bit?
-3 - Quantos bytes existem em 3GB?
-4 - Para o processador, o que é uma palávra?
-5 - Em um processador fictíceo de 8 bits
-qual o máximo de memória pode ser endereçada?
-6 - Qual a diferença entre dado e endereço?
-7 - Qual a semelhança entre dado e endereço?
-8 - Qual é o controle da instrução "a == b;"?
+﻿Síntese da aula
+1 - Qual a diferença entre Hertz e Bit?
+2 - Quantos bytes existem em 3GB?
+3 - Para o processador, o que é uma palávra?
+4 - Em um processador fictíceo de 8 bits qual o máximo de memória pode ser endereçada?
+5 - Qual a diferença entre dado e endereço?
+6 - Qual a semelhança entre dado e endereço?
+7 - Qual é o controle da instrução "a == b;"?
