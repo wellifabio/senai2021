@@ -1,4 +1,4 @@
-Exercícios
+﻿Exercícios
 1) Realize a conversão da base decimal para a base binária
 a. 331 = 101001011(2)
 b. 334 = 101001110(2)
@@ -14,5 +14,4 @@ b. 98 = 153
 5) Realiza a conversão da base octal para a decimal
 a. 71 = 57
 b. 22 = 18
-
------------------------
+---------------------------------------
