@@ -21,7 +21,6 @@
 
 Exercício
 Faça uma tabela do brasileirão 2022 com apenas 4 times, cabeçalho e rodapé.
-
 Time jogos	vitórias	derrotas	empates	pontos
 São Paulo		6	0	0	18
 Curintia		5	1	0	15
