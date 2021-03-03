@@ -18,3 +18,13 @@
 	<tfoot> Rodapé da Tabela
 		<tr> Linha da tabela
 		<td> coluna da tabela
+
+Exercício
+Faça uma tabela do brasileirão 2022 com apenas 4 times, cabeçalho e rodapé.
+
+Time jogos	vitórias	derrotas	empates	pontos
+São Paulo		6	0	0	18
+Curintia		5	1	0	15
+Santos		4	2	0	12
+Palmeiras		0	6	0	0
+Resultados	15	9	0	45
