@@ -1,1 +1,20 @@
-Inicio
+<html> Página
+	<head> Cabeçalho da página
+	<body> Corpo da página
+
+<ul> Lista desordenada
+	<li> linha da lista
+<ol> Lista ordenada
+	<li> linha da lista
+
+
+<table> Tabela
+	<thead> Cabeçalho da tabela
+		<tr> Linha da tabela
+		<th> coluna do cabeçalho
+	<tbody> Corpo da Tabela
+		<tr> Linha da tabela
+		<td> coluna da tabela
+	<tfoot> Rodapé da Tabela
+		<tr> Linha da tabela
+		<td> coluna da tabela
