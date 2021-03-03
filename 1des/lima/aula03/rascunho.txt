@@ -19,7 +19,7 @@
 		<tr> Linha da tabela
 		<td> coluna da tabela
 
-Exercício
+Exercício da aula.
 Faça uma tabela do brasileirão 2022 com apenas 4 times, cabeçalho e rodapé.
 Time jogos	vitórias	derrotas	empates	pontos
 São Paulo		6	0	0	18
@@ -27,3 +27,16 @@ Curintia		5	1	0	15
 Santos		4	2	0	12
 Palmeiras		0	6	0	0
 Resultados	15	9	0	45
+
+Tarefa com Layouts.(Vale nota)
+1 - Escolha um modelo de Leiaute (Layout2 ou layout3)
+2 - Crie um projeto contendo no mínimo três páginas
+3 - Temas:
+	Turismo (Destinos Brasileiros)
+	Tecnologia (IOt, BigData, Learnig Machine, BI)
+	Livros (Harry Potter, Senhor dos Anéis ...)
+	Filmes (Piratas do vale do siício, A sociedade dos poetas mortos, Poderoso Chefão)
+	Ou outro tema livre.
+
+
+
