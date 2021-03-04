@@ -1,0 +1,5 @@
+FAT32 windows XP
+NTFS windows XP, 7, 8, 10, Server
+EXT Linux
+
+A principal diferença entre os sistemas de arquivos é o tamanho do Cluster.
