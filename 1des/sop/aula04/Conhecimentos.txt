@@ -1,4 +1,0 @@
-2.3.7. Gerenciamento de arquivos
-2.3.8. Gerenciamento de usuários e permissões
-2.4. Níveis de inicialização e finalização
-2.5. Instalação na máquina virtual
