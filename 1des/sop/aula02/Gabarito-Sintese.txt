@@ -1,0 +1,15 @@
+﻿Síntese da aula
+1 - Qual a diferença entre Hertz e Bit?
+	Hertz é frequência, 1Hz é uma vez por segundo e Bit é um espaço de memória que pode ser 0 ou 1
+2 - Quantos bytes existem em 3GB?
+	1024 * 1024 * 1024 * 3 = 3221225472
+3 - Para o processador, o que é uma palávra?
+	é uma instrução composta por endereço, dado e controle
+4 - Em um processador fictíceo de 8 bits qual o máximo de memória pode ser endereçada?
+	256 bytes
+5 - Qual a diferença entre dado e endereço?
+	Dado é a informação a ser processada enquanto endereço é onde está esta informação
+6 - Qual a semelhança entre dado e endereço?
+	Os dois são binários e normalmente possuem a mesma quantidade de bits.
+7 - Qual é o controle da instrução "a == b;"?
+	Comparação de igualdade ==
