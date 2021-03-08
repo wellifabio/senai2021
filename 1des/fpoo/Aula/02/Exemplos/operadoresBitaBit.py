@@ -12,11 +12,13 @@ print(bin(e))
 xor = x ^ y
 print(bin(xor))
 '''
+
 '''
 # Exemplo 3
 desDir = x >> 2
 print(bin(desDir))
 '''
+
 
 # Exemplo 4
 desEsq = x << 3
