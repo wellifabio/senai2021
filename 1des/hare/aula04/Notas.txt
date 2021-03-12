@@ -1,0 +1,65 @@
+1KHz = 1 x 10^3Hz = 1000Hz = 1000 (1/s)
+2MHz = 2 x 10^6Hz = 1.000.000Hz = 1.000.000 (1/s)
+2,5GHz = 2,5 x 10^9Hz = 2.500.000.000Hz= 2.500.000.000 (1/s)
+
+
+--------------------------------------
+1Byte = 1B = 8 bits = 8b
+10110011_2 = B3_16
+6C_16 = 01101100_2 = 32+64+8+4 = 108
+
+00110110 AND
+00100011
+=
+00100010 OR
+00001111
+=
+00101111 XOR
+11111111
+=
+11010000
+
+FF_16=
+11111110
+8421 
+
+1 xor 0 = 1
+0 xor 1 = 1
+0 xor 0 = 0
+1 xor 1 = 0
+
+
+-----------------
+Código exemplo
+
+; Rafael Martins Alves - rafaelmartinsalves@gmail.com
+; 12/03/2021
+; Senai - SP - Jaguariúna
+
+; Instrução MOV
+MOV A, 22 ; A<=22
+MOV B, A  ; B<=A
+
+; Instrução ADD
+ADD A, B  ; A <= A + B
+ADD B, 13 ; B <= B + 13
+
+; Instrução SUB
+SUB A, B  ; A <= A - B
+MOV C, A  ; C <= A
+SUB C, 7  ; C <= C - 7
+
+; Multplicação - SEMPRE É O REGISTRADOR A COMO REFERÊNCIA
+MUL C ; A <= A * C
+MUL 3 ; A <= A * 3
+
+; ~Divisão - SEMPRE É O REGISTRADOR A COMO REFERÊNCIA
+DIV 2 ; A <= A / 2
+
+
+; Operadores Lógicos
+AND A, B ; A <= A AND B
+OR A, 00001111b ; A <= A AND B
+XOR A, 0xFF ; A <= A XOR 0xFF
+
+HLT
