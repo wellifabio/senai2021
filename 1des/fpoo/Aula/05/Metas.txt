@@ -1,0 +1,2 @@
+- Corrigir os exercícios do URI da semana passada
+- Começar os slides dessa aula
