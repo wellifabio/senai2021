@@ -1,0 +1,4 @@
+- Fpoo - lista de exercícios de estrutura de decisão, resolver em python e fluxograma
+- Lima - Formulários
+- Hare e sop - Exercício de orçamento
+- FPOO - String
