@@ -22,3 +22,14 @@ Elis
 Leonardo
 Hiago
 Paulo
+
+
+Grupo do Robésio: Sistema web para venda de alimentos (doces, salgados e marmitex)
+Descrição do assunto: https://docs.google.com/document/d/1WIoG2RXMJWq5LkdVfi_NiA45Irci4l9Z/edit
+
+Grupo da Elis: Sistema de Saúde: controle agenda com cadastro dos médicos e pacientes, vídeo conferência, controle nutrição (IMC), receita da alimentação
+Descrição do assunto: https://drive.google.com/drive/u/0/folders/1vF1qGcCjBvlpuut6WsjnO5FvsiO7kIs0
+
+Grupo do Pedro: Sistema de venda (drop shipping). (VAI VER COM O GRUPO PARA DECIDIR O ASSUNTO)
+
+Grupo do Murilo: Sistema web para gerenciamento de estoque (CONVERSAR COM O GRUPO PARA CONFIRMAR O ASSUNTO)
