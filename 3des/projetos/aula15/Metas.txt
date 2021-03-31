@@ -1,0 +1,13 @@
+- Status do projeto:
+
+Grupo do Robesio. Já fechou a ideia. Fez matriz swot. Cronograma e DER inicial.
+
+Grupo Elis. Já fechou ideia. Fez matriz swot. Estão fazendo cronograma e vão iniciar Der. 
+
+Os outros grupos  enviar até sexta-feira. Matriz. Cronograma e DER.
+
+- Fazer planilha com acompanhamento dos projetos
+- Certificar das tecnologias, node js (posso pesquisar uma estrutura pronta) ou spring (posso pesquisar uma estrutura pronta), react ou vue.js (front) , ionic ou vue.js(para aplicativo) ou react native ou flutter ou xamarin, banco de dados não relacional (mongo db ou CouchDB ou Cassandra) 
+- Verificar o curso
+- Utilizar Jira para fazer diagrama kanban
+
