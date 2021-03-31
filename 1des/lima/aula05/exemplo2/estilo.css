@@ -1,0 +1,22 @@
+body{
+    background-image: url('padrao.png');
+}
+
+div{
+
+    border: solid 2px #000;
+    border-radius: 5px;
+    width: 50%;
+    height: 150px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    margin: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-self: center;
+}
