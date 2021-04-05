@@ -1,0 +1,4 @@
+- Slide sobre while: https://docs.google.com/presentation/d/1SYdtsAdW_Qg3-YjW6iyzvLx5--7l8I_zcmtCk3LbM2Q/edit?usp=sharing
+ 	- Correção das atividades da aula passada
+	- Conteúdo sobre while
+	- Atividade sobre while
