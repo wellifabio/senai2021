@@ -1,0 +1,8 @@
+apinode2.rar: está com o código a mais:
+app.listen(CONFIG.PORT, function () {
+  console.log(`Running in port => ${CONFIG.PORT}`);
+});
+
+Para Executar:
+npm i
+node src/app.js

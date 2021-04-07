@@ -1,5 +1,6 @@
 - Perguntar sobre andamento dos projetos
 - Fazer planilha excel com acompanhamento dos projetoss
 - Perguntar das tecnologias e divisões dos projetos
+- Apresentação do pré projeto
 - Utilizar Jira para fazer diagrama kanban
 - Rodar backend spring e node
