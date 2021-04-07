@@ -1,0 +1,13 @@
+Exercícios
+
+O que são dispositivos de entrada e saída(E/S)?
+Cite alguns dos principais dispositivos de entrada e de saída?
+Cite alguns dos principais dispositivos de entrada e saída para uso de armazenamento de dados?
+Cite alguns exemplos de interfaces para teclado e mouse.
+Qual é diferença entre a porta serial e paralela.
+Cite algumas características da porta USB.
+Quais versões de porta USB existentes? Qual diferença entre elas?
+Quais são tipos de saída de vídeos existentes?
+Qual nome da porta para saída de rede mais usada?
+Qual é a cor dos conectores de áudio respectivamente: microfone, saída de áudio e entrada de áudio.
+Identifique em seu computador pessoal os tipos de interfaces existentes e quais são utilizadas ou tire uma foto para discutirmos na próxima aula.
