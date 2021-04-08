@@ -1,3 +1,5 @@
+- Marcar provas
+- Acesso o teams
 - Finalizar  o assembly
 - Exercícios de assembly
 - Ver planilhas da cotação
