@@ -1,0 +1,4 @@
+- Verificar com eles como ficou a formação dos novos grupos
+- Atualizar planilha excel com acompanhamento dos projetos
+- Apresentação do pré projeto
+- Rodar backend spring
