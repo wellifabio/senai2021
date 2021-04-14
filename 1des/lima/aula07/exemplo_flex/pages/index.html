@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/index.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <div class="container" id="container">
+      <div class="items item1">1</div>
+      <div class="items item2">2</div>
+      <div class="items item3">3</div>
+      <div class="items item4">4</div>
+      <div class="items item5">5</div>
+    </div>
+    <div class="options">
+      <div class="ojc">
+        <input type="radio" id="jcfs" name="jc" onclick="displayjc(0)">
+        <label for="jcfs">justify-content: flex-start</label><br>
+        <input type="radio" id="jcfe" name="jc" onclick="displayjc(1)">
+        <label for="jcfe">justify-content: flex-end</label><br>
+        <input type="radio" id="jcc" name="jc" onclick="displayjc(2)">
+        <label for="jcc">justify-content: center</label><br>
+        <input type="radio" id="jcsb" name="jc" onclick="displayjc(3)">
+        <label for="jcsb">justify-content: space-between</label><br>
+        <input type="radio" id="jcsa" name="jc" onclick="displayjc(4)">
+        <label for="jcsa">justify-content: space-around</label><br>
+        <input type="radio" id="jcse" name="jc" onclick="displayjc(5)">
+        <label for="jcse">justify-content: space-evenly</label>
+      </div>
+      <div class="oai">
+        <input type="radio" name="ai" id="ais" onclick="displayai(0)">
+        <label for="ais">align-items: flex-start</label><br>
+        <input type="radio" name="ai" id="aie" onclick="displayai(1)">
+        <label for="aie">align-items: flex-end</label><br>
+        <input type="radio" name="ai" id="aic" onclick="displayai(2)">
+        <label for="aic">align-items: center</label><br>
+        <input type="radio" name="ai" id="aist" onclick="displayai(3)">
+        <label for="aist">align-items: stretch</label><br>
+        <input type="radio" name="ai" id="aibl" onclick="displayai(4)">
+        <label for="aibl">align-items: baseline</label>
+      </div>
+      <div class="oas">
+        <input type="radio" name="as" id="ass" class="as" value="flex-start">
+        <label for="ass">align-self: flex-start</label><br>
+        <input type="radio" name="as" id="ass" class="as" value="flex-end">
+        <label for="ass">align-self: flex-end</label><br>
+        <input type="radio" name="as" id="ass" class="as" value="center">
+        <label for="ass">align-self: center</label><br>
+        <input type="radio" name="as" id="ass" class="as" value="stretch">
+        <label for="ass">align-self: stretch</label><br>
+        <input type="radio" name="as" id="ass" class="as" value="baseline">
+        <label for="ass">align-self: baseline</label>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="../scripts/index.js"></script>
+</html>
