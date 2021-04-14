@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(54, 54, 54);
+  font-family: 'New Tegomin', serif;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 35vh;
+  margin: 5% auto 2.5% auto;
+  background-color: rgb(109, 30, 255);
+  border: 2px solid rgb(173, 173, 173);
+}
+
+.options {  
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.items {
+  width: 15vh;
+  height: 15vh;
+  background-color: rgb(180, 87, 0);
+  border: 2px solid rgb(173, 173, 173);
+  border-radius: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.item1 {
+  background-color: rgb(192, 130, 71);
+}
