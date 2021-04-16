@@ -5,7 +5,7 @@ Paulo:
 
 Robésio:
 - Requisitos funcionais/não funcionais
-- Ionic
+- Pegar imagem no front
 
 Janderson
 - Backend
@@ -28,7 +28,7 @@ Vinícius
 
 Isadora
 - Trabalhar no BD
-- Documentação
+- Documentação (requisitos funcionais e não funcionais)
 
 Elis
 - Requisitos funcionais e não funcionais
@@ -39,6 +39,7 @@ Hiago
 - Diagrama de casos de uso
 
 Leonardo
+- Front
 - Requisitos funcionais e não funcionais
 - Diagrama de casos de uso
 
