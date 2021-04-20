@@ -1,0 +1,7 @@
+Servidores de Aplicação
+
+IIS - Windows (HTML CSS) asp
+Apache - Linux (HTML CSS) php
+V8 - Chome (HTML CSS) JavaScrip
+
+Live Server (É um v8, plugin para VSCode se comportar como servidor)

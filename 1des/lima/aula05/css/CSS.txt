@@ -1,0 +1,19 @@
+Introdução.
+
+CSS: Folha de estilos. "Perfumaria"
+
+3 Formas:
+inline. <style>
+interna. <style type="text/css"></style>
+externa. <link rel="stylesheet" type="text/css" href="arquivo.css" />
+
+<div> Tag que serve para dividir uma página </div>
+<span> Tag span serve para agrupar objetos </span>
+https://www.w3schools.com/
+
+
+Elementos HTML representados em CSS
+Identificação por # id ou . class
+
+
+Missão: CSS responsividade com display: flex, inline e grid.

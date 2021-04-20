@@ -1,4 +1,9 @@
 - Revisar a aula passada
 - Corrigir os exercícios, dar tempo caso for necessário
+
+
+
+
+
 - Cadastrar o URI
 - Implementar os problemas no URI

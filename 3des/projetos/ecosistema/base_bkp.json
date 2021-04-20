@@ -1,0 +1,112 @@
+{
+    "Connection": {
+        "Headers": {
+            "Content-type": "application/json; charset=UTF-8",
+            "Access-Control-Allow-Origin": "http://localhost/",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE"
+        }
+    },
+    "Database": {
+        "host": "localhost",
+        "port": "3306",
+        "dbname": "database_name",
+        "user": "root",
+        "password": ""
+    },
+    "Class": [{
+            "name": "usuarios",
+            "attributes": [
+                "id",
+                "nome",
+                "celular",
+                "rua",
+                "numero",
+                "bairro",
+                "cidade",
+                "uf",
+                "cpf",
+                "senha",
+                "tipo"
+            ]
+        },
+        {
+            "name": "chamados_autonomos",
+            "attributes": [
+                "id",
+                "usuario_autonomo_id",
+                "usuario_solicitatnte_id",
+                "status_cha",
+                "lat",
+                "longi",
+                "dia_horario",
+                "materiais"
+            ]
+        },
+        {
+            "name": "materiais",
+            "attributes": [
+                "id",
+                "nome",
+                "cor"
+            ]
+        },
+        {
+            "name": "ecopontos",
+            "attributes": [
+                "id",
+                "cooperativas_id",
+                "nome",
+                "descricao",
+                "lat",
+                "longi"
+            ]
+        },
+        {
+            "name": "veiculos",
+            "attributes": [
+                "id",
+                "cooperativas_id",
+                "placa",
+                "modelo",
+                "marca",
+                "capacidade_carga_kg",
+                "ecopontos"
+            ]
+        },
+        {
+            "name": "cooperativas",
+            "attributes": [
+                "id",
+                "nome"
+            ]
+        },
+        {
+            "name": "porta_a_porta",
+            "attributes": [
+                "id",
+                "cooperativas_id",
+                "descricao",
+                "lat",
+                "longi"
+            ]
+        },
+        {
+            "name": "pontos",
+            "attributes": [
+                "id",
+                "rotas_id",
+                "lat",
+                "longi"
+            ]
+        },
+        {
+            "name": "rotas",
+            "attributes": [
+                "id",
+                "veiculos_id",
+                "nome",
+                "dia_hora"
+            ]
+        }
+    ]
+}

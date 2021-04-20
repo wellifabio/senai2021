@@ -1,0 +1,81 @@
+- Fpoo - lista de exercícios de estrutura de decisão, resolver em python e fluxograma 
+- Lima - Formulários
+- Hare e sop - Exercício de orçamento
+- FPOO - String
+
+https://docs.google.com/presentation/d/18jamX44y5QToU2BnrPa80UVHSpvBls9kh66llvv0Ppo/edit?usp=sharing
+
+Metas:
+- Conversar com os alunos sobre as atividades se precisa de ajuda
+- Corrigir atividades de assembly, colocar na relação da planilha quem fez e quem não fez
+- Continuar com assembly
+- Tempo para fazer curso
+- Ajudar com alguma atividade
+
+
+-------------------------------CMP-------------------------------:
+MOV A, 16
+MOV B, 15
+CMP A, B
+
+Mesmo resultado do CMP:
+MOV A, 16
+MOV B, 16
+SUB A, B
+
+-------------------------------JMP-------------------------------:
+MOV A, 10
+JMP incrementarB
+
+incrementarA:
+INC A
+INC A 
+
+incrementarB:
+INC B
+INC B
+
+HLT
+
+----------------------Operadores Lógicos-----------------
+
+MOV A, 1101b
+MOV B, 0010b
+;AND A, B
+;OR A, B
+;XOR A, B
+;NOT A
+
+
+----------------------JC-----------------
+ADD A, 200
+ADD A, 60
+JC terminar
+MOV A, 0
+terminar:
+HLT
+
+
+----------------------JNC-----------------
+MOV A, 10
+SUB A, 60
+JNC terminar
+MOV A, 0
+terminar:
+HLT
+
+
+----------------------JZ-----------------
+MOV A, 2
+MOV B, 2
+CMP A, B
+JZ valoresIguais
+MOV D, 0
+JMP fim
+valoresIguais:
+MOV D, 1
+fim:
+HLT
+
+
+

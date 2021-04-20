@@ -1,0 +1,7 @@
+git clone LINK_DO_REPOSITORIO // Clonar repositório do git
+cd NOME_PASTA_CRIADA // Mudar diretório para o diretório criado
+git status // Verificar as pastas/arquivos não rastreado (arquivos untracked)
+git add . // Adicionar todos os arquivos para rastreado
+git commit -m "COMENTÁRIO AQUI" // Prepara o envio dos arquivos rastreados para o git
+git push // Enviar os arquivos para o git hub
+git pull // Enviar as atualizações do repositório remoto para o repositório local

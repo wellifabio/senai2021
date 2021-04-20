@@ -1,0 +1,23 @@
+;2 - Considere o pi igual a 3. Calcula a área de uma circunferência área = pi * raio ^ 2. Considere o registrador A para armazenar o pi, registrador B o raio, D saída (área). Mantenham os valores originais dos  registradores A e B, registrador C terminar com zero.
+
+; Rafael Martins Alves - rafaelmartinsalves@gmail.com
+; 12/03/2021
+; Senai - SP - Jaguariúna
+; Atividade 2 - Cálculo da área
+
+MOV A, 3 ; PI A <- 3
+MOV B, 2 ; Raio B <- 2
+MOV C, A ; A tem PI original C <- PI
+MUL B ; A <- A * B
+MUL B ; A <- A * B
+MOV D, A ; D <- A (já está com a área calculada)
+MOV A, C ; Recupera o valor inicial de A
+MOV C, 0 ;  Atriui zero para o registrador C
+HLT ; Finalizar o porgrama
+
+PI = 3
+R = 2
+A = PI * R ^ 2 = 3 * 2^2 = 3 * 4 = 12
+
+ 
+

@@ -1,0 +1,111 @@
+- Marcar provas
+- Acesso o teams
+- Finalizar  o assembly
+- Exercícios de assembly
+- Ver planilhas da cotação
+- Apresentação da aula 06, interfaces
+- Exercícios
+- Seminário
+
+Avaliação Somativa:
+
+HARE: 16/04
+FPOO: 19/04
+LIMA: 21/04
+SOAP: 22/04
+
+
+Resolução dos exercícios
+
+---------------Atividade 01-------------------:
+mov A,10 ;atribuição
+mov B,5 ;atribuição
+CMP A,B ;comparação
+ja maior ;pular para a rotulo "maior" se A > B
+jmp fim ;pular para a rotulo "fim" sempre ira pular independente de condição
+
+
+
+maior: ;rotulo para que seja executado o pulo
+mov C,1 ;ação caso A > B
+
+
+
+fim: ;rotulo final ( sempre sera a ultima parte do processo )
+hlt ;comando de finalizar
+
+
+
+---------------Atividade 02-------------------:
+mov A,10 ;atribuição
+mov B,51 ;atribuição
+CMP A,B ;comparação
+jb menor ;pular para a rotulo "menor" se A < B
+jmp fim ;pular para a rotulo "fim" sempre ira pular independente de condição
+
+
+
+menor: ;rotulo para que seja executado o pulo
+mov C,1 ;ação caso A < B
+
+
+
+fim: ;rotulo final ( sempre sera a ultima parte do processo )
+hlt ;comando de finalizar
+
+
+---------------Atividade 03-------------------:
+mov A,5 ;atribuição
+mov B,6 ;atribuição
+CMP A,B ;comparação
+
+
+
+je igual ;pular para a rotulo "igual" se A == B
+jmp fim ;pular para a rotulo "fim" sempre ira pular independente de condição
+
+
+
+igual: ;rotulo para que seja executado o pulo
+mov C,1 ;ação caso A == B
+
+
+
+fim: ;rotulo final ( sempre sera a ultima parte do processo )
+hlt ;comando de finalizar
+
+---------------Atividade 04-------------------:
+;atribuir e comparar valores
+mov a,11
+mov b,11
+cmp a,b
+
+
+
+;comparadores
+ja maior
+jb menor
+je igual
+
+
+
+;registradores de comparação
+maior:
+mov c,1
+jmp final
+
+
+
+igual:
+mov c,2
+jmp final
+
+
+
+menor:
+mov c,3
+
+
+
+final:
+hlt
