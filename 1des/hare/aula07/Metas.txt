@@ -1,0 +1,9 @@
+Corrigir:
+
+a) 20GB em MB
+
+
+b) 1000 bits em MB
+
+100Mbps para MBps e para KB/s
+
