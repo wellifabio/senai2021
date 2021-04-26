@@ -1,0 +1,63 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "ixsistemas",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "usuario",
+			"attributes" : [
+				"id_usuario",
+				"login",
+				"senha",
+				"tipo"
+			]
+		},
+		{
+			"name" : "mesa",
+			"attributes" : [
+				"id_mesa",
+				"descricao",
+				"id_usuario"
+			]
+		},
+		{
+			"name" : "produto",
+			"attributes" : [
+				"id_produto",
+				"nome",
+				"descricao",
+				"valor",
+				"tipos"
+			]
+		},
+		{
+			"name" : "pedido",
+			"attributes" : [
+				"id_pedido",
+				"id_mesa",
+				"data",
+				"hora",
+				"status",
+				"obs"
+			]
+		},
+		{
+			"name" : "item",
+			"attributes" : [
+				"id_pedido",
+				"id_produto"
+			]
+		}
+	]
+}
