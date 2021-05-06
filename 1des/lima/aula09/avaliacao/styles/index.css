@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(218, 218, 218);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+}
+
+header>img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-right: 10%;
+}
+
+header>p>b {
+    margin-left: 20px;
+}
+
+header>p>b>span {
+    margin-left: 10px;
+}
+
+header>input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#sep1 {
+    width: 95%;
+    border: 2px solid rgba(143, 143, 143, .8);
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.content {
+    width: 50%;
+}
+
+.content>ul {
+    margin-left: 20%;
+}
+
+.content>ul>li {
+    display: flex;
+    margin-top: 20px;
+}
+
+.imagem {
+    width: 450px;
+    height: 275px;
+    background-color: gray;
+}
+
+.info {
+    margin: 20px 20px;
+}
+
+.info>h1,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    margin: 1% auto;
+    width: 25%;
+    background-color: #fff;
+    height: 10%;
+    border-radius: 10px;
+}
+
+.list>ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list>h2 {
+    margin: 30px;
+}
+
+.list>ul>li {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sep2 {
+    width: 80%;
+}
