@@ -1,0 +1,13 @@
+Responda as questões abaixo baseadas na versão atual da planilha FolhaDePag.xlsx
+1 - Qual é o cargo do Elian de Oliveira Moraes?
+2 - Quanto ganha "Salário" um Programador FrontEnd Júnior?
+3 - Quanto ganha "Salário" um Programador BackEnd Pleno?
+4 - Quanto ganha "Salário" um Analista de Sistemas Senior?
+5 - Quanto paga de IR a funcionária Jaqueline Dias Oliveira?
+6 - Quem "nome" ganha o maior salário, qual o valor e qual seu cargo?
+7 - Qual o total gasto pela empresa com FGTS?
+8 - Qual a média salarial dos funcionários desta empresa?
+9 - Quanto a empresa precisa depositar de IRRF para a receita federal?
+10 - Promova o funcionário Matheus Ricardo Belli para Jovem Aprendiz e responda qual será seu Salário Líquido?
+11 - Qual o valor total gasto pela empresa com esta folha de pagamento?
+12 - Qual o valor total gasto pela empresa com esta folha de pagamento se a hora extra passar a valer 75%?
