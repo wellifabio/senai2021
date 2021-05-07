@@ -1,0 +1,4 @@
+- Finalizar slide da aula anterior
+- Verificar a implementação dos códigos dos alunos (corrigir juntos)
+- Slide aula 03 - estrutura de controle 02
+- Fazer as duas listas de exercício, começar em sala de aula

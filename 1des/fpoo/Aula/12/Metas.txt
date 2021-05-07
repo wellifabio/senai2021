@@ -1,2 +1,4 @@
 - Ver as atividades de funções
 - Aulas 01, 02 e 03 (trabalhar com o eclipse)
+- Mostrar exemplo Main.java
+- Atividades 06 URI
