@@ -1,0 +1,19 @@
+drop database if exists usuarios;
+create database usuarios;
+use usuarios;
+create table usuarios(
+	email varchar(50) unique,
+	senha varchar(30)
+);
+
+insert into usuarios values
+('senai@senai.com','12344'),
+('email@senai.com','54321'),
+('senai@email.com','12345'),
+('aluno@senai.com','12344'),
+('aluno@email.com','12345'),
+('email@email.com','12345'),
+('senai@aluno.com','12343');
+show tables;
+select * from usuarios;
+Select * from Usuarios where email = 'email@email.com' and senha = '12345';
