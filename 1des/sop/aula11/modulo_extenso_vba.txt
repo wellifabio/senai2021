@@ -1,0 +1,123 @@
+Function extenso999(num As Variant)
+
+    Saida = ""
+    centena = ""
+    dezena = ""
+    unidade = ""
+    
+    While num > 0
+        If num >= 1000 Then
+            num = 0
+        ElseIf num >= 100 Then
+            If num >= 900 Then
+                centena = "novecentos"
+                num = num - 900
+            ElseIf num >= 800 Then
+                centena = "oitocentos"
+                num = num - 800
+            ElseIf num >= 700 Then
+                centena = "setecentos"
+                num = num - 700
+            ElseIf num >= 600 Then
+                centena = "seiscentos"
+                num = num - 600
+            ElseIf num >= 500 Then
+                num = num - 500
+                centena = "quinhentos"
+            ElseIf num >= 400 Then
+                num = num - 400
+                centena = "quatrocentos"
+            ElseIf num >= 300 Then
+                num = num - 300
+                centena = "trezentos"
+            ElseIf num >= 200 Then
+                num = num - 200
+                centena = "duzentos"
+            ElseIf num >= 100 Then
+                num = num - 100
+                centena = "cento"
+            End If
+            
+            If num > 0 Then
+                Saida = Saida & centena & " e "
+            Else
+                Saida = Saida & centena
+            End If
+            
+        ElseIf num >= 10 Then
+            If num >= 90 Then
+                dezena = "noventa"
+                num = num - 90
+            ElseIf num >= 80 Then
+                dezena = "oitenta"
+                num = num - 80
+            ElseIf num >= 70 Then
+                dezena = "setenta"
+                num = num - 70
+            ElseIf num >= 60 Then
+                dezena = "secenta"
+                num = num - 60
+            ElseIf num >= 50 Then
+                num = num - 50
+                dezena = "cinquenta"
+            ElseIf num >= 40 Then
+                num = num - 40
+                dezena = "quarenta"
+            ElseIf num >= 30 Then
+                num = num - 30
+                dezena = "trinta"
+            ElseIf num >= 20 Then
+                num = num - 20
+                dezena = "vinte"
+            ElseIf num >= 10 Then
+                num = num - 10
+                dezena = "dez"
+            End If
+        
+            If num > 0 Then
+                Saida = Saida & dezena & " e "
+            Else
+                Saida = Saida & dezena
+            End If
+        
+        ElseIf num >= 0 Then
+            If num >= 9 Then
+                unidade = "nove"
+                num = num - 9
+            ElseIf num >= 8 Then
+                unidade = "oito"
+                num = num - 8
+            ElseIf num >= 7 Then
+                unidade = "sete"
+                num = num - 7
+            ElseIf num >= 6 Then
+                unidade = "seis"
+                num = num - 6
+            ElseIf num >= 5 Then
+                num = num - 5
+                unidade = "cinco"
+            ElseIf num >= 4 Then
+                num = num - 4
+                unidade = "quatro"
+            ElseIf num >= 3 Then
+                num = num - 3
+                unidade = "três"
+            ElseIf num >= 2 Then
+                num = num - 2
+                unidade = "dois"
+            ElseIf num >= 1 Then
+                num = num - 1
+                unidade = "um"
+            End If
+            
+            If num > 0 Then
+                Saida = Saida & unidade & " e "
+            Else
+                Saida = Saida & unidade
+            End If
+
+        End If
+    Wend
+    Saida = centena & dezena & unidade
+    extenso999 = Saida
+End Function
