@@ -36,7 +36,7 @@ class Notas3 {
 		System.out.println("Digite um valor em dinheiro, maior do que zero:");
 		valor = entrada.nextFloat();
 
-		// Processamento
+		// Processamento 
 		while (valor > 0.00f) {
 			for (int i = 0; i < 12; i++) {
 				if (valor >= dinheiro[i].val) {
@@ -58,6 +58,7 @@ class Notas3 {
 }
 
 class Dinheiro {
+	
 	int cont;
 	float val;
 	String nome;

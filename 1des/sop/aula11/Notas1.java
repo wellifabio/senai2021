@@ -21,8 +21,9 @@ class Notas1 {
     //Entrada
     System.out.println("Digite um valor em dinheiro, maior do que zero:");
     valor = entrada.nextFloat();
-
-    //Processamento
+	
+    //Processamento com condicionais e laços
+	//Devido a utilização de ponto flutuante, este algoritmo apresenta erro de estouro de memória
     do{
       if(valor >= (float)100){
         cem++;
