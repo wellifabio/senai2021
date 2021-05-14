@@ -1,0 +1,15 @@
+Responda as questões abaixo baseadas na versão atual da planilha FolhaDePag.xlsx
+1 - Qual é o cargo do Elian de Oliveira Moraes? Programador Backend
+2 - Quanto ganha "Salário" um Programador FrontEnd Júnior?  R$ 1.870,20
+3 - Quanto ganha "Salário" um Programador BackEnd Pleno?  R$ 2.431,26
+4 - Quanto ganha "Salário" um Analista de Sistemas Senior?  R$ 4.156,00 
+5 - Quanto paga de IR a funcionária Jaqueline Dias Oliveira? R$ 17,66
+6 - Quem "nome" ganha o maior salário, qual o valor e qual seu cargo?  R$ 7.800,00 
+7 - Qual o total gasto pela empresa com FGTS?  R$ 7.215,21
+8 - Qual a média salarial dos funcionários desta empresa?  R$ 2.658,36
+9 - Quanto a empresa precisa depositar de IRRF para a receita federal?  R$ 2.657,77
+10 - Promova o funcionário Matheus Ricardo Belli para Jovem Aprendiz e responda qual será seu Salário Líquido?  R$ 1.275,18
+11 - Qual o valor total gasto pela empresa com esta folha de pagamento?  R$ 107.800,77
+12 - Qual o valor total gasto pela empresa com esta folha de pagamento se a hora extra passar a valer 75%?  R$ 108.193,65
+
+

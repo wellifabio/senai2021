@@ -1,0 +1,22 @@
+drop database if exists produtos;
+create database produtos;
+use produtos;
+create table produtos(
+	descricao varchar(50),
+	valor decimal(7,2)
+);
+insert into produtos values
+("Rúcula",7.25),
+("Abacate",7.25),
+("Ameixa",7.25),
+("abóbora",7.25),
+("almeirão",7.25),
+("Abacaxi",7.25),
+("Banana",7.25),
+("Brócolis",7.25),
+("Rabanete",7.25);
+show tables;
+select * from produtos;
+UPDATE PRODUTOS SET VALOR  = VALOR * 1.1 WHERE DESCRICAO LIKE 'A%'
+UPDATE PRODUTOS SET VALOR  = 7.25;
+SELECT * FROM PRODUTOS;

@@ -1,0 +1,152 @@
+Uma empresa deverá manter informações sobre produtos. Um produto possui uma única categoria vinculada e a categoria pode estar vinculada a vários produtos.
+Qual a cardinalidade entre essas entidades?
+Produto[1]-[1]Categoria
+Produto[1]-[N]Categoria
+Produto[N]-[1]Categoria
+Categoria[N]-[1]Produto
+Categoria[N]-[N]Produto
+
+Como interpretamos o relacionamento abaixo com base na cardinalidade min x max? Diretor[1,1] - [1,1]Departamento
+1 Diretor possui no mínimo 0 e no máximo 1 Departamentos e 1 Departamento possui no mínimo 0 e no máximo 1 Diretores
+1 Diretor possui no mínimo 1 e no máximo 1 Departamentos e 1 Departamento possui no mínimo 1 e no máximo 1 Diretores
+1 Diretor possui no mínimo 1 e no máximo N Departamentos e 1 Departamento possui no mínimo 1 e no máximo N Diretores
+1 Diretor possui no mínimo 1 e no máximo 1 Departamentos e 1 Departamento possui no mínimo 1 e no máximo N Diretores
+1 Diretor possui no mínimo 0 e no máximo N Departamentos e 1 Departamento possui no mínimo 0 e no máximo N Diretores
+
+Um técnico em desenvolvimento de sistemas, após instalar o IIS, visando montar um servidor web, para verificar se a tarefa ocorreu com sucesso, executou determinado endereço no web browser que resultou na exibição da página padrão do IIS.
+Qual foi o endereço executado por este técnico?
+http://setup
+http://index
+http://default
+http://install
+http://localhost
+
+Um técnico em desenvolvimento de sistemas, após instalar o XAMPP, visando montar um ambiente de desenvolvimento web, na janela aberta do Controll Panel clicou em Start no serviço Apache. Para verificar se a tarefa ocorreu com sucesso, executou determinado endereço no web browser que resultou na exibição da página padrão do XAMPP.
+http://127.0.0.1
+http://172.16.0.1
+http://index
+http://default
+http://192.168.0.1
+
+A figura a seguir exibe um diagrama que representa a relação: Gerente "É UM" Funcionário. Ela apresenta ainda um diagrama no qual os elementos "analista", "dirtetor" e "gerente" estão associados ao elemento "funcionario".
+A qual pilar da orientação a objetos essa imagem se refere?
+Encapsulamento
+Polimorfismo
+Abstração
+Herança
+Interface
+
+Uma fábrica de software utiliza um ciclo de vida de desenvolvimento de sistemas que contempla um conjunto sequencial de ações de desenvolvimento, que se inicia com o diagnóstico do problema e finaliza com os testes necessários a implementação. Além disso, a finalização ocorre somente quando todas as fases estão completas.
+Qual ciclo de vida visa estruturar os projetos desta empresa?
+XP
+Cascata
+RAD
+Espiral
+SCRUM
+
+Qual das práticas de desenvolvimento de projetos a seguir está presente no manifesto Ágil e prevê entregas periódicas, semanais ou quinzenais chamadas de SPRINTS?
+XP
+Cascata
+RAD
+Espiral
+SCRUM
+
+Uma empresa necessita atualizar, em seu banco de dados, a tabela PRODUTOS onde os produtos que iniciam por "A", no campo DESCRICAO, tenham seu valor reajustado em dez por cento a mais que o valor atual.
+Qual comando SQL efetua esta atualização?
+UPDATE PRODUTOS SET VALOR  = VALOR * 1.1
+UPDATE PRODUTOS SET VALOR  = VALOR * 0.1
+UPDATE PRODUTOS SET VALOR  = VALOR * 0.1 WHERE DESCRICAO LIKE 'A%'
+UPDATE PRODUTOS SET VALOR  = VALOR * 0.1 WHERE DESCRICAO = 'A%'
+UPDATE PRODUTOS SET VALOR  = VALOR * 1.1 WHERE DESCRICAO LIKE 'A%'
+
+Em seu trabalho um técnico em desenvolvimento de sistemas pode utilizar o conceito de Programação Orientada a Objetos (POO) e a linguagem de programação orientada a objetos para codificar sistemas.
+Neste tipo de linguagem de programação:
+classe Pai, classe Base ou Superclasse é a classe que foi herdada de outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+polimorfismo e Abstração são os únicos princípios do POO.
+as instâncias são características e ações de um objeto.
+métodos definem as características dos objetos.
+
+Ainda sobre POO é possível afirmar que:
+classe Pai, classe Base ou Superclasse é a classe que herda ou estende outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+Polimorfismo e Abstração são os únicos princípios do POO.
+As instâncias são características e ações de um objeto.
+Atributos definem as características dos objetos.
+
+Continuando no assunto de POO é correto afirmar que:
+classe Pai, classe Base ou Superclasse é a classe que herda ou estende outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+As instâncias são características e ações de um objeto.
+Métodos definem as ações dos objetos.
+Encapsulamento é o ato de proteger os métodos deixando seu acesso somente via atributos.
+
+Em POO o conceito de Encapsulamento consistem em:
+Apenas definir os atributos como privados
+Proteger os métodos através do modificador privado e definir seu acesso através dos atributos públicos Gets e Sets
+Proteger os atributos através do modificador privado e definir seu acesso através dos metodos públicos Gets e Sets
+Definir os métodos de acesso como privados
+Definir os atributos como publicos
+
+Um programador está desenvolvendo um programa em um ambiente de desenvolvimento integrado - Integrated Development Environment (IDE) - que reúne várias facilidades, no entanto precisará acompanhar a execução e verificar erros no programa.
+Nesta situação, o programador deverá utilizar o:
+compilador
+depurador
+localizador
+corretor
+editor
+
+Em um banco de dados, tem-se um conjunto de operações conhecido como CRUD para manipular as entidades.
+Quais são essas operações e seus respectivos comandos SQL que executam o CRUD?
+Create - ADD; Read - FIND; Update - Edit; Delete - DROP.
+Create - ADD; Read - FIND; Update - UPDATE; Delete - DEL.
+Create - ADD; Read - FIND; Update - EDIT; Delete - REMOVE.
+Create - INSERT; Read - SELECT; Update - UPDATE; Delete - DELETE.
+Create - INSERT; Read - SELECT; Update - EDIT; Delete - DROP.
+
+Uma fábrica de software apresenta dificuldade de planejar as ações futuras do desenvolvimento, por isso adotou os processos do Scrum, que é um processo iterativo e incremental para o gerenciamento de seus projetos de desenvolvimento ágil de software.
+Qual é a etapa desta metodologia que consiste em listar as funcionalidades a serem desenvolvidas em um sistema?
+User history
+Daily Scrum
+Sprint backlog
+Product backlog
+Release Burndown
+
+Ainda sobre Scrum podemos afirmar que segue as seguintes etapas necessariamente nesta ordem ou ciclo:
+Product backlog (Lista de funcionalidades do Sistema), Sprint backlog (Lista de funcionalidades que serão trabalhadas), Sprint (Desenvolvimento das funcionalidades com duração de 2 a 4 semanas e com Daily scrum meeting[Reuniões Diárias]), Potencially shippable product increment (Potencial Produto ou Funcionalidade Concluída).
+Sprint (Desenvolvimento das funcionalidades com duração de 2 a 4 semanas e com Daily scrum meeting[Reuniões Diárias]), Product backlog (Lista de funcionalidades do Sistema), Sprint backlog (Lista de funcionalidades que serão trabalhadas), Potencially shippable product increment (Potencial Produto ou Funcionalidade Concluída).
+Sprint (Desenvolvimento das funcionalidades com duração de 2 a 4 semanas e com Daily scrum meeting[Reuniões Diárias]), Sprint backlog (Lista de funcionalidades que serão trabalhadas), Product backlog (Lista de funcionalidades do Sistema), Potencially shippable product increment (Potencial Produto ou Funcionalidade Concluída).
+Sprint backlog (Lista de funcionalidades que serão trabalhadas), Sprint (Desenvolvimento das funcionalidades com duração de 2 a 4 semanas e com Daily scrum meeting[Reuniões Diárias]), Product backlog (Lista de funcionalidades do Sistema), Potencially shippable product increment (Potencial Produto ou Funcionalidade Concluída).
+Sprint backlog (Lista de funcionalidades que serão trabalhadas), Product backlog (Lista de funcionalidades do Sistema), Sprint (Desenvolvimento das funcionalidades com duração de 2 a 4 semanas e com Daily scrum meeting[Reuniões Diárias]), Potencially shippable product increment (Potencial Produto ou Funcionalidade Concluída).
+
+Um técnico decidiu utilizar uma função SQL para obter parte de uma string. A função que ele utilizou foi SUBSTR('SENAI',1,3).
+Qual o retorno desta função utilizada pelo técnico?
+ENA
+SEN
+NAI
+N
+A
+
+A aplicação cliente frontend, ao solicitar uma informação para a aplicação backend, recebeu o código com erro 5XX.
+Onde é preciso analisar primeiramente a falha?
+Backend.
+Servidor.
+Internet.
+Frontend.
+Navegador
+
+Em um banco de dados, considere as seguintes relações: um aluno realiza vários trabalhos e um trabalho é realizado por um ou mais alunos. As entidades utilizadas são: Aluno e Trabalho. O relacionamento é: aluno_trabalho.
+As cardinalidades de aluno para trabalho e de trabalho para aluno são, respectivamente:
+Cardinalidade: (1,n) e (n,n).
+Cardinalidade: (1,1) e (1,1).
+Cardinalidade: (1,n) e (1,n).
+Cardinalidade: (1,1) e (1,n).
+Cardinalidade: (n,n) e (n,n).
+
+Em um banco de dados, os usuários cadastrados para utilizarem determinado sistema estão na tabela USUARIOS. Para verificar se um usuário com o e-mail (email@email.com) e a senha (12345) existem no sistema, é necessário realizar uma consulta por essas informações.
+Qual é o comando que executa esse procedimento?
+Select * Usuarios where email = 'email@email.com' or senha = '12345'
+Select from Usuarios where email = 'email@email.com' or senha = '12345'
+Select * from Usuarios where email = 'email@email.com' or senha = '12345'
+Select from Usuarios where email = 'email@email.com' and senha = '12345'
+Select * from Usuarios where email = 'email@email.com' and senha = '12345'

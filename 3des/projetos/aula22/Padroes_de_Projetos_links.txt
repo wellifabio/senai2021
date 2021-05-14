@@ -1,0 +1,5 @@
+https://www.academia.edu/9146719/Padroes_de_Projetos_Solucoes_Reutilizaveis_Gamma_Erich
+
+https://www.inf.ufpr.br/andrey/ci163/Design_Patterns.pdf
+
+http://disciplinas.lia.ufc.br/es10.1/arquivos/padr%F5es-gof-posa-version1.pdf
