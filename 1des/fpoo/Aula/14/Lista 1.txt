@@ -1,0 +1,16 @@
+01 - Implemente um programa de nome ListaExerc6_1.java que recebe um número de 1
+a 7 e imprime o dia da semana correspondente. O programa deve ficar recebendo o
+número dentro de um laço enquanto o número for diferente de 0 (zero). UTILIZE A ESTRUTURA SWITCH CASE PARA ESSE EXERCÍCIO.
+
+
+02 - Escreva um laço while que execute 20 vezes, imprimindo o valor da variável x que
+inicialmente está com valor 10 e vai sendo incrementado em 1. Converta este laço para
+um do-while. (nome do arquivo: ListaExerc6_2.java)
+
+
+03 – Faça um programa que contenha um menu com 4 opções (nome aquivo:
+ListaExerc6_9.java):
+1 – calcular o fatorial de um número dado
+2 – calcular a raiz quadrada de 3 números dados
+3 – imprimir a tabuada completa de 1 a 10
+4 – sair do programa
