@@ -1,3 +1,2 @@
 Protocolos
 Camadas OSI
-Endereçamento IP V4
