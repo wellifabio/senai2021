@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class ExercLista1_4 {
 
-	int minhaVar2 = 4;
+	static int minhaVar2 = 4;
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int minhaVar = 1;

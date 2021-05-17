@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner input = new Scanner(System.in);
+		double A,B,C,D,Media;
+	
+		A=input.nextDouble();
+		B=input.nextDouble();
+		C=input.nextDouble();
+		D=input.nextDouble();
+		
+		Media=((A*2)+(B*3)+(C*4)+(D*5))/14;
+		
+		System.out.printf("A média é %.1f%n",Media);
+	
+		input.close();
+	}
+	
+	
+}

@@ -1,0 +1,64 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		String sex;
+		double peso, altura, imc;
+		
+
+		System.out.println("Informe seu Sexo (Masc/Fem): ");
+		sex = sc.nextLine();
+		
+		System.out.print("Digite o peso: ");
+		peso = sc.nextDouble();
+
+		System.out.print("Digite a altura: ");
+		altura = sc.nextDouble();
+
+		imc = peso / (altura * altura);
+		System.out.printf("O IMC é %.2f%n", imc);
+		
+		if(sex.equals("Masc")){
+			
+			if (imc < 20.7) {
+				System.out.println("Abaixo do peso");
+			}
+			else if (imc > 26.4 && imc<=20.7) {
+				System.out.println("No peso normal");
+			}
+			else if (imc > 26.4 && imc<=27.8) {
+				System.out.println("Marginalmente acima do peso");
+			}
+			else if (imc <= 31.1) {
+				System.out.println("Acima do peso ideal");
+			} else {
+				System.out.println("Obeso");
+			}
+		}
+
+		else {
+			
+			if (imc < 19.1) {
+				System.out.println("Abaixo do peso");
+			}
+			else if (imc > 19.1 && imc <= 25.8 ) {
+				System.out.println("No peso normal");
+			}
+			else if (imc > 25.8 && imc <= 27.3) {
+				System.out.println("Marginalmente acima do peso");
+			}
+			else if (imc <= 32.3) {
+				System.out.println("Acima do peso ideal");
+			} else {
+				System.out.println("Obesa");
+			}
+		}
+
+		sc.close();
+	}
+
+}
