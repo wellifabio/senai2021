@@ -4,6 +4,7 @@ package view;
 //* Exemplo de uma Cliente que implementa os
 //* Objetos que vão efetivamente utilizar os
 //* recursos de CRUD nos dois SGBDs
+//* https://www.youtube.com/watch?v=5AiiHFizQWY
 //* */
 
 import javax.swing.JOptionPane;
