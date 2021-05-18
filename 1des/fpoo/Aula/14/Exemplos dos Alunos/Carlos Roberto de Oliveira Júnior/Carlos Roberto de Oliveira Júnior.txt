@@ -1,0 +1,78 @@
+package auladia17;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class ListaExerc6_9 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US); 
+		Scanner input = new Scanner(System.in);
+		
+		int x, a, b, i;
+		int permission = 1;
+		int fat = 1;
+		float A;
+	
+		System.out.println("Digite 1 para calcular o fatorial de um número");
+		System.out.println("Digite 2 para calcular a raiz quadrada dos números");
+		System.out.println("Digite 3 para calcular a tabuada completa de um número");
+		System.out.println("Digite 4 para sair do programa");
+		
+		x = input.nextInt();
+		
+		
+		while (permission == 1 && x != 4) {		
+			switch (x) {	
+			case 1:
+				System.out.println("Digite o número que deseja obter o seu fatorial: ");
+				a = input.nextInt();
+				for (i = 1; i <= a; i++) {
+					fat *= i;
+					}
+				System.out.println("O fatorial de " + a + " é igual a: " + fat);
+				break;
+				
+			case 2:
+				System.out.println("Digite quantos números você quer obter a raiz quadrada: ");
+				a = input.nextInt();				
+				for (i = 1; i <= a; i++) {
+					System.out.println("Digite um número para obter a raiz: ");
+					b = input.nextInt();
+					System.out.printf("A raiz quadrada de %d é: %.2f\n", b, (Math.sqrt(b)));
+					}
+				break;
+				
+			case 3: 
+				System.out.println("Digite um número para obter a tabuada: ");
+				A = input.nextFloat();
+				for(i = 1; i <= 10; i++) {
+					System.out.printf("%d x %.1f = %.1f\n", i, A, (i*A));
+				}
+				break;
+			}
+	
+			System.out.println("Quer continuar o programa? (1-sim 2-nao)");
+			
+			int p = input.nextInt();
+			while (p != 1 && p != 2) {
+				System.out.println("Digite um valor válido");
+				System.out.println("Quer continuar o programa? (1-sim 2-nao)");
+				p = input.nextInt();
+			}
+				
+			if (p == 1) {
+				System.out.println("Digite 1 para calcular o fatorial de um número");
+				System.out.println("Digite 2 para calcular a raiz quadrada dos números");
+				System.out.println("Digite 3 para calcular a tabuada completa de um número");
+				System.out.println("Digite 4 para sair do programa");
+				
+				x = input.nextInt();
+				
+			}else if (p == 2) {
+				permission = 2;
+			}		
+		}
+		input.close();
+	}
+
+}
