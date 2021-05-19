@@ -1,0 +1,27 @@
+Avaliação Formativa de DS 02 (2021 - 3DES - SENAI - Jaguariuna)
+Questões de processos seletivos diversos para a área de desenvolvimento de sistemas
+
+Em um sistema temos uma função chamada minhaFuncao, que tem o objetivo de exibir a mensagem "SENAI". O pseudocódigo a seguir exibe essa função.
+Ao executar essa função, quantas vezes a palavra SENAI aparecerá?
+1
+2
+3
+4
+5
+
+Observe o exemplo de um algoritmo, escrito em pseudocódigo, que calcula a média entre duas notas dadas. Considere, ainda, que uma nota é válida se seu valor estiver entre 0 (zero) e 10 (dez).
+Qual comando deve ser inserido na linha 13 para que este algoritmo esteja correto?
+n1>=0 E n1 <10 OU n2 > 0 E n2 <= 10
+n1>0 OU n1 <=10 OU n2 > 0 OU n2 <= 10
+(n1>=0 E n1 <=10) OU (n2 >= 0 E n2 <= 10)
+(n1>=0) E (n1 <=10) E (n2 >= 0) E (n2 <= 10)
+(n1>=0) OU (n1 <=10) E (n2 >= 0) OU (n2 <= 10)
+
+Os padrões de projeto (design patterns) popularizaram-se a partir de 1995 com a publicação do livro Design Patterns: Elements of Reusable Object-Oriented Software, escrito por Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides. Nesse livro, os padrões de projeto foram divididos em três grupos: padrões de criação, padrões estruturais e padrões comportamentais. Um desses padrões de criação garante que uma classe tenha uma única instância e provê um ponto global de acesso a essa instância.
+Qual é esse padrão de criação?
+Builder
+Singleton
+Prototype
+Factory Method
+Abstract Factory
+
