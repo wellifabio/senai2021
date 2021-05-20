@@ -117,6 +117,35 @@ button:hover {
     font-size: 1.5em;
 }
 
+.equipe {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.cardequipe {
+    width: 15vw;
+    height: 40vh;
+}
+
+.cardequipe>img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.infoequipe {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: rgb(130, 35, 253);
+    margin-top: -12%;
+    padding-top: 15%;
+}
+
 @media (max-width: 600px) {
     .header>.topo>nav {
         display: none;
