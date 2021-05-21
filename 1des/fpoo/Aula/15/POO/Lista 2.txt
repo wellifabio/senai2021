@@ -1,0 +1,5 @@
+1) Liste os atributos e métodos de uma classe Cachorro. Faça o diagrama UML dessa classe. Instancie os cachorros toto e o pingo. A raça do toto é vira-lata já o pingo é dálmata, o toto late assim: "auau", já o pingo: "uuuuuuu". Imprima seus latidos na tela.
+
+2) Liste os atributos e métodos de uma classe Humano. Faça o diagrama UML dessa classe. Instancie os Humanos Wellington, Rafael e Reenye. O peso desses humanos são respectivamente, 70, 80 e 90. Além disso, eles falam, respectivamente: "tchê", "uai" e "bah". Faça a impressão da tela do que cada um deles falam.
+
+3) Pense em uma outra classe. Faça seu diagrama UML como também sua implementação em JAVA com no mínimo de duas instâncias.
