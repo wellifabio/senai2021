@@ -1,16 +1,10 @@
+Aula 10 - Revisão
+Modelo: OSI -> 7 Camadas
+Protocolo: TCP/IP -> 4 Camadas
+Outro Protocolo de Exemplo: IPX/SPX
+Subprotocolos: Programas FTP, HTTP, SMTP, POP3, UDP, TCP, IP...
+
+
 Endereçamento IP V4
-TCP/IP
-
-32 bits
-Quatro octetos
-menor
-Binário 00000000.00000000.00000000.00000000
-Decimal 0.0.0.0
-maior
-Binário 11111111.11111111.11111111.11111111
-Decimal 255.255.255.255
-
-IPv6
-128 Bits
-Normalmente com representação Hexadecimal
-FF01::1
+Endereçamento IP V6
+http://ipv6.br/post/enderecamento-ipv6/
