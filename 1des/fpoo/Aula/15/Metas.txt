@@ -1,5 +1,5 @@
 - Ver/corrigir lista 2 de vetor da aula passada
-- Slide matriz
-- Lista 1 de Matriz
-- Slide de POO
-- Lista 2 de POO
+- Slide sobre matriz
+- Lista 1: matriz
+- Slide sobre POO
+- Lista 2 sobre POO
