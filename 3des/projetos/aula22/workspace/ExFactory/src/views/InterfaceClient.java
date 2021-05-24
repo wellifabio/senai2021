@@ -18,12 +18,14 @@ public class InterfaceClient {
 
 	public static void main(String[] args) {
 
-		so = new Android();
+		so = new Android(); //A cada vez que utilizamos o "new" alocamos memória para um objeto
 		System.out.println(so.getTipo());
 		so = new IOS();
 		System.out.println(so.getTipo());
 		so = new Windows();
 		System.out.println(so.getTipo());
+		
+		//Da forma convencional estamos alocando memória para três objetos
 
 	}
 
