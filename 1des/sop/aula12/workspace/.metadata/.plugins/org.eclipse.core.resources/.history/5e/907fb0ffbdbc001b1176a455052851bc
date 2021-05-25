@@ -1,0 +1,12 @@
+package client;
+
+import domain.Estenso;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Estenso num = new Estenso();
+		System.out.println(num.getValor(0).getEstenso());
+	}
+
+}

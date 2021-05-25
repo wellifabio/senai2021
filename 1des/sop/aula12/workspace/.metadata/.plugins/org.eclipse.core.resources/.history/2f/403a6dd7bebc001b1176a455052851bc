@@ -1,0 +1,20 @@
+package client;
+
+import javax.swing.JOptionPane;
+
+import domain.Estenso;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Estenso num = new Estenso();
+		int val = 0;
+		while (val >= 0 && val <= 100) {
+			String entrada = JOptionPane.showInputDialog("Digite um núm. inteiro entre 0 e 100 para escrevêlo ou maior que 100 para sair:");
+			val = Integer.parseInt(entrada);
+			System.out.println(num.getValor(0).getEstenso());
+		}
+
+	}
+
+}

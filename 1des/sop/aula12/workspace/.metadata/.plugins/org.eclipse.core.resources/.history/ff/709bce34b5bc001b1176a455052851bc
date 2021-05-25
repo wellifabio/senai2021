@@ -1,0 +1,32 @@
+package domain;
+
+public abstract class Valor {
+
+	private int num;
+	private String estenso;
+
+	public Valor() {
+	}
+
+	public Valor(int num, String estenso) {
+		this.num = num;
+		this.estenso = estenso;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public String getEstenso() {
+		return estenso;
+	}
+
+	public void setEstenso(String estenso) {
+		this.estenso = estenso;
+	}
+
+}

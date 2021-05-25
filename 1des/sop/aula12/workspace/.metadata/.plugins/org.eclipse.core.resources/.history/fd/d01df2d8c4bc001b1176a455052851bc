@@ -1,0 +1,31 @@
+package client;
+
+import javax.swing.JOptionPane;
+
+import domain.Ate100;
+
+public class MainClass {
+
+	private static Ate100 num;
+	private static String entrada;
+	private static String saida;
+
+	public static void main(String[] args) {
+		num = new Ate100();
+		int val = 0;
+		while (val >= 0 && val <= 100) {
+			entrada = JOptionPane
+					.showInputDialog("Digite um inteiro entre 0 e 100 para escrevêlo ou maior que 100 para sair:");
+			try {
+				val = Integer.parseInt(entrada);
+			} catch (Exception e) {
+				val = 101;
+			}
+			saida = num.getValor(val);
+			saida = saida.substring(0, 1).toUpperCase().concat(saida.substring(1));
+			System.out.println(val + ", " + saida);
+		}
+
+	}
+
+}

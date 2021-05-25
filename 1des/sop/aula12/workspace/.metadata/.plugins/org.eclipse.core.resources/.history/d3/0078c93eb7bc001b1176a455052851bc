@@ -1,0 +1,13 @@
+package client;
+
+import domain.Unidade;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Unidade uni = new Unidade();
+		System.out.println(uni.getValor(0).getEstenso());
+
+	}
+
+}
