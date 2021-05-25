@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int l = sc.nextInt();
+		int c = sc.nextInt();
+		int matriz[][] = new int[l][c];
+		for (int line = 0; line < matriz.length; line++) {
+			System.out.println();
+			for (int col = 0; col < matriz[0].length; col++) {
+				matriz[line][col] = col;
+
+				System.out.printf("%4d", matriz[line][col]);
+				
+			}
+		}
+		subMatrix(matriz);
+
+	}
+
+	private static void subMatrix(int[][] matriz) {
+		for (int line = 0; line < matriz.length; line++) {
+			System.out.println();
+			for (int col = 0; col < matriz[0].length; col++) {
+				if (matriz[line][col] % 2 == 0) {
+					matriz[line][col] = 1;
+				} else {
+					matriz[line][col] = -1;
+				}
+				System.out.printf("%4d", matriz[line][col]);
+			}
+		}
+
+	}
+
+}
