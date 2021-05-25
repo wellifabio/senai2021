@@ -1,5 +1,8 @@
 package models;
 
+//Classe Phone encapsulada e com um metodo construtor com todos os campos obrigatórios
+//Não tem o construtor vazio
+
 public class Phone {
 
 	private String os;

@@ -1,18 +1,24 @@
-//Exemplo de Factory em https://www.youtube.com/watch?v=arAz2Ff8s88
+//Exemplo de Factory by Filipe Deschamps
+//https://www.youtube.com/watch?v=arAz2Ff8s88
+
+var result = document.getElementById("result");
+
 //Exemplo 1 Factory
 function fabricaObjeto(){
     let objeto = {}
     return objeto;
 }
 
-pessoa1 = fabricaObjeto()
-pessoa2 = fabricaObjeto()
+var objeto1 = fabricaObjeto()
+var objeto2 = fabricaObjeto()
 
-pessoa1.nome = "João"
-pessoa2.nome = "Maria"
+objeto1.nome = "Alicate"
+objeto2.nome = "Martelo"
 
-console.log(pessoa1)
-console.log(pessoa2)
+function showOBjetos(){
+    result.innerHTML += "Objeto 1: "+objeto1.nome
+    result.innerHTML += "Objeto 2: "+objeto2.nome
+}
 
 //Exemplo 2 Factory
 function fabricarPessoa(nome, sobrenome){
@@ -28,8 +34,10 @@ function fabricarPessoa(nome, sobrenome){
     return pessoa
 }
 
-let pessoaA = fabricarPessoa("Maria","Souza")
-let pessoaB = fabricarPessoa("Marcos","Almeida")
+var pessoaA = fabricarPessoa("Maria","Souza")
+var pessoaB = fabricarPessoa("Marcos","Almeida")
 
-console.log(pessoaA)
-console.log(pessoaB)
+function showPessoas(){
+    result.innerHTML += "PessoaA: "+pessoaA.nomeCompleto
+    result.innerHTML += "PessoaA: "+pessoaB.nomeCompleto
+}
