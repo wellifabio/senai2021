@@ -1,0 +1,107 @@
+Avaliação Formativa de DS 02 (2021 - 3DES - SENAI - Jaguariuna)
+Questões de processos seletivos diversos para a área de desenvolvimento de sistemas
+
+Em um sistema temos uma função chamada minhaFuncao, que tem o objetivo de exibir a mensagem "SENAI". O pseudocódigo a seguir exibe essa função.
+Ao executar essa função, quantas vezes a palavra SENAI aparecerá?
+1
+2
+3
+4
+5
+
+Observe o exemplo de um algoritmo, escrito em pseudocódigo, que calcula a média entre duas notas dadas. Considere, ainda, que uma nota é válida se seu valor estiver entre 0 (zero) e 10 (dez).
+Qual comando deve ser inserido na linha 13 para que este algoritmo esteja correto?
+n1>=0 E n1 <10 OU n2 > 0 E n2 <= 10
+n1>0 OU n1 <=10 OU n2 > 0 OU n2 <= 10
+(n1>=0 E n1 <=10) OU (n2 >= 0 E n2 <= 10)
+(n1>=0) E (n1 <=10) E (n2 >= 0) E (n2 <= 10)
+(n1>=0) OU (n1 <=10) E (n2 >= 0) OU (n2 <= 10)
+
+Os padrões de projeto (design patterns) popularizaram-se a partir de 1995 com a publicação do livro Design Patterns: Elements of Reusable Object-Oriented Software, escrito por Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides. Nesse livro, os padrões de projeto foram divididos em três grupos: padrões de criação, padrões estruturais e padrões comportamentais. Um desses padrões de criação garante que uma classe tenha uma única instância e provê um ponto global de acesso a essa instância.
+Qual é esse padrão de criação?
+Builder
+Singleton
+Prototype
+Factory Method
+Abstract Factory
+
+Os testes de software são executados, usando procedimentos e documentos de teste.
+Para que a fase de execução de teste seja realizada com sucesso, deve ser efetuado.
+os casos de uso
+os casos de teste
+os diagramas de atividade
+os testes de turing
+o teste de coma
+
+Um técnico em desenvolvimento de sistemas foi solicitado para executar um conjunto de testes em um sistema a partir da análise dos seguintes recursos:
+I, Suporte a impressoras X;
+II, Conexões de rede - redes locais e de longa distância;
+III, Configurações de servidor - drivers e hardware de servidor
+IV, Outros softwares instalados na área de trabalho e/ou servidores;
+V, Versões de software para todos os softwares instalados;
+VI, Hardware com o pior desempenho;
+VII, Software co-residente com um histórico de problemas de compatibilidade;
+VIII, Clientes que acessam o servidor através da conexão LAN/WAN mais lenta possível;
+IX, Recursos insuficientes (CPU lenta, memória ou resolução mínima, espaço em disco, etc.).
+Qual teste o técnico adotou para atender essa solicitação?
+Teste de desenpenho.
+Teste de configuração.
+Teste de integração.
+Teste de instalação.
+Teste de unidade.
+
+Ao desenvolver um software, é possível garantir que pequenas unidades de seu código funcionem através de um teste específico. Qual é esse tipo de teste?
+Teste de integração.
+Teste de regressão.
+Teste de aceitação.
+Teste de unidade.
+Teste de volume.
+
+Ao realizar uma tentativa de acesso ao sistema, um usuário recebeu a seguinte mensagem de erro:
+Access denied for user 'root'@'10.1.1.73' (using password: NO)
+Qual procedimento deve ser adotado para que o problema seja solucionado?
+Alterar o endereço IP do servidor de banco de dados;
+conferir permissões de acesso ao banco de dados;
+Alterar o nome de usuário que acessa o servidor;
+Criar uma nova base de dados no servidor;
+Verificar o endereço IP do servidor web;
+
+A programação Orientada a objetos é baseada em diversos conceitos. Um desses conceitos é o uso de um mesmo nome para identificar diferentes implementações dos métodos.
+Qual é esse conceito?
+Classe
+Herança
+Interface
+Polimorfismo
+Encapsulamento
+
+Uma equipe está desenvolvendo um novo software e o responsável pela elaboração do diagrama de classes criou a associação conforme a imagem a seguir:
+Qual o tipo de associação está presente nesse diagrama?
+Associação binária.
+Associação agregação.
+Associação ternária ou N-ária.
+Associação unária ou reflexiva.
+Associação generalização ou especificação.
+
+Um programador desenvolvendo um software ao interpretar o diagrama de classes, se deparou com qual tipo de associação representado neste diagrama?
+Associação binária.
+Associação agregação.
+Associação composição.
+Associação unária ou reflexiva.
+Associação generalização ou especificação.
+
+Um técnico de desenvolvimento de sistemas recebeu informações em um documento de acordo com a figura a seguir.
+Essas informações fazem parte de qual documento?
+Plano de configuração.
+Plano de implantação.
+Plano de testes.
+Caso de uso.
+Requisitos.
+
+Um técnico de desenvolvimento de sistemas recebeu informações em um documento de acordo com a figura a seguir.
+Essas informações fazem parte de qual documento?
+Plano de configuração.
+Plano de implantação.
+Plano de testes.
+Termo de Abertura do Projeto (TAP).
+Escopo do Projeto (EAP).
+

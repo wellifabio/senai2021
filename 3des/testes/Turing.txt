@@ -1,0 +1,7 @@
+Teste de Turing
+O teste de Turing foi criado nos anos 50 por Alan Turing,um dos pais da ciência da computação e da inteligência artificial.
+O Teste de Turing testa a capacidade de uma máquina exibir comportamento inteligente equivalente a um ser humano, ou indistinguível deste.
+O teste de Turing funciona da seguinte forma: um interrogador (humano) fará perguntas a duas entidades ocultas; uma delas é um humano e outra é um computador. A comunicação entre o interrogador e as entidades é feita de modo indirecto, pelo teclado, por exemplo.
+Qual é o objetivo do Teste de Turing?
+Turing defende a criação de um teste hipotético para analisar se um sistema computacional é ou não inteligente como um ser humano, conhecido popularmente como Teste de Turing.
+Na teoria da computação, há um conceito bastante relacionado chamado de Turing-equivalência. ... Assim, um sistema Turing-completo é aquele que pode simular uma máquina de Turing. Porém, o termo é normalmente usado com o significado de Turing-equivalente a uma máquina de Turing.
