@@ -28,10 +28,6 @@ Quais os vendedores que mais venderam?
 Quais as cidades que mais vendem?
 Qual vendedor vendeu menos nos ultimos três meses?
 
-Links
-Curso de Excel com VBA Completo https://vbaacademy.com.br/
-Canal do YouTube com curso completo gratis https://www.youtube.com/watch?v=chkPZMa3G-o
-
 Desafio
 Criem um DashBoard
 (Certo Volume de dados)

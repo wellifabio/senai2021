@@ -1,0 +1,30 @@
+Function encontrado(val As Variant, vals())
+    Dim retorno As Boolean
+    retorno = False
+    For Each v In vals
+        If val = v Then
+            retorno = True
+        End If
+    Next
+    encontrado = retorno
+End Function
+Function estenso(val As Variant)
+    Dim nomes()
+    nomes() = Range("dados").Value
+    Dim centena As Variant
+    Dim dezena As Variant
+    Dim unidade As Variant
+    
+    If encontrado(val.Value, nomes) Then
+        estenso = WorksheetFunction.VLookup(val, nomes, 2, 0)
+    Else
+        dezena = Left(val, 1)
+        unidade = Right(val, 1)
+        dezena = dezena * 10
+        If encontrado(dezena, nomes) And encontrado(CInt(unidade), nomes) Then
+            estenso = WorksheetFunction.VLookup(dezena, nomes, 2, 0) & " e " & WorksheetFunction.VLookup(CInt(unidade), nomes, 2, 0)
+        Else
+            estenso = "Não encontrado"
+        End If
+    End If
+End Function
