@@ -105,3 +105,18 @@ Plano de testes.
 Termo de Abertura do Projeto (TAP).
 Escopo do Projeto (EAP).
 
+A figura a seguir exibe as informações que um técnico em desenvolvimento de sistemas recebeu.
+Essas informações se referem ao teste de:
+Configuração
+Estabilidade
+Integridade
+Volume
+Carga
+
+A empresa está atualizando os preços de seus produtos e precisa aplicar reajustes de preço em determinadas condições. os produtos cujos preços são maiores do que R$ 50,00. deverão sofrer reajuste. O fluxograma a seguir representa parte da lógica desta solução.
+Quais são as estruturas de controle de fluxo utilizadas nesta solução?
+Condição (SE) e Repetição (PARA).
+Condição (ESCOLHA) e Condição (SE)
+Repetição (FAÇA) e Condição (ESCOLHA)
+Repetição (PARA) e Repetição (ENQUANTO)
+Repetição (ENQUANTO) e Condição (SE)

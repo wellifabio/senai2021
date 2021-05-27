@@ -1,5 +1,82 @@
-Dashboards
-Macros, Modulos e Funções (VBA)
+﻿Gerar números aleatórios
+=ALEATÓRIO() * 100 -> Gerar um número aleatório entre 0 e 100 (Real)
+Caso prefira número inteiro = TRUNCAR()
+=ALEATÓRIOENTRE(10,100) -> Gerar um número aleatório entre 10 e 100 inteiros
+
+Concatenar Texto
+& símbolo para concatenar texto
+Separar texto
+=ESQUERDA(texto;núm_de_caracteres)
+=DIREITA(texto;núm_de_caracteres)
+Exemplo:
+Ana Luiza	=ESQUERDA(A1;LOCALIZAR(" ";A1))
+Maria Silva =ESQUERDA(A2;LOCALIZAR(" ";A2))
+Marcos Paulo =ESQUERDA(A3;LOCALIZAR(" ";A3))
+Juliana Prado =ESQUERDA(A4;LOCALIZAR(" ";A4))
+Resultado
+Ana
+Maria
+Marcos
+Juliana
+
+Dashboards (Painel de Controle)
+Quais perguntas devem ser respondias, através do painel de controle?
+Ex:
+Quais os veículos mais vendios?
+Quando estes carros veículos mais vendidos?
+Quais os vendedores que mais venderam?
+Quais as cidades que mais vendem?
+Qual vendedor vendeu menos nos ultimos três meses?
+
 Links
 Curso de Excel com VBA Completo https://vbaacademy.com.br/
 Canal do YouTube com curso completo gratis https://www.youtube.com/watch?v=chkPZMa3G-o
+
+Desafio
+Criem um DashBoard
+(Certo Volume de dados)
+Temas:
+- Escola Particular que tenha alunos do ensino fundamental(1º ao 9º) e médio (1º ao 3º)
+Informações de Alunos, Turmas, Series, Professores, Disciplinas
+- Fabrica de Bebidas
+Informações: Alcoólicas (Destilados, Fermentado) Não alcoólicas (Sucos, Refrigerantes) Lotes, Datas
+- Empresa de Transporte e Logística
+Informações: Veículos (Caminhões, Vans, Caminhonetes, Motos), Motoristas, Horários, Volume de Produtos, Transportes.
+
+Num	Alunos	Temas
+1	Allan Cesar da Silva	Escola
+2	Ana Júlia Moreira Vieira	Logística
+3	Augusto Cezar da Silva	Escola
+4	Bárbara Caroline Bueno da Silva	Escola
+5	Carlos Roberto de Oliveira Júnior	Escola
+6	Daniel Souza da Silva	Bebidas
+7	Danilo Alves Falcirolli	Escola
+8	Danilo Berimni Soares	Logística
+9	Diogo Henrique Medeiros	Escola
+10	Elian de Oliveira Moraes	Escola
+11	Éryk Mateus Bento	Bebidas
+12	Felipe Henrique Lopes Gabriel	Escola
+13	Felipe Reis de Oliveira	Logística
+14	Gabriel Alex Sandro Soares Lançoni	Logística
+15	Gabriel Vital Ferreira	Bebidas
+16	Gustavo Henrique Rocha de Oliveira	Logística
+17	Helena Frasson Delangelica	Logística
+18	Jaqueline Dias Oliveira	Escola
+19	Kailane Debernardi Oliveira	Logística
+20	Larissa Ferreira Pardim	Escola
+21	Lavínia Barbosa de Sá	Logística
+22	Leonardo Panigassi Imenes	Logística
+23	Letícia Luany dos Santos	Logística
+24	Matheus Belarmino Pignata	Escola
+25	Matheus Ricardo Belli	Bebidas
+26	Michael José da Silva	Logística
+27	Michael Leonardo Chaves Medeiros	Bebidas
+28	Paula Rosana de Souza Braga	Escola
+29	Rafael Bartulic Tieppo	Bebidas
+30	Rafael Fernandes de Faria	Bebidas
+31	Raul Machado Mariano	Bebidas
+32	Roberto Donisete Pereira Dias	Bebidas
+33	Rodrigo Aparecido de Morais	Bebidas
+34	Victória Rosa dos Santos	Escola
+35	Vitor Leme Corrêa	Bebidas
+36	Vitor Hugo Ramos Silva	Bebidas
