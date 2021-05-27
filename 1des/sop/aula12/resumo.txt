@@ -80,3 +80,5 @@ Num	Alunos	Temas
 34	Victória Rosa dos Santos	Escola
 35	Vitor Leme Corrêa	Bebidas
 36	Vitor Hugo Ramos Silva	Bebidas
+
+Sorteado e apresentado: Carlos Roberto de Oliveira Júnior

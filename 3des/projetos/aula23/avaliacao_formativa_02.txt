@@ -120,3 +120,59 @@ Condição (ESCOLHA) e Condição (SE)
 Repetição (FAÇA) e Condição (ESCOLHA)
 Repetição (PARA) e Repetição (ENQUANTO)
 Repetição (ENQUANTO) e Condição (SE)
+
+A seguir é apresentada uma pequena planilha.
+Qual a função que calcula a soma dos valores maiores que 15, nesta planilha?
+=SOMASE(A1:A11;">15";A1:A11)
+=PROCV(15;A1:A11;1)
+=CONT.SE(A1:A11;">15")
+=CONT.VALORES(A1:A11)
+=SE(A1:A11>15;SOMA(A1:A11);A1:A11)
+
+Existem três estruturas de dados muito conhecidas, fila, pilha e lista, suas características são
+fila: primeiro que entra é o primeiro que sai ou em inglês FiFo(First in, first out)
+pilha: primeiro que entra é o último que sao ou FiLo (First in, last out)
+lista: São os vetores mais utilizados, pois são dinâmicos, não possuem ordem de entrada ou saída, porém demandam mais capacidade de processamento.
+Na estrutura de pilha temos duas funções (métodos) utilizados, um para empilhar push(dado) e outro para desempilhar pop().
+
+1. push(3)
+2. push(9)
+3. pop()
+4. push(5)
+5. push(8)
+6. pop()
+7. pop()
+8. push(1)
+9. pop()
+
+Ao efetuar essa sequencia de operações em uma pilha vazia, qual o elemento que estará no topo da estrutura ao final das operações indicadas?
+
+1
+3
+5
+8
+9
+
+Um membro da equipe que administra o sistema do SENAI solicitou a concessão de permissão para leitura na tabela FUNCIONARIOS do banco DB_SENAI a um novo usuário "adm".
+Qual o comando SQL que deve ser utilizado para conceder esse acesso?
+CREATE ALL TO FUNCIONARIOS ON ADM;
+GRANT SELECT ON FUNCIONARIOS TO ADM;
+GRANT READ ON FUNCIONARIOS TO ADM;
+CREATE SELECT ON FUNCIONARIOS TO ADM;
+GRANT SELECT ON FUNCIONARIOS.DB_SENAI TO ADM;
+
+Uma equipe desenvolveu um diagrama referente a um sistema hoteleiro, conforme o exemplificado na figura a seguir. A partir desse diagrama. o programador irá desenvolver os recursos do sistema considerando a interação dos atores.
+Esse diagrama, criado pela equipe e apresentado ao programador, é o de
+Classe
+Atividade
+Sequência
+Caso de uso
+Implantação
+
+O diagrama apresentado na questão 19 possui um erro conceitual, qual é esse erro?
+
+Os atores estão representados por um desenho humanoide
+Os casos estão representados por elipses
+As flechas pontilhadas representam as relações de dependência entre os casos
+Os casos não estão escritos em forma de verbo no infinitivo
+As relações include e  e extend estão invertidos
