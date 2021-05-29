@@ -1,0 +1,1 @@
+Implemente os métodos getters e setters dos exercícios da aula passada. Coloque todos seus atributos como private. Atualize os diagramas UML de cada exercício.
