@@ -2,7 +2,7 @@ package domain;
 
 public class ValidaSaldoConta {
 
-	private double saldo = 1000;
+	private double saldo;
 
 	public double getSaldo() {
 		return saldo;

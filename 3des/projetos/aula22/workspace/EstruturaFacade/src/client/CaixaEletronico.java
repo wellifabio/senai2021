@@ -22,13 +22,32 @@ public class CaixaEletronico {
 	public static int menu;
 
 	public static Scanner leia = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
 
+		menu = 0;
 		System.out.print("Digite o número da conta e a senha:");
 		cc = new ContaCorrenteFacade(leia.nextInt(),leia.nextInt());
-		
-
+				
+		while (menu != 3) {
+			System.out.print("\n\n1.Depositar\n2.Sacar\n3.sair\nDigite uma opção:");
+			switch (menu = leia.nextInt()) {
+			case 1:
+				System.out.print("Digite o valor do depósito:");
+				cc.depositar(leia.nextDouble());
+				break;
+			case 2:
+				System.out.print("Digite o valor do saque:");
+				cc.sacar(leia.nextDouble());
+				break;
+			case 3:
+				System.out.println("Valews, Falows.");
+				break;
+			default:
+				System.out.println("Opção inválida.");
+				break;
+			}
+		}
 	}
 
 }
