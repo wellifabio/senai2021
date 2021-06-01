@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/cruds.css" />
+</head>
+
+<body onload="loadUsers()">
+    <div class="containners" id="corpo">
+        <div class="faixa" style="background-image: url('../assets/back5.png'); background-size: 100%">
+            <input type="text" id="id" placeholder="Id"
+                style="border: 1px solid #ccc;border-radius: 5px;width:100px; height:100%;" required />
+            <input type="text" id="name" placeholder="Nome completo"
+                style="border: 1px solid #ccc;border-radius: 5px;width:400px; height:100%;" required />
+            <input type="text" id="email" placeholder="Email"
+                style="border: 1px solid #ccc;border-radius: 5px;width:400px; height:100%;" required />
+            <input type="password" id="password" placeholder="Senha"
+                style="border: 1px solid #ccc;border-radius: 5px;width:200px; height:100%;" required />
+            <select id="type" style="border: 1px solid #ccc;border-radius: 5px;width:150px; height:100%;">
+                <option value="aluno">Aluno</option>
+                <option value="admin">Admin</option>
+            </select>
+            <img title="enviar" onclick="createUser()" style="margin-left:20px;cursor:pointer;"
+                src="../assets/menus/send.png" />
+        </div>
+    </div>
+    <script src="../scripts/users.js"></script>
+</body>
+
+</html>

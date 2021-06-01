@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/cruds.css" />
+</head>
+
+<body onload="loadFiles('files/uploadeds'),loadFiles('files/projetos/diversos'),loadFiles('files/projetos/minhacasa'),loadFiles('assets/links'),loadFiles('assets/menus')">
+    <div class="containners">
+        <div class="containners">
+            <div class="faixa" style="background-image: url('../assets/back2.png'); background-size: 100%">
+                <select id="path" style="border: 1px solid #ccc;border-radius: 5px;width:300px; height:100%;">
+                    <option value="files/uploadeds">Pasta de Arquivos ../files/uploadeds/</option>
+                    <option value="files/projetos/diversos">Projetos ../files/projetos/diversos</option>
+                    <option value="files/projetos/minhacasa">Projetos ../files/projetos/minhacasa</option>
+                    <option value="assets/links">Paste de imagens para Links ../assets/links/</option>
+                    <option value="assets/menus">Paste de imagens para Menus ../assets/menus/</option>
+                </select>
+                <input type="file" id="file"
+                    style="border: 1px solid #ccc;border-radius: 5px;width:400px; height:100%;" required />
+                <input type="button" value="Enviar" onclick="sendFile()"
+                    style="border: 1px solid #ccc;border-radius: 5px;width:150px; height:100%;" />
+            </div>
+            <div class="files" style="background-image: url('../assets/back3.png'); background-size: 100% 100%;"
+                id="corpo">
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/uploads.js"></script>
+</body>
+
+</html>

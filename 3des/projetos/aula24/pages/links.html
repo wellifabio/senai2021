@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/cruds.css" />
+</head>
+
+<body onload="loadLinks()">
+    <div class="containners" id="corpo">
+        <div class="faixa" style="background-image: url('../assets/back5.png'); background-size: 100%">
+            <input type="text" id="label" placeholder="Descrição do Link"
+                style="border: 1px solid #ccc;border-radius: 5px;width:320px; height:100%;" required />
+            <input type="text" id="href" placeholder="Endereço do Link"
+                style="border: 1px solid #ccc;border-radius: 5px;width:570px; height:100%;" required />
+            <input type="text" id="img" placeholder="Endereço da imagem"
+                style="border: 1px solid #ccc;border-radius: 5px;width:270px; height:100%;" required />
+            <select id="type" style="border: 1px solid #ccc;border-radius: 5px;width:100px; height:100%;">
+                <option value="destaque">Destaque</option>
+                <option value="contato">Contato</option>
+                <option value="projeto">Projeto</option>
+                <option value="senai">SENAI</option>
+                <option value="etec">ETEC</option>
+                <option value="fatec">FATEC</option>
+            </select>
+            <img title="enviar" onclick="createLink()" style="margin-left:20px;cursor:pointer;" src="../assets/menus/send.png"/>
+        </div>
+    </div>
+    <script src="../scripts/links.js"></script>
+</body>
+
+</html>

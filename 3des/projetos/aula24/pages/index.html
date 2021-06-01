@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/icone.png">
+	<link rel="stylesheet" type="text/css" href="../styles/index.css" />
+	<title>Prof. Wellington</title>
+</head>
+
+<body onload="loadMainMenu()">
+	<div class="bodyAll">
+		<div class="containners">
+			<div class="ruler" style="background-image: url('../assets/ruler.png'); background-size: cover;">
+				<div class="title">
+					<a href="./"><img align="left" style="margin-left:20px;" src="../assets/menus/home1.png"
+							onmouseover="altimg(this,'../assets/menus/home2.png','1 Home Page')"
+							onmouseout="altimg(this,'../assets/menus/home1.png','Mensagens do site:')" /></a>
+					Professor Wellington - Tecnologia da Informação
+				</div>
+				<div class="head" id="ruler"></div>
+			</div>
+			<div class="bigframe">
+				<iframe src="home.html" class="iframe" name="mainFrame"></iframe>
+			</div>
+		</div>
+	</div>
+	<div id='modal'>
+		<div class='modal-box' style='background-image: url(../assets/back1.png); background-size: 100% 100%;'>
+			<div class='fechar' onclick="fecharModal()">x</div>
+			<form class='cadastro'>
+				<h3>Formulário de Cadastro</h3>
+				<div>Nome*<input type='text' id='nome' style="width:410px" placeholder='Digite seu nome completo' />
+				</div>
+				<div>Email*<input type='text' id='email' style="width:400px" placeholder='Digite seu melhor e-mail' />
+				</div>
+				<div>Email*<input type='text' id='cemail' style="width:400px"
+						placeholder='Redigite seu e-mail para confirmar' /></div>
+				<div>Senha*<input type='password' id='senha' placeholder='Crie uma senha' />
+					*<input type='password' id='csenha' placeholder='Confirme a senha' /></div>
+				<div>
+					<hr />
+					<a href='./termos.html' target='blanck'>*Termos de Privacidade</a>
+					<input type='checkbox' id='politica'>Li e aceito os termos.
+					<hr />
+				</div>
+				<div align="center">
+					<input type='reset' value='Limpar' />
+					<input type='button' value='Cadastrar' onclick="cadastrarUser()" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="../scripts/index.js"></script>
+</body>
+
+</html>

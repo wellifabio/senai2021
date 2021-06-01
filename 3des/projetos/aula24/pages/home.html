@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css" />
+</head>
+
+<body onload="loadContatos(),loadLinks()">
+    <div class="containners">
+        <div class="containner" style="background-image: url('../assets/back3.png'); background-size: cover;">
+            <div style="width:800px; margin-left:100px; margin-top:20px;">
+                <div class="paragraph">Deixe uma mensagem:</div>
+                <div class="paragraph">
+                    <input type="text" placeholder="Nome completo:" id="name">
+                    <textarea id="message" placeholder="Deixe sua mensagem, se precisar de um retorno informe um canal, e-mail, whats..."></textarea>
+                    <input type="button" value="Enviar" id="button" onclick="sendMessage()">
+                </div>
+            </div>
+            <div style="width:800px; margin-left:100px; margin-top:20px;">
+                <div class="title">Links importantes:</div>
+                <div class="paragraph" id="links"></div>    
+            </div>
+        </div>
+        <div class="cardsv" style="background-image: url('../assets/back2.png'); background-size: cover;">
+            <div style="margin-left:50px; margin-top:70px;">
+                <div class="title">Redes sociais:</div>
+                <div class="paragraph" id="redes"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/home.js"></script>
+</body>
+
+</html>
