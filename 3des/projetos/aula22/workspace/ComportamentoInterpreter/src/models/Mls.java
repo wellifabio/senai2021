@@ -1,6 +1,6 @@
 package models;
 
-public class MLs extends Contexto {
+public class Mls extends Contexto {
 
 	@Override
 	public String galoes(double quantidade) {

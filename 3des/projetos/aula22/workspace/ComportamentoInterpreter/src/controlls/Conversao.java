@@ -2,13 +2,14 @@ package controlls;
 
 public class Conversao {
 
-	private String questao;
-	private String resposta;
-	private String de;
-	private String para;
+	private String questao = "";
+	private String resposta = "";
+	private String de = "";
+	private String para = "";
 	private String[] partesDaQuestao;
 	private double quantidade;
 
+	//Construtor
 	public Conversao(String entrada) {
 		questao = entrada;
 		partesDaQuestao = getEntrada().split(" ");
@@ -18,24 +19,27 @@ public class Conversao {
 		resposta = partesDaQuestao[0] + " " + partesDaQuestao[1] + " iguais ";
 	}
 
-	private String paraMinusculas(String palavraParaMinuscula) {
-		return palavraParaMinuscula.toLowerCase();
-	}
-
 	public String getEntrada() {
 		return questao;
 	}
 
-	private String capitalizar(String palavraCapitalizar) {
-		palavraCapitalizar = palavraCapitalizar.toLowerCase();
-		palavraCapitalizar = Character.toUpperCase(palavraCapitalizar.charAt(0)) + palavraCapitalizar.substring(1);
-		int comprimento = palavraCapitalizar.length();
-		if (palavraCapitalizar.charAt(comprimento - 1) != 's') {
-			palavraCapitalizar = new StringBuffer(palavraCapitalizar).insert(comprimento, "s").toString();
+	//Deizar a primeira letra do nome de uma palavra em maiúscula e no plural
+	private String capitalizar(String palavra) {
+		palavra = palavra.toLowerCase();
+		palavra = Character.toUpperCase(palavra.charAt(0)) + palavra.substring(1);
+		int comprimento = palavra.length();
+		if (palavra.charAt(comprimento - 1) != 's') {
+			palavra = new StringBuffer(palavra).insert(comprimento, "s").toString();
 		}
-		return palavraCapitalizar;
+		return palavra;
 	}
 
+	//Deixar todas em minusculas
+	private String paraMinusculas(String palavra) {
+		return palavra.toLowerCase();
+	}
+	
+	//Getters
 	public String getQuestao() {
 		return questao;
 	}
