@@ -45,6 +45,10 @@ public class Cliente {
 	public static void main(String[] args) {
 
 		tela = new JFrame();
+		tela.setBounds(100,100,640,480);
+		tela.setLayout(null);
+		tela.setTitle("Conversão de volumes");
+		tela.setVisible(true);
 		frase = new Conversao(
 				JOptionPane.showInputDialog(tela, "Digite uma frase para conversao ex: 2 galoes em litros"));
 		de = frase.getDe();

@@ -1,2 +1,8 @@
-1 - Corrigir os exercícios de herança da aula passada
+﻿1 - Corrigir os exercícios de herança da aula passada
 2 - Apresentar Polimorfismo
+
+Solução de problemas (Pensamento computacional)
+Identificar
+Decompor em partes (Segmentar, abstrair, Classificar - Classe >> Instancia>> Objeto) Pacotes
+Encontrar padrões (Função, Método)
+Algoritmo (Juntar tudo e criar uma Receita) Solução
