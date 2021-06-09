@@ -6,12 +6,12 @@ public class Cedula extends Dinheiro{
 		super();
 	}
 
-	public Cedula(int valor, String nome) {
-		super(valor, nome);
+	public Cedula(int valor, String nome, int quantidade) {
+		super(valor, nome, quantidade);
 	}
 
 	@Override
 	public String toString() {
-		return String.format("R$ %d,00", super.getValor())+" "+super.getNome()+" Reais";
+		return super.getQuantidade()+" x "+String.format("R$ %d,00", super.getValor())+" "+super.getNome()+" Reais";
 	}
 }

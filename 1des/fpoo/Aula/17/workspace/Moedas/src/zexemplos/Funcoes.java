@@ -1,4 +1,4 @@
-package exemplos;
+package zexemplos;
 
 public class Funcoes {
 
