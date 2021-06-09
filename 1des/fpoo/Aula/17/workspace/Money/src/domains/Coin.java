@@ -20,10 +20,9 @@ public class Coin extends Money {
 			else
 				return getQtd() + " moedas de R$ 0," + getVal() + " - " + getNome() + " centavos";
 		else if (getVal() < 10)
-			if (getVal() == 1)
-				return getQtd() + " moeda de R$ " + getVal() + ",00 - " + getNome() + " real";
-			else
-				return getQtd() + " moeda de R$ 0,0" + getVal() + " - " + getNome() + " centavos";
+			return getQtd() + " moeda de R$ 0,0" + getVal() + " - " + getNome() + " centavos";
+		else if (getVal() == 100)
+			return getQtd() + " moeda de R$ " + getVal() + ",00 - " + getNome() + " real";
 		else
 			return getQtd() + " moeda de R$ 0," + getVal() + " - " + getNome() + " centavos";
 	}
