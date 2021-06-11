@@ -1,0 +1,17 @@
+emulador tplink
+https://www.tp-link.com/br/support/emulator/
+https://emulator.tp-link.com/TL-R600VPN_UN_4.0_Emulator/index.html
+
+
+Exercício 1: 
+Fazer uma simulação de projeto no Paket tracer de uma rede Rede IP Classe A
+Com uma nuvem, um roteador, um servidor DHCP.
+Mascara Classe A: 255.0.0.0
+IP DHCP Classe A: Range (Escopo) 10.0.0.100 até 10.0.0.150
+Gatway 10.0.0.10
+
+Exercício 2: 
+Fazer uma simulação de projeto no Paket tracer de uma rede Rede composta pelo seguinte cenário:
+Duas empreas, uma possui uma rede IP classe B e outro possui uma rede IP classe C
+A primeira possu um servidor DHCP e a segunda utiliza IP Fixo.
+A simulação deve fazer as duas redes conversarem enviando um pacote de uma para a outra.
