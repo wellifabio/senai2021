@@ -1,0 +1,11 @@
+CheckList - Das metas do dia
+Primeiras metas
+- Cama (  )Essencial
+- Listas (  )Essencial
+- CRUD (  )Essencial
+- Validações (  )Importante
+
+Segundas metas 
+- MVC (  )Importante
+- Versionamento (  )Desejável
+- GUI(  )Desejável
