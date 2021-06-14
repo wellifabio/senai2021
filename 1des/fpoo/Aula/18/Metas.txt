@@ -1,11 +1,21 @@
 CheckList - Das metas do dia
 Primeiras metas
-- Cama (  )Essencial
-- Listas (  )Essencial
-- CRUD (  )Essencial
+- Cama ( x )Essencial
+- Listas ( x )Essencial
+- CRUD ( x )Essencial
 - Validações (  )Importante
 
 Segundas metas 
 - MVC (  )Importante
 - Versionamento (  )Desejável
 - GUI(  )Desejável
+
+Atividades:
+1 - Crie uma pasta com o nome de "workspace"
+2 - Abriu o Eclipse e aponte para ela
+3 - Criar um novo projeto com o nome de Viagens
+4 - Em src crie um pacote com o nome de "visao"
+5 - Dentro do pacote "visao" crie uma classe "TelaViagens"
+6 - Na classe TelaViagens crie um menú com 5 opções
+	Seria "Fazer a Cama" criando um: menu
+	alguns "CASEs" ou "IFs" com as opções do menu.
