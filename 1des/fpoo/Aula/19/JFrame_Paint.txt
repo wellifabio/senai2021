@@ -1,0 +1,16 @@
+//Desenhar formas básicas
+//https://www.youtube.com/watch?v=zHK1QlRdv2w
+	public void paint(Graphics g) {
+		g.drawLine(50, 50, 200, 200);
+		g.drawRect(300, 50, 50, 50);
+		g.drawOval(50, 200, 70, 100);
+		g.setColor(Color.RED);
+		g.fillRect(300, 200, 100, 70);
+		g.setColor(Color.BLUE);
+		g.fillOval(50, 400, 100, 70);
+		g.clearRect(100, 100, 200, 200);
+	}
+
+//Desenhar livremente ao clicar o mouse
+//https://www.youtube.com/watch?v=CxU1TnD-xH8
+//Utilizando o Thread

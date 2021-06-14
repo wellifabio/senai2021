@@ -1,0 +1,7 @@
+Falando sobre
+Virtualização
+Containner
+Docker
+Kernel
+https://www.youtube.com/watch?v=kkbFqCNgFlE
+Exemplo Ubunto em máquina virtual

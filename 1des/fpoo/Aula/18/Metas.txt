@@ -19,3 +19,5 @@ Atividades:
 6 - Na classe TelaViagens crie um menú com 5 opções
 	Seria "Fazer a Cama" criando um: menu
 	alguns "CASEs" ou "IFs" com as opções do menu.
+8 - Opções do menu: "1.Criar","2.Listar","3.Alterar","4.Excluir","5.Sair"
+7 - Crie uma lista ArrayList tipo String onde serão armazenados destinos de viagem.
