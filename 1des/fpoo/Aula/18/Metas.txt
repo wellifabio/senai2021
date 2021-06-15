@@ -3,11 +3,11 @@ Primeiras metas
 - Cama ( x )Essencial
 - Listas ( x )Essencial
 - CRUD ( x )Essencial
-- Validações (  )Importante
+- Validações ( x )Importante
 
 Segundas metas 
-- MVC (  )Importante
-- Versionamento (  )Desejável
+- MVC ( x )Importante
+- Versionamento ( x )Desejável
 - GUI(  )Desejável
 
 Atividades:
