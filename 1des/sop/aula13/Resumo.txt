@@ -2,3 +2,8 @@ Macros, Modulos e Funções (VBA)
 Links
 Curso de Excel com VBA Completo https://vbaacademy.com.br/
 Canal do YouTube com curso completo gratis https://www.youtube.com/watch?v=chkPZMa3G-o
+
+Exercícios
+1 - Crie uma função no Excel onde o usuario passe o número da semana de 1 a 7 a função deve retornar por extenso ex: "Domingo"
+2 - Crie o contador de notas e/ou moedas, a função recebe o valor ex: 15,88 e retorna o número de cedulas e/ou moedas ex: "1 nota de dez, 1 nota de 5 ..."
+3 - Crie um "Banco de Dados" em Excel utilizando como exemplo o arquivo "ExemploExercicio3.xlsm"
