@@ -1,4 +1,4 @@
-package client;
+package client;//É o mesmo que cliente ou Visão ou View (MVC)Camadas (Padrão de Projeto)
 
 /*
  * Escrever Números por estenso entre 0 e 100
@@ -6,7 +6,7 @@ package client;
 
 import javax.swing.JOptionPane;
 
-import domain.Estenso;
+import controller.Estenso;
 
 public class MainClass {
 

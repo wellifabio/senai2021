@@ -6,7 +6,7 @@ package client;
 
 import javax.swing.JOptionPane;
 
-import domain.EstensoAteMil;
+import controller.EstensoAteMil;
 
 public class MainAteMil {
 
