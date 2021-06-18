@@ -1,0 +1,93 @@
+Parte lógica da Rede:
+Endereçamento IPv4 32 Bits:
+Quantas classes: A, B, C, D, E
+IPs: Reservados LAN das três classes utilizáveis
+A10.0.0.0/8, B172.16.0.0/16,C192.168.0.0/24
+Máscara: Identifica a rede
+A255.0.0.0, B255.255.0.0, C255.255.255.0
+DNS: Serviço de nomes - Tradução de nomes para IP
+DHCP - Serviço de Distribuição dinâmida de IP:
+Roteamento: Ligar duas subredes ou mais subredes
+Gatetway: Cada porta do roteador (A porta de saída da Subrede)
+IPs não reservados (Totais)
+IP inicial classe A 1.0.0.0
+IP inicial classe B128.0.0.0
+IP inicial classe C192.0.0.0
+1.0.0.0
+255.255.255.254
+Equipamentos de Rede:
+HUB Concentrador de cabos, SWITCH concentrador de cabos inteligente
+Roteador interliga subredes, sinonimo BRIDGE ou Ponte
+Access Point HUB wireless
+Roteador All in One similar a um Servidor
+(Roteamento, Ponte, DHCP, DNS, Access Point, Modem DSL)
+Servidores - DHCP, DNS, Dominio, Aplicação(Midware), Banco de Dados.
+
+IPv6 128 Bits expresso em Hexadecimal
+Ex: F2:D1:35:49:::::::::F6:45:48:AB
+
+
+Classe B 172.16.0
+
+Mascara
+/24(bits = 1)
+11111111.11111111.11111111.00000000(Binario)
+255.255.255.0 (Decimal)
+
+/25(bits = 1)
+11111111.11111111.11111111.10000000(Binario)
+255.255.255.128(Decimal)
+
+ClasseB
+172.16.0.1/24 Gateway
+172.16.0.255/24 BroadCast
+255.255.255.0
+
+Classe B
+172.16.0.1/25 Gateway
+172.16.0.127/25BroadCast
+172.16.0.128/25Gateway
+172.16.0.255/25BroadCast
+
+Máscara Classe C (256) 255.255.255.0  = /24
+Rede (Computadores) Máscara
+2	(128)	/25
+4	(64)	/26
+8	(32)	/27
+16	(16)	/28
+32	(8)	/29
+64	(4)	/30
+128	(2)	/31
+
+Como seria a mascara /25 em decimal? = 255.255.255.128
+11111111.11111111.11111111.10000000
+Como seria a mascara /29 em decimal? = 255.255.255.248
+11111111.11111111.11111111.11111000
+
+Máscara Classe B (65525) 255.255.0.0 /16
+Rede (Computadores) Máscara
+2(32512) /17
+4(16256) /18
+...
+
+Ex:
+255.255.192.0 = /18
+1111111.11111111.11000000.00000000
+
+Youtube: SubRedes
+https://www.youtube.com/watch?v=wBBrO06HIP4
+
+
+Exemplo de uma rede divida em 4 subredes
+Mascara 255.255.255.192 = /26
+IP Classe B Reservado:
+172.16.0.1/26 Gateway
+172.16.0.63/26 BroadCast
+172.16.0.64/26 Gateway
+172.16.0.127/26 BroadCast
+172.16.0.128/26 Gateway
+172.16.0.191/26 BroadCast
+172.16.0.192/26 Gateway
+172.16.0.255/26 BroadCast
+
+
