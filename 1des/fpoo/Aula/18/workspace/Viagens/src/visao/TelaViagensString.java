@@ -1,9 +1,9 @@
-package modelo;
+package visao;
  
 import java.util.ArrayList;
 import java.util.Scanner;
  
-public class TelaViagens {
+public class TelaViagensString {
 
     public static int menu = 0;
     public static Scanner leia = new Scanner(System.in);

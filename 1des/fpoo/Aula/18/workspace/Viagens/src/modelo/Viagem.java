@@ -1,4 +1,4 @@
-package visao;
+package modelo;
 
 public class Viagem {
 	

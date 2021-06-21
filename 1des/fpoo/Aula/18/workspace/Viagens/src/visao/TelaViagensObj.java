@@ -3,6 +3,8 @@ package visao;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import modelo.Viagem;
+
 public class TelaViagensObj {
 
 	public static int menu = 0;
