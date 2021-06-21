@@ -46,7 +46,11 @@ public class Viagem {
 	}
 	@Override
 	public String toString() {
-		return origem + "\t" + destino + "\t" + distancia + "\t" + tempo + "\t" + String.format("%.1f", getVelocidade());
+		return origem + "\t" + destino + "\t" + distancia + "\t" + tempo + "\t" + String.format("%.1f", getVelocidade())+"\n";
+	}
+	
+	public String toCSV() {
+		return origem + ";" + destino + ";" + distancia + ";" + tempo + "\r\n";
 	}
 	
 }

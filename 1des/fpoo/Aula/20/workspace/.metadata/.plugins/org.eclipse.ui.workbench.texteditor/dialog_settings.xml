@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Reais"/>
+		<item key="selection" value="excluir"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="cancelar"/>
+			<item value="salvar"/>
 			<item value="reais"/>
 		</list>
 		<list key="replacehistory">
+			<item value="excluir"/>
+			<item value="alterar"/>
+			<item value="add"/>
+			<item value="cancelar"/>
 			<item value="Reais"/>
 		</list>
 	</section>
