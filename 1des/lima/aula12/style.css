@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+main>img {
+    width: 300px;
+}
+
+header div {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+header a,
+header img,
+header div,
+.button {
+    margin-right: 1%;
+}
+
+.button {
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    color: blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.search input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.cards {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 120px);
+}
+
+.card {
+    width: 112px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    transition: background .2s;
+}
+
+.card:hover {
+    cursor: pointer;
+    /*background-color: hsl(66, 20%, 95%);*/
+    background: #f0e5e4;
+}
+
+.card .img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFF;
+}

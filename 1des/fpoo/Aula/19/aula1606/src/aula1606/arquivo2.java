@@ -33,6 +33,8 @@ public class arquivo2 {
 		//FileWriter
 		//BufferedWriter
 		
+		//file.excluir("Ronaldinho");
+		
 		/*try {
 
 			//BufferedWriter bw = new BufferedWriter(new FileWriter("data.txt"));
@@ -51,6 +53,7 @@ public class arquivo2 {
 			
 		}*/
 		
+		//file.excluirList("Ciclano de Oliveira");
 		
 		//Leitura
 		//FileReader
