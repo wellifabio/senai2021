@@ -1,0 +1,15 @@
+Indice
+0 Maria
+1 Regina
+2 Suelem
+Após uma exclusão
+0 Maria
+1 Suelem
+
+Id
+1 Maria
+2 Ana
+3 Marta
+Após uma exclusão
+1 Maria
+3 Marta
