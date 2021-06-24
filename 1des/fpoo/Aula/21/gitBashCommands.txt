@@ -1,0 +1,13 @@
+Repositorio Remoto
+github (Remotamente criamos nosso repositório - Publico ou Privado [Convidamos os integrantes da equipe])
+
+Localmente temos o git
+git clone <Colar o endereço do repositório> //Faz download do repositorio remoto
+
+Dentro do repositorio local.
+git pull //Faz download das ultimas atulizações do repositório
+
+Após uma alteração nos dados do projeto para fazer o Commit (Atualização no Projeto)
+git add . //Adicione todas as alterações que eu fiz.
+git commit -m "Breve descrição com informações da nova versão"
+git push //Empurrar, ralizar a alteração no Repositório Remoto
