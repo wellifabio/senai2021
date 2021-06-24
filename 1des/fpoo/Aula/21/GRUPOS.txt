@@ -1,0 +1,35 @@
+Num	Vendedor	Tema	Grupos
+5	Daniel Souza da Silva	Manutenção	Grupo1
+10	Felipe Henrique Lopes Gabriel	Manutenção	Grupo1
+12	Gabriel Alex Sandro Soares Lançoni	Manutenção	Grupo1
+14	Gustavo Henrique Rocha de Oliveira	Manutenção	Grupo1
+29	Raul Machado Mariano	Manutenção	Grupo2
+32	Vitor Hugo Ramos Silva	Manutenção	Grupo2
+33	Vitor Leme Corrêa	Manutenção	Grupo2
+1	Allan Cesar da Silva	Orçamento	Grupo3
+3	Augusto Cezar da Silva	Orçamento	Grupo3
+7	Diogo Henrique Medeiros	Orçamento	Grupo3
+8	Elian de Oliveira Moraes	Rede	Grupo4
+9	Éryk Mateus Bento	Rede	Grupo4
+11	Felipe Reis de Oliveira	Rede	Grupo4
+13	Gabriel Vital Ferreira	Orçamento	Grupo5
+17	Kailane Debernardi Oliveira	Orçamento	Grupo5
+18	Larissa Ferreira Pardim	Orçamento	Grupo5
+19	Lavínia Barbosa de Sá	Orçamento	Grupo6
+20	Leonardo Panigassi Imenes	Orçamento	Grupo6
+23	Matheus Ricardo Belli	Orçamento	Grupo6
+28	Rafael Fernandes de Faria	Orçamento	Grupo7
+31	Rodrigo Aparecido de Morais	Orçamento	Grupo7
+21	Letícia Luany dos Santos	Estacionamento	Grupo8
+24	Michael José da Silva	Estacionamento	Grupo8
+25	Michael Leonardo Chaves Medeiros	Estacionamento	Grupo8
+27	Rafael Bartulic Tieppo	Rede	Grupo9
+30	Roberto Donisete Pereira Dias	Rede	Grupo9
+34	Victória Rosa dos Santos	Rede	Grupo9
+2	Ana Júlia Moreira Vieira	Patrimônio	Grupo10
+4	Bárbara Caroline Bueno da Silva	Patrimônio	Grupo10
+6	Danilo Alves Falcirolli	Patrimônio	Grupo10
+15	Helena Frasson Delangelica	Patrimônio	Grupo11
+16	Jaqueline Dias Oliveira	Patrimônio	Grupo11
+35	Carlos Roberto de Oliveira Júnior	Patrimônio	Grupo11
+22	Matheus Belarmino Pignata	Patrimônio	Grupo12
