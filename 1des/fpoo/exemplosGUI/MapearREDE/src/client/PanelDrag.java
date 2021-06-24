@@ -6,26 +6,32 @@ import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
+import domain.Ponto;
+
 public class PanelDrag extends JPanel {
 
 	private static final long serialVersionUID = 1L;
-	private ImageIcon[] imgs;
-	private Point[] cantoImg;
+	private ArrayList<ImageIcon> imgs = new ArrayList<>();
+	private ArrayList<Point> cantoImg = new ArrayList<>();
 	private Point prevPoint, currPt;
 
-	PanelDrag(String[] path) {
-		imgs = new ImageIcon[path.length];
-		cantoImg = new Point[path.length];
-		int x = 0;
-		for (int i = 0; i < path.length; i++) {
-			imgs[i] = new ImageIcon(new ImageIcon(path[i]).getImage().getScaledInstance(100, 100, 100));
-			cantoImg[i] = new Point(x, 0);
-			x += 100;
+	PanelDrag(ArrayList<Ponto> pontos) {
+		int x = 0, y = 0;
+		for (Ponto p : pontos) {
+			imgs.add(new ImageIcon(new ImageIcon(p.getIcone()).getImage().getScaledInstance(100, 100, 100)));
+			cantoImg.add(new Point(x, y));
+			if (x == 300) {
+				y += 100;
+				x = 0;
+			} else {
+				x = 300;
+			}
 		}
 		Click click = new Click();
 		Drag drag = new Drag();
@@ -44,11 +50,10 @@ public class PanelDrag extends JPanel {
 	public class Drag extends MouseMotionAdapter {
 		public void mouseDragged(MouseEvent e) {
 			currPt = e.getPoint();
-			for (int i = 0; i < imgs.length; i++) {
-				if (e.getX() >= cantoImg[i].getX() && e.getX() < (cantoImg[i].getX() + 150)
-						&& e.getY() >= cantoImg[i].getY() && e.getY() < (cantoImg[i].getY() + 150)) {
-					cantoImg[i].translate((int) (currPt.getX() - prevPoint.getX()),
-							(int) (currPt.getY() - prevPoint.getY()));
+			for (Point p : cantoImg) {
+				if (e.getX() >= p.getX() && e.getX() < (p.getX() + 150) && e.getY() >= p.getY()
+						&& e.getY() < (p.getY() + 150)) {
+					p.translate((int) (currPt.getX() - prevPoint.getX()), (int) (currPt.getY() - prevPoint.getY()));
 					prevPoint = currPt;
 				}
 				repaint();
@@ -58,10 +63,10 @@ public class PanelDrag extends JPanel {
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		System.out.println("Vetor de " + imgs.length);
-		for (int i = 0; i < imgs.length; i++) {
-			imgs[i].paintIcon(this, g, (int) cantoImg[i].getX(), (int) cantoImg[i].getY());
-			System.out.println("cantoImg x = " + (int) cantoImg[i].getX() + " y = " + (int) cantoImg[i].getY());
+		int indice = 0;
+		for (ImageIcon i : imgs) {
+			i.paintIcon(this, g, (int) cantoImg.get(indice).getX(), (int) cantoImg.get(indice).getY());
+			indice++;
 		}
 	}
 }
