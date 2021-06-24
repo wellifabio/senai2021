@@ -23,6 +23,7 @@ Num	Vendedor	Tema	Grupos
 21	Letícia Luany dos Santos	Estacionamento	Grupo8
 24	Michael José da Silva	Estacionamento	Grupo8
 25	Michael Leonardo Chaves Medeiros	Estacionamento	Grupo8
+22	Matheus Belarmino Pignata	Patrimônio	Grupo8
 27	Rafael Bartulic Tieppo	Rede	Grupo9
 30	Roberto Donisete Pereira Dias	Rede	Grupo9
 34	Victória Rosa dos Santos	Rede	Grupo9
@@ -32,4 +33,3 @@ Num	Vendedor	Tema	Grupos
 15	Helena Frasson Delangelica	Patrimônio	Grupo11
 16	Jaqueline Dias Oliveira	Patrimônio	Grupo11
 35	Carlos Roberto de Oliveira Júnior	Patrimônio	Grupo11
-22	Matheus Belarmino Pignata	Patrimônio	Grupo12
