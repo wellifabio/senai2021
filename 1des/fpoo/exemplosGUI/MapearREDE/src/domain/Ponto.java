@@ -7,12 +7,16 @@ public class Ponto {
 	private String icone;
 	private String origem;
 	private String destino;
-	private Ponto pai;
+	private String pai;
 
 	public Ponto() {
 	}
 
-	public Ponto(String id, String descricao, String icone, String origem, String destino, Ponto pai) {
+	public Ponto(String id) {
+		this.id = id;
+	}
+	
+	public Ponto(String id, String descricao, String icone, String origem, String destino, String pai) {
 		this.id = id;
 		this.descricao = descricao;
 		this.icone = icone;
@@ -61,11 +65,11 @@ public class Ponto {
 		this.destino = destino;
 	}
 
-	public Ponto getPai() {
+	public String getPai() {
 		return pai;
 	}
 
-	public void setPai(Ponto pai) {
+	public void setPai(String pai) {
 		this.pai = pai;
 	}
 	
@@ -96,10 +100,10 @@ public class Ponto {
 
 	@Override
 	public String toString() {
-		return id + "\t" + descricao + "\t" + icone + "\t" + origem + "\t" + destino + "\t" + pai.getId();
+		return id + "\t" + descricao + "\t" + icone + "\t" + origem + "\t" + destino + "\t" + pai + "\n";
 	}
 
 	public String toCSV() {
-		return id + ";" + descricao + ";" + icone + ";" + origem + ";" + destino + ";" + pai.getId() + "\r\n";
+		return id + ";" + descricao + ";" + icone + ";" + origem + ";" + destino + ";" + pai + "\r\n";
 	}
 }
