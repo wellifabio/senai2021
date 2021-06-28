@@ -1,0 +1,42 @@
+Defina Classe em POO:
+Representação de entidades do mundo real na forma virtual composta por variáveis, parâmetros e funções
+Representação de entidades do mundo real na forma virtual composta por título, atributos e métodos
+Representação de entidades do mundo real na forma virtual composta por título, parâmetros e funções
+Representação de entidades do mundo real na forma virtual composta por título, métodos e funções
+Representação de entidades do mundo real na forma virtual composta por variáveis, métodos e funções
+
+Marque a afirmação correta sobre Classes em POO:
+Em uma classe os atributos representam as características de um objeto como "cor, tipo, id, nome, idade" e os métodos representam as ações como "andar, obter total, configurar idade".
+Em uma classe os métodos representam as características de um objeto como "cor, tipo, id, nome, idade" e as funções representam as ações como "andar, obter total, configurar idade".
+Em uma classe as funções representam as características de um objeto como "cor, tipo, id, nome, idade" e os atributos representam as ações como "andar, obter total, configurar idade".
+Em uma classe os métodos representam as características de um objeto como "cor, tipo, id, nome, idade" e os atributos representam as ações como "andar, obter total, configurar idade".
+Em uma classe os atributos representam as características de um objeto como "cor, tipo, id, nome, idade" e os parâmetros representam as ações como "andar, obter total, configurar idade".
+
+Sobre métodos de uma Classe em POO, são como funções que possuem ou não retorno e recebem ou não parâmetros. Desta forma sobre o método a seguir "public int obterIdade()" podemos afirmar que:
+possui um parâmetro do tipo inteiro e não retorna nada
+retorna um dado do tipo inteiro e recebe um parâmetro do tipo inteiro
+não retorna nehum dado void e não recebe nenhum parâmetro
+recebe um parâmetro do tipo inteiro e retorna um dado do tipo inteiro
+retorna um dado do tipo inteiro e não recebe nenhum parâmetro
+
+Ainda sobre o método a seguir "public void escreveExtenso(int numero)" podemos afirmar que:
+retorna um dado do tipo inteiro e recebe um parâmetro do tipo inteiro
+não retorna nehum dado void e não recebe nenhum parâmetro
+possui um parâmetro do tipo inteiro e não retorna nada
+recebe um parâmetro do tipo inteiro e retorna um dado do tipo inteiro
+retorna um dado do tipo inteiro e não recebe nenhum parâmetro
+
+Ainda sobre o método a seguir "public String escreveExtenso(int numero)" podemos afirmar que:
+retorna um dado do tipo inteiro e recebe um parâmetro do tipo inteiro
+não retorna nehum dado void e não recebe nenhum parâmetro
+possui um parâmetro do tipo inteiro e não retorna nada
+retorna um dado do tipo String e recebe um parâmetro do tipo inteiro
+recebe um parâmetro do tipo inteiro e retorna um dado do tipo inteiro
+
+Qual a diferença entre uma Classe, uma instância e um objeto?
+O Objeto é o esqueleto de um objeto, a instância é quando declaramos um objeto mas não há nada atribuído ainda, já a classe (new) é o resultado final do objeto que realmente podemos utilizar.
+A Classe é o esqueleto de um objeto, a instância é quando declaramos um objeto mas não há nada atribuído ainda, já o objeto (new) é o resultado final da classe que realmente podemos utilizar.
+O Objeto é o esqueleto de um objeto, a classe é quando declaramos um objeto mas não há nada atribuído ainda, já a instância (new) é o resultado final do objeto que realmente podemos utilizar.
+A Classe é o esqueleto de um objeto, o objeto é quando declaramos um objeto mas não há nada atribuído ainda, já a instância (new) é o resultado final da classe que realmente podemos utilizar.
+A Instância é o esqueleto de um objeto, o objeto é quando declaramos um objeto mas não há nada atribuído ainda, já a classe (new) é o resultado final da classe que realmente podemos utilizar.
+

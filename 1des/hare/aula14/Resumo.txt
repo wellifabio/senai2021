@@ -26,7 +26,6 @@ Servidores - DHCP, DNS, Dominio, Aplicação(Midware), Banco de Dados.
 IPv6 128 Bits expresso em Hexadecimal
 Ex: F2:D1:35:49:::::::::F6:45:48:AB
 
-
 Classe B 172.16.0
 
 Mascara
