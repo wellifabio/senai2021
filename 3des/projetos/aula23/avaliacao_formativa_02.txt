@@ -77,17 +77,17 @@ Encapsulamento
 Uma equipe está desenvolvendo um novo software e o responsável pela elaboração do diagrama de classes criou a associação conforme a imagem a seguir:
 Qual o tipo de associação está presente nesse diagrama?
 Associação binária.
-Associação agregação.
+Associação Agregação.
 Associação ternária ou N-ária.
-Associação unária ou reflexiva.
-Associação generalização ou especificação.
+Associação Composição.
+Associação generalização, especificação (Herança).
 
 Um programador desenvolvendo um software ao interpretar o diagrama de classes, se deparou com qual tipo de associação representado neste diagrama?
 Associação binária.
 Associação agregação.
 Associação composição.
 Associação unária ou reflexiva.
-Associação generalização ou especificação.
+Associação generalização ou especificação (Herança).
 
 Um técnico de desenvolvimento de sistemas recebeu informações em um documento de acordo com a figura a seguir.
 Essas informações fazem parte de qual documento?

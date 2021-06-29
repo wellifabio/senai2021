@@ -1,4 +1,4 @@
-Defina Classe em POO:
+﻿Defina Classe em POO:
 Representação de entidades do mundo real na forma virtual composta por variáveis, parâmetros e funções
 Representação de entidades do mundo real na forma virtual composta por título, atributos e métodos
 Representação de entidades do mundo real na forma virtual composta por título, parâmetros e funções
@@ -33,10 +33,80 @@ possui um parâmetro do tipo inteiro e não retorna nada
 retorna um dado do tipo String e recebe um parâmetro do tipo inteiro
 recebe um parâmetro do tipo inteiro e retorna um dado do tipo inteiro
 
-Qual a diferença entre uma Classe, uma instância e um objeto?
+Quais as corretas definições de Classe, instância e objeto?
 O Objeto é o esqueleto de um objeto, a instância é quando declaramos um objeto mas não há nada atribuído ainda, já a classe (new) é o resultado final do objeto que realmente podemos utilizar.
 A Classe é o esqueleto de um objeto, a instância é quando declaramos um objeto mas não há nada atribuído ainda, já o objeto (new) é o resultado final da classe que realmente podemos utilizar.
 O Objeto é o esqueleto de um objeto, a classe é quando declaramos um objeto mas não há nada atribuído ainda, já a instância (new) é o resultado final do objeto que realmente podemos utilizar.
 A Classe é o esqueleto de um objeto, o objeto é quando declaramos um objeto mas não há nada atribuído ainda, já a instância (new) é o resultado final da classe que realmente podemos utilizar.
 A Instância é o esqueleto de um objeto, o objeto é quando declaramos um objeto mas não há nada atribuído ainda, já a classe (new) é o resultado final da classe que realmente podemos utilizar.
+
+A programação Orientada a objetos é baseada em diversos conceitos. Um desses conceitos é o uso de um mesmo nome para identificar diferentes implementações dos métodos. Qual é o nome deste conceito?
+Classe
+Herança
+Interface
+Polimorfismo
+Encapsulamento
+
+Em POO entende-se por Polimorfismo a sobrecarga de métodos ou a sobrescrita de métodos. Qual das afirmações a seguir melhor descreve estes conceitos?
+Sobrecarga é quando utilizamos vários métodos com o mesmo nome, porém com parâmetros diferentes já a sobrescrita refere-se a métodos herdados da classe pai reescritos com retornos ou comportamentos diferentes.
+Sobrescrita é quando utilizamos vários métodos com o mesmo nome, porém com parâmetros diferentes já a sobrecarga refere-se a métodos herdados da classe pai reescritos com retornos ou comportamentos diferentes.
+Sobrecarga é quando utilizamos vários atributos com o mesmo nome, porém com parâmetros diferentes já a sobrescrita refere-se a atributos herdados da classe pai reescritos com retornos ou comportamentos diferentes.
+Sobrescrita é quando utilizamos vários atributos com o mesmo nome, porém com parâmetros diferentes já a sobrecarga refere-se a atributos herdados da classe pai reescritos com retornos ou comportamentos diferentes.
+Sobrescrita é quando utilizamos vários métodos com o mesmo nome, porém com atributos diferentes já a sobrecarga refere-se a atributos herdados da classe pai reescritos com retornos ou comportamentos diferentes.
+
+Uma equipe está desenvolvendo um novo software e o responsável pela elaboração do diagrama de classes criou a associação conforme a imagem a seguir:
+Qual o tipo de associação está presente nesse diagrama?
+Associação binária.
+Associação Agregação.
+Associação ternária ou N-ária.
+Associação Composição.
+Associação generalização, especificação (Herança).
+
+Um programador desenvolvendo um software ao interpretar o diagrama de classes, se deparou com qual tipo de associação representado neste diagrama?
+Associação Binária.
+Associação Agregação.
+Associação Composição.
+Associação Unária ou reflexiva.
+Associação generalização ou especificação (Herança).
+
+Qual tipo de associação é representada neste diagrama?
+Associação Binária.
+Associação Agregação.
+Associação Composição.
+Associação Unária ou reflexiva.
+Associação generalização ou especificação (Herança).
+
+Em seu trabalho um técnico em desenvolvimento de sistemas pode utilizar o conceito de Programação Orientada a Objetos (POO) e a linguagem de programação orientada a objetos para codificar sistemas.
+Neste tipo de linguagem de programação:
+classe Pai, classe Base ou Superclasse é a classe que foi herdada de outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+polimorfismo e Abstração são os únicos princípios do POO.
+as instâncias são características e ações de um objeto.
+métodos definem as características dos objetos.
+
+Sobre POO é possível afirmar que:
+classe Pai, classe Base ou Superclasse é a classe que herda ou estende outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+Polimorfismo e Abstração são os únicos princípios do POO.
+As instâncias são características e ações de um objeto.
+Atributos definem as características dos objetos.
+
+Continuando no assunto de POO é correto afirmar que:
+classe Pai, classe Base ou Superclasse é a classe que herda ou estende outra classe.
+entre a Classe Filha e a Sub-Classe, apenas a Classe Filha herda da Classe Pai.
+As instâncias são características e ações de um objeto.
+Métodos definem as ações dos objetos.
+Encapsulamento é o ato de proteger os métodos deixando seu acesso somente via atributos.
+
+Em POO o conceito de Encapsulamento consistem em:
+Apenas definir os atributos como privados
+Proteger os métodos através do modificador privado e definir seu acesso através dos atributos públicos Gets e Sets
+Proteger os atributos através do modificador privado e definir seu acesso através dos metodos públicos Gets e Sets
+Definir os métodos de acesso como privados
+Definir os atributos como publicos
+
+O que é uma classe Abstrata?
+Uma classe que deve ser instânciada e possui atributos e métodos que serão herdados por uma classe filha.
+Uma classe que possui
+Uma classe que não pode ser instânciada e possui atributos e métodos que apenas serão herdados por uma classe filha.
 
