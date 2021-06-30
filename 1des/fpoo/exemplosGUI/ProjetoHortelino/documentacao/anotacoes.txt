@@ -1,0 +1,2 @@
+Video sobre comparação de Objetos (Evitar duplicados)
+https://blog.algaworks.com/entendendo-o-equals-e-hashcode/
