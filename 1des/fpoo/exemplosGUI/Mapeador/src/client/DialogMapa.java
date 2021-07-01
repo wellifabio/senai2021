@@ -25,23 +25,23 @@ public class DialogMapa extends JDialog implements ActionListener {
 	DialogMapa() {
 		// setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Arraste e Solte");
-		setSize(800, 600);
+		setSize(1300,700);
 		panel = new JPanel();
 		setContentPane(panel);
 		setLayout(null);
 		setLocationRelativeTo(null);
 
 		imgs = new PanelDrag(ProcessaPontos.pontos);
-		imgs.setBounds(5, 5, 774, 515);
+		imgs.setBounds(5, 5, 1274, 615);
 		panel.add(imgs);
 
 		exportar = new JButton("Exportar");
-		exportar.setBounds(533, 525, 120, 30);
+		exportar.setBounds(533, 625, 120, 30);
 		exportar.addActionListener(this);
 		panel.add(exportar);
 
 		cancelar = new JButton("Cancelar");
-		cancelar.setBounds(658, 525, 120, 30);
+		cancelar.setBounds(658, 625, 120, 30);
 		cancelar.addActionListener(this);
 		panel.add(cancelar);
 	}

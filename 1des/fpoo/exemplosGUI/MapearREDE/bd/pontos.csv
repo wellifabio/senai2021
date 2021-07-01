@@ -1,8 +1,0 @@
-RK01PT00;Switch Principal;switch.png;TI;TI;null
-RK01PT01;PC Recepção;pc.png;TI;Recepção;RK01PT00
-RK01PT02;Laptop Diretor;pc.png;TI;Diretoria;RK01PT00
-RK01PT03;PC ADM;pc.png;TI;Administração;RK01PT00
-RK01PT04;Switch Secundário;switch.png;TI;Corredor;RK01PT00
-RK02PT01;PC Almoxarifado;pc.png;Corredor;Almoxarifado;RK01PT04
-RK02PT02;PC Balcão;pc.png;Corredor;Balcão 1;RK01PT04
-RK02PT03;PC Balcão;pc.png;Corredor;Balcão 2;RK01PT04

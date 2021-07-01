@@ -24,7 +24,10 @@ public class PontoDAO {
 			String linha = "";
 			while ((linha = br.readLine()) != null) {
 				String[] campos = linha.split(";");
-				Ponto = new Ponto(campos[0], campos[1], campos[2], campos[3],campos[4],campos[5]);
+				if (campos.length > 5)
+					Ponto = new Ponto(campos[0], campos[1], campos[2], campos[3], campos[4], campos[5]);
+				else
+					Ponto = new Ponto(campos[0], campos[1], campos[2], campos[3], campos[4], "");
 				pontos.add(Ponto);
 			}
 			br.close();
@@ -37,7 +40,7 @@ public class PontoDAO {
 	public boolean salvar(ArrayList<Ponto> vs) {
 		try {
 			bw = new BufferedWriter(new FileWriter(arquivo, false));
-			for(Ponto p: vs) {
+			for (Ponto p : vs) {
 				bw.write(p.toCSV());
 			}
 			bw.close();

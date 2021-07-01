@@ -26,7 +26,8 @@ public class PanelDrag extends JPanel {
 		this.pontos = pontos;
 		int x = 0, y = 0;
 		for (Ponto p : pontos) {
-			imgs.add(new ImageIcon(new ImageIcon("./assets/"+p.getIcone()).getImage().getScaledInstance(100, 100, 100)));
+			imgs.add(new ImageIcon(new ImageIcon("./assets/" + p.getIcone().toLowerCase() + ".png").getImage()
+					.getScaledInstance(100, 100, 100)));
 			cantoImg.add(new Point(x, y));
 			if (x == 450) {
 				y += 100;
@@ -66,7 +67,7 @@ public class PanelDrag extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		for (int i = 0; i < pontos.size(); i++) {
-			if (pontos.get(i).getPai() != null && !pontos.get(i).getPai().equals("null")) {
+			if (pontos.get(i).getPai() != null && !pontos.get(i).getPai().equals("")) {
 				g.setColor(Color.BLUE);
 				int indiceDestino = pontos.indexOf(new Ponto(pontos.get(i).getPai()));
 				g.drawLine((int) cantoImg.get(i).getX() + 50, (int) cantoImg.get(i).getY() + 50,
