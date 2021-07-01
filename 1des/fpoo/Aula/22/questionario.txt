@@ -107,6 +107,35 @@ Definir os atributos como publicos
 
 O que é uma classe Abstrata?
 Uma classe que deve ser instânciada e possui atributos e métodos que serão herdados por uma classe filha.
-Uma classe que possui
+Uma classe que possui conceitos abstratos de encapsulamento atributos e métodos.
 Uma classe que não pode ser instânciada e possui atributos e métodos que apenas serão herdados por uma classe filha.
+Uma classe que herda atributos e métodos da superclasse e é instanciada como objeto filho.
+Uma classe que é implementada por outras classes e pode ser instânciada também.
 
+O que é o padrão de projeto MVC?
+É um padrão de projeto pertencente ao GOF que segmenta o projeto em camadas (Modelo, Visão e Comando)
+É um padrão de projeto não pertencente GOF que segmenta o projeto em camadas (Modelo, Visão e Comando)
+É um padrão de projeto pertencente ao GOF que segmenta o projeto em camadas (Modelo, Visão e Controle)
+É um padrão de projeto não pertencente GOF que segmenta o projeto em camadas (Modelo, Visão e Controle)
+É um padrão de projeto não pertencente GOF que segmenta o projeto em camadas (Módulo, Visão e Comando)
+
+No padrão de projetos MVC, qual a camada responsável pelo CRUD?
+A camanda responsável pelo CRUD é a "View" pois apresenta um menú de opções ou botões "Adicionar", "Excluir" e "Alterar" e mostra os dados da lista "Read" ao usuário.
+Todas as camadas implemantam processos CRUD, porém a "Model" organiza os dados, a "Controler" processa as listas na memória e a "View" recebe comandos e mostra os dados para o usuário.
+A camanda responsável pelo CRUD é a "Controller" pois apresenta um menú de opções ou botões "Adicionar", "Excluir" e "Alterar" e mostra os dados da lista "Read" ao usuário.
+A camanda responsável pelo CRUD é a "Model" pois apresenta um menú de opções ou botões "Adicionar", "Excluir" e "Alterar" e mostra os dados da lista "Read" ao usuário.
+A camanda responsável pelo CRUD é a "DAO" pois apresenta métodos que abrem um arquivo para leitura e salvam os dados em um arquivo de texto.
+
+Para que serve o DAO?
+É um objeto de acesso a dados que serve para manipular apenas arquivos.
+É um objeto de acesso a dados que serve para manipular apenas dados modelados.
+É um objeto MVC de acesso a dados que serve para manipular apenas arquivos.
+É um objeto de acesso a dados que serve para manipular a conexão externa do programa com arquivos de banco de dados.
+É um objeto MVC de acesso a dados que serve para manipular apenas gerenciador de banco de dados.
+
+Assinale a alternativa correta sobre interfaces.
+Uma classe pode implementar diversas interfaces, porém só pode extender uma Superclasse.
+Uma classe pode extender diversas classes abstratas, porém só pode implementar uma Interface.
+Uma classe pode extender diversas classes abstratas e pode implementar diversas Interfaces.
+Uma classe pode extender diversas Superclasses e pode implementar diversas Interfaces.
+Uma classe pode extender diversas Superclasses, porém só pode implementar uma Interface.

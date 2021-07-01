@@ -119,7 +119,6 @@ public class FormRede extends JFrame implements ActionListener {
 		tableModel.addColumn("Origem");
 		tableModel.addColumn("Destino");
 		tableModel.addColumn("Pai");
-		tableModel.addColumn("Img");
 		if (!ProcessaPontos.pontos.isEmpty()) {
 			for (Ponto p : ProcessaPontos.pontos) {
 				tableModel.addRow(p.getStringVetor());
