@@ -49,7 +49,7 @@ IP Classe A e Máscara Classe B
 
 Um técnico ao analizar uma rede através de um computador conectado, executou o comando ipconfig e obteve como resultado as seguintes informações: IP 10.0.0.77 Mascara:255.255.255.128, qual das alternativas abaixo apresenta o provável Gateway Padrão e o BroadCast deste segmento de rede?
 Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.255
-Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.255
+Gateway Padrão: 10.0.0.127 - BroadCast: 10.0.0.128
 Gateway Padrão: 10.1.1.1 - BroadCast: 10.1.1.255
 Gateway Padrão: 10.0.0.128 - BroadCast: 10.0.0.255
 Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.127
