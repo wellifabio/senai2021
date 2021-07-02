@@ -1,0 +1,91 @@
+Qual padrão de adaptador de rede é mais rápido?
+Gigabit Ethernet
+Fast Ethernet
+Ethernet
+
+Qual o tipo de cabo mais utilizada em redes do tipo LAN atualmente?
+Fibra Ótica
+Coaxial
+Par Trançado cat 5e, cat6e
+Cabo de energia
+USB
+
+Marque a alternativa correta quanto a conectores de rede.
+Os cabos coaxiais também conhecidos como patch cord utilizan conectores RJ45.
+Os cabos pares trançados também conhecidos como patch cord utilizan conectores RJ45 macho.
+Os cabos mais utilizados como patch cord utilizan conectores USB ou seriais.
+Para conectar o "Patch Panel" às keystone(tomadas de rede RJ45 Fêmea) são utilizados cabos de fibra óptica.
+Os patch cord servem para conectar o "Patch Panel" ás Keystones.
+
+Assinale a alternativa incorreta quanto as conexões de rede.
+Os patch cords são utilizados para conectar o patch panel ao switch e também para conectar equipamentos de rede como notebooks às tomadas de rede.
+O patch panel é um equipamento que serve para organizar a chegada dos cabos de rede a um rack em um esquema de cabeamento estruturado.
+Os Hubs ou Switches são equipamentos que concentram as conexões de uma rede geralmente com topologia estrela.
+Não podemos utilizar cabos de energia para conectar computadores a uma rede LAN devido a sua tenção e corrente alternada.
+Os cabos de rede, conectores, racks, concentradores de cabo e outros equipamentos estão na camada física dos protocolos de rede.
+
+
+
+Sobre os serviços de rede assinale a alternativa incorreta:
+O Firewal é um equipamento que possui um sistema operacional e fica conectado diretamente a internet e serve como filtro contra ataques ou invasões.
+O serviço de DNS serve para distribuir endereços IPs para os computadores de uma rede deve ser configurado com um "range" escopo de IPs reservados, classe A, B ou C.
+O protocolo TCP/IP possui um grande conjunto de protocolos e segue um modelo dividido em camadas, dentre ele os protocolos UDP e TCP que fazem parte da camada de transporte.
+O protocolo IP está na camada de Rede do protocolo TCP/IP e atualmente está na sendo amplamente utilizado nas versões IPv4 e IPv6.
+O serviço HTTP pertence a camada de Aplicação do protocolo TCP/IP e é o protocolo responsável pela comunicação de Hypertexto onde a maior parte dos dados são compartilhados via internet através da HTML.
+
+Sobre o endereço IPv4192.168.0.25/24. Um técnico precisa configurar a máscara de rede no formato decimal, qual das máscaras a seguir é a correta?
+255.0.0.0
+255.255.0.0
+255.255.192.0
+255.192.0.0
+255.255.255.0
+
+A qual classe o IPv4 e máscara a seguir pertence "172.16.0.250/16"?
+IP Classe B e Máscara Classe B
+IP Classe B e Máscara Classe C
+IP Classe B e Máscara Classe A
+IP Classe C e Máscara Classe B
+IP Classe A e Máscara Classe B
+
+Um técnico ao analizar uma rede através de um computador conectado, executou o comando ipconfig e obteve como resultado as seguintes informações: IP 10.0.0.77 Mascara:255.255.255.128, qual das alternativas abaixo apresenta o provável Gateway Padrão e o BroadCast deste segmento de rede?
+Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.255
+Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.255
+Gateway Padrão: 10.1.1.1 - BroadCast: 10.1.1.255
+Gateway Padrão: 10.0.0.128 - BroadCast: 10.0.0.255
+Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.127
+
+Se este mesmo técnico obtivesse o resultado como resultado as seguintes informações: IP 192.168.0.36 Mascara:255.255.255.0, qual das alternativas abaixo apresenta o provável Gateway Padrão e o BroadCast deste segmento de rede?
+Gateway Padrão: 10.0.0.1 - BroadCast: 10.0.0.127
+Gateway Padrão: 172.16.0.1 - BroadCast: 172.16.0.255
+Gateway Padrão: 192.168.0.1 - BroadCast: 192.168.0.255
+Gateway Padrão: 192.168.0.1 - BroadCast: 192.168.0.127
+Gateway Padrão: 192.168.0.127 - BroadCast: 192.168.0.255
+
+A principal diferenca entre o IPv4 e o IPv6 é o comprimento do endereço, sobre este assunto é correto afirmar que:
+IPv4 possui 64 Bits enquanto IPv6 possui 128 Bits
+IPv4 possui 128 Bits enquanto IPv6 possui 64 Bits
+IPv4 possui 32 Bits enquanto IPv6 possui 128 Bits
+IPv4 possui 32 Bits enquanto IPv6 possui 64 Bits
+IPv4 possui 64 Bits enquanto IPv6 também possui 64 Bits
+
+Em uma subrede com máscara 255.255.255.224, tirando o Gateway e o Broadcast qual o máximo de equipamentos conseguimos conectar?
+254 equipamentos
+126 equipamentos
+62 equipamentos
+30 equipamentos
+14 equipamentos
+
+O endereço IPv4 127.0.0.1 é também conhecido como:
+Gateway padrão
+localhost ou loopback
+APIPA - Automatic Private IP Addressing
+BroadCast
+IP externo de uma rede
+
+Um técnico de rede ao executar o comando ipconfig em um PC de uma rede recebeu como informação o seguinte endereço IP 169.254.1.118, isto significa que:
+O cabo de rede está desconectado
+O Gateway Padrão desta rede é 169.254.1.1
+O Broadcast desta rede é 169.254.255.254
+O Serviço DHCP não está respondendo
+A placa de rede não está corretamente instalada ou está queimada
+
