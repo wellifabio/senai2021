@@ -57,7 +57,7 @@ public class FormRede extends JFrame implements ActionListener {
 		tfDescr = new JTextField();
 		tfDescr.setBounds(120, 30, 120, 25);
 		painel.add(tfDescr);
-		cbIcone = new JComboBox<String>(new String[] { "Switch", "Roteador", "PC", "Impressora", "LapTop" });
+		cbIcone = new JComboBox<String>(new String[] { "Switch", "Roteador", "PC", "Impressora", "LapTop","Servidor","DVR","Internet"});
 		cbIcone.addActionListener(this);
 		cbIcone.setBounds(240, 30, 100, 24);
 		painel.add(cbIcone);
@@ -209,7 +209,7 @@ public class FormRede extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		// ProcessaPontos.preencheTestes();
+		//ProcessaPontos.preencheTestes();
 		ProcessaPontos.lerArquivo();
 		new FormRede().setVisible(true);
 	}

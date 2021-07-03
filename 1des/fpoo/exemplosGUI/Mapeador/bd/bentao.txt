@@ -1,0 +1,73 @@
+FW	Servidor FIREWALL	pc	TI - Conectado a Internet	0 - TI - CISCO	
+TICISCO	TI - CISCO	switch	TI	TI	FW
+DC	Servidor SWBQ01 AD	switch	0 - TI - CISCO	TI - Servidor SWBQ01	TICISCO
+NSA	Servidor NSA SW12BQ01	servidor	0 - TI - CISCO	TI - Servidor NSA	TICISCO
+SW02	Servidor SWBQ02 WDS Arquivos	servidor	0 - TI - CISCO	TI - Servidor SWBQ02	TICISCO
+SW03	Servidor SWBQ03  - Virtuais (GRP, GLPI ..)	servidor	0 - TI - CISCO	TI - Servidor SWBQ03	TICISCO
+SWI2	Servidor SWBQ04 - Antigo servidor16	servidor	0 - TI - CISCO	TI - Servidor SW12BQ01	TICISCO
+TI10	Switch - Giga	switch	0 - TI - CISCO	1 - Laboratório Info 1	TICISCO
+TI11	Switch - Giga	switch	0 - TI - CISCO	1 - Laboratório Info 2	TICISCO
+TI12	Switch - Giga	switch	0 - TI - CISCO	1 - Laboratório Info 3	TICISCO
+TI13	Switch - Giga	switch	0 - TI - CISCO	1 - Laboratório Info 4	TICISCO
+TI14	Switch - Giga	switch	0 - TI - CISCO	2 - Administração - Copa	TICISCO
+TI27	Switch - Giga	switch	0 - TI - CISCO	1 - Biblioteca	TICISCO
+TIM01	Switch - 10/100	switch	0 - TI - CISCO	2 - Mecanica	TICISCO
+TISG	Switch - Giga	switch	0 - TI - CISCO	1 - TI - TPLINK	TICISCO
+TI16	Switch - 10/100 - 24 Portas	switch	0 - TI - CISCO	2 - Elétrica	TICISCO
+TI15	Roteador/Switch	roteador	0 - TI - CISCO	2 - Robotica	TICISCO
+TIW	Access Point WIFI TI	roteador	0 - TI - CISCO	2 - TI - WiFi	TICISCO
+MA0	Switch - 10/100	switch	0 - TI - CISCO	2 - Espaço Maker	TICISCO
+BN	Wifi Quadra	roteador	0 - TI - CISCO	Wifi Quadra	TICISCO
+1	Estação de Trabalho	pc	1 - TI - TPLINK	TI - Aux Docente	TISG
+2	Estação de Trabalho	pc	1 - TI - TPLINK	TI02 - Estagiários	TISG
+3	Estação de Trabalho	pc	1 - TI - TPLINK	TI - Bancada01	TISG
+4	Estação de Trabalho	pc	1 - TI - TPLINK	TI - Fundos, maquinas de teste	TISG
+5	Estação de Trabalho	pc	1 - TI - TPLINK	TI-14GB - Estagiários	TISG
+6	Estação de Trabalho	pc	1 - TI - TPLINK	TI - Aux Docente	TISG
+7	Estação de Trabalho	pc	1 - TI - TPLINK	TI - Bancada02	TISG
+TI08	Estação de Trabalho	pc	1 - TI - TPLINK	Almoxarifado Principal	TISG
+TI09	Estação de Trabalho	pc	1 - TI - TPLINK	Almoxarifado Mecanica	TISG
+TI28	Estação de Trabalho	pc	1 - TI - TPLINK	Almoxarifado Secundário	TISG
+TI29	Impressora	impressora	1 - TI - TPLINK	Almoxarifado Impressora	TISG
+UX	Estação de Trabalho	pc	1 - TI - TPLINK	Almoxarifado Secundário	TISG
+ADPT	Switch - Giga	switch	2 - Administração - Copa	3 - Patio - Salas de Aula	TI14
+COR	Switch - 10/100	switch	2 - Administração - Copa	3 - Coordenação	TI14
+PRO	Switch - 10/100	switch	2 - Administração - Copa	3 - Sala dos Professores	TI14
+EL01	Switch 10/100	switch	2 - Elétrica	3 - Automação	TI16
+LT2	Switch 10/100 - Intelbraz	switch	2 - Elétrica	3 - Smartphone	TI16
+LT3	Switch Giga	switch	2 - Elétrica	3 - Microprocessados	TI16
+ME01	Estação de Trabalho	pc	2 - Mecanica	Sala1 ao lado do SWITCH	TIM01
+ME02	Estação de Trabalho	pc	2 - Mecanica	Sala2 próxima ao SWITCH	TIM01
+ME03	Estação de Trabalho	pc	2 - Mecanica	Sala2 próxima ao SWITCH	TIM01
+ME04	Estação de Trabalho	pc	2 - Mecanica	Sala3 Ao lado da sala 2	TIM01
+LT4	Estação de Trabalho	pc	3 - Automação	Eletronica Digital	EL01
+LT5	Estação de Trabalho	pc	3 - Automação	Eletronica Analogica	EL01
+3	Estação de Trabalho	pc	3 - Coordenação	coordenação bancada 1	COR
+4	Estação de Trabalho	pc	3 - Coordenação	coordenação bancada 2	COR
+5	Estação de Trabalho	pc	3 - Coordenação	coordenação bancada 3	COR
+6	Estação de Trabalho	pc	3 - Coordenação	computador direita imp	COR
+7	Impressora	impressora	3 - Coordenação	Impressora	COR
+8	Estação de Trabalho	pc	3 - Coordenação	computador esquerda imp	COR
+9	Estação de Trabalho	pc	3 - Coordenação	ponto 1 bancada da janela	COR
+13	Estação de Trabalho	pc	3 - Coordenação	ponto 2 bancada da janela	COR
+14	Estação de Trabalho	pc	3 - Coordenação	segunda sala	COR
+H3	Access Point WIFI ADM	roteador	3 - Coordenação	3 - Wifi ADM	COR
+V3	DVR	dvr	3 - Coordenação	DVR(Camera)	COR
+V5	DVR	dvr	3 - Coordenação	DVR(Camera)	COR
+Z4	DVR	dvr	3 - Coordenação	DVR(Camera)	COR
+Z5	Estação de Trabalho	pc	3 - Coordenação	Segunda sala Departamento Pessoal 	COR
+ITC	Switch - Giga	switch	3 - Microprocessados	4 - Telecom	LT3
+AUDIT0	Switch 10/100	switch	3 - Patio - Salas de Aula	3 - Salão Nobre - Auditório	ADPT
+C17	Estação de Trabalho	pc	3 - Patio - Salas de Aula	3 - Laboratório Info 5	ADPT
+VID2	Estação de Trabalho	pc	3 - Patio - Salas de Aula	Emenda Auxiliar para o Espaço Maker	ADPT
+HIFI	Access Point - WIFI Prof	roteador	3 - Sala dos Professores	3 - Corredor Professores - WIFI	PRO
+PINT2	Impressora	impressora	3 - Sala dos Professores	Sala do RH	PRO
+PRINT	Impressora	impressora	3 - Sala dos Professores	Impressora Sala Dos Prof.	PRO
+RI	Estação de Trabalho	pc	3 - Sala dos Professores	Relações Institucionais	PRO
+T1	Estação de Trabalho	pc	3 - Sala dos Professores	Sala dos Professores	PRO
+T2	Estação de Trabalho	pc	3 - Sala dos Professores	Sala dos Professores	PRO
+T3	Estação de Trabalho	pc	3 - Sala dos Professores	Sala dos Professores	PRO
+V4	Primeira Estação de Trabalho	pc	3 - Sala dos Professores	Departamento Pessoal	PRO
+Z6	Estação de Trabalho	pc	3 - Sala dos Professores	Diretoria	PRO
+Z7	Impressora	impressora	3 - Sala dos Professores	Impressora Sansung - Cidinha	PRO
+I8	Estação de Trabalho	pc	4 - Telecom	Sala de aula 18	ITC

@@ -1,0 +1,45 @@
+TICISCO;0 - Switch GB - TI - CISCO;switch;TI (Sala de TI);TI (Sala de TI);
+TI14;1 - Switch GB - Copa/Cozinha;switch;0 - Switch GB - TI - CISCO;Administração - Copinha/Cozinha;TICISCO
+TIM01;1 - Switch 100 - Mecânica;switch;0 - Switch GB - TI - CISCO;Oficina Mecânica Rack;TICISCO
+TI16;1 - Switch 100 - Elétrica;switch;0 - Switch GB - TI - CISCO;Elétrica Sala Aux. Docentes;TICISCO
+ADPT;2 - Switch GB - Pátio;switch;1 - Switch GB - Copa/Cozinha;Patio - Salas Aula, Nobre, Lab05, Maker;TI14
+COR;2 - Switch 100 - Coordenação;switch;1 - Switch GB - Copa/Cozinha;Sala da Coordenação;TI14
+PRO;2 - Switch 100 - Professores;switch;1 - Switch GB - Copa/Cozinha;Sala dos Professores;TI14
+EL01;2 - Switch 100 - Automação;switch;1 - Switch 100 - Elétrica;Lab - Automação;TI16
+LT2;2 - Switch 100 - Laboratorio06;switch;1 - Switch 100 - Elétrica;Lab06 - Antigo SmarPhone;TI16
+LT3;2 - Switch GB - Microprocessados;switch;1 - Switch 100 - Elétrica;Lab -  Microprocessados;TI16
+ME01;Prof. Sala Projetos Mecânicos;laptop;1 - Mecanica;Sala Projetos Mec PC ou Note Prof.;TIM01
+ME02;Prof Sala Mec;laptop;1 - Mecanica;Sala Prof Mecanica;TIM01
+ME03;PC Microscópio Sala Mec;pc;1 - Mecanica;Sala Mec PC - Microscópio;TIM01
+ME04;Sala CNC;pc;1 - Mecanica;Sala mecanica CNC;TIM01
+LT4;Eletronica Digital;pc;2 - Switch 100 - Automação;Eletronica Digital;EL01
+LT5;Eletronica Analogica;pc;2 - Switch 100 - Automação;Eletronica Analogica;EL01
+3;Coord. Bancada 01;laptop;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+4;Coord. Bancada 02;laptop;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+5;Coord. Bancada 03;laptop;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+6;PC Orientadora Educacional;pc;2 - Switch 100 - Coordenação;Computador Orient. Educacional;COR
+7;Impressora Coordenação;impressora;2 - Switch 100 - Coordenação;Impressora;COR
+8;PC01 prox impressora;pc;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+9;PC02 prox impressora;pc;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+13;Coord. Bancada 04;pc;2 - Switch 100 - Coordenação;Ponto de rede Coordenador;COR
+14;Coord. Fundos (Antig Sala Pedag);pc;2 - Switch 100 - Coordenação;Ponto de rede Fundos;COR
+H3;3 - WIFIADM - AccessPoint;roteador;2 - Switch 100 - Coordenação;Access Point WIFI ADM;COR
+V3;DVR(Cameras);dvr;2 - Switch 100 - Coordenação;DVR(Cameras);COR
+V5;DVR(Cameras);dvr;2 - Switch 100 - Coordenação;DVR(Cameras);COR
+Z4;DVR(Cameras);dvr;2 - Switch 100 - Coordenação;DVR(Cameras);COR
+Z5;RH00;pc;2 - Switch 100 - Coordenação;Sala do RH;COR
+ITC;3 - Switch GB - Telecom;switch;2 - Switch GB - Microprocessados;Laboratório de Telecomunicações;LT3
+AUDIT0;3 - Switch 100 - Salão Nobre;switch;2 - Switch GB - Pátio;3 - Salão Nobre - Auditório;ADPT
+C17;3 - Switch GB - Laboratório05;switch;2 - Switch GB - Pátio;3 - Laboratório Info 5;ADPT
+VID2;3 - Ponto auxiliar Maker;laptop;2 - Switch GB - Pátio;Aux p/ Espaço Maker - Antiga Sala Video;ADPT
+HIFI;3 - WIWI Prof;roteador;2 - Switch 100 - Professores;3 - Corredor Professores - WIFI;PRO
+PINT2;Impressora RH;impressora;2 - Switch 100 - Professores;Sala do RH;PRO
+PRINT;Impressora Prof;impressora;2 - Switch 100 - Professores;Impressora Sala Dos Prof.;PRO
+RI;RI - PC - Sala Rel. Institu.;pc;2 - Switch 100 - Professores;Sala Relações Institucionais;PRO
+T1;Prof01;pc;2 - Switch 100 - Professores;Sala dos Professores;PRO
+T2;Prof02;pc;2 - Switch 100 - Professores;Sala dos Professores;PRO
+T3;Prof03;pc;2 - Switch 100 - Professores;Sala dos Professores;PRO
+V4;RH01;laptop;2 - Switch 100 - Professores;Sala do RH;PRO
+Z6;PC-Diretoria;pc;2 - Switch 100 - Professores;Diretoria;PRO
+Z7;Impressora Secretaria;impressora;2 - Switch 100 - Professores;Impressora Sansung - Cidinha;PRO
+I8;Sala de Aula 18;pc;3 - Switch GB - Telecom;PC Prof. Sala de aula 18;ITC

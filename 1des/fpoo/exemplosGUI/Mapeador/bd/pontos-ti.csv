@@ -1,0 +1,32 @@
+LINK1;VivoFibra - 100Gb - Conversor;internet;TI (Sala de TI) Fibra;TI (Sala de TI) Firewall;
+FW;FIREWALL - PC - Debian;pc;TI (Sala de TI) Conversor;0 - Switch GB - TI - CISCO;LINK1
+TICISCO;0 - Switch GB - TI - CISCO;switch;TI (Sala de TI);TI (Sala de TI);FW
+DC;SWBQ01 Servidor AD;servidor;0 - Switch GB - TI - CISCO;TI - Servidor SWBQ01;TICISCO
+NSA;SW12BQ01 Servidor NSA;pc;0 - Switch GB - TI - CISCO;TI - Servidor NSA;TICISCO
+SW02;SWBQ02 Arquivos e WDS - Antigo 16;pc;0 - Switch GB - TI - CISCO;TI - Servidor SWBQ02;TICISCO
+SW03;SWBQ03 HyperV (GRP, GLPI, OpenBiblio..);servidor;0 - Switch GB - TI - CISCO;TI - Servidor SWBQ03;TICISCO
+SWI2;SWBQ04 Arquivos - Antigo NSA;servidor;0 - Switch GB - TI - CISCO;TI - Servidor SW12BQ01;TICISCO
+TI10;1 - Switch GB - LAB01;switch;0 - Switch GB - TI - CISCO;Laboratório INFO1;TICISCO
+TI11;1 - Switch GB - LAB02;switch;0 - Switch GB - TI - CISCO;Laboratório INFO2;TICISCO
+TI12;1 - Switch GB - LAB03;switch;0 - Switch GB - TI - CISCO;Laboratório INFO3;TICISCO
+TI13;1 - Switch GB - LAB04;switch;0 - Switch GB - TI - CISCO;Laboratório INFO4;TICISCO
+TI14;1 - Switch GB - Copa/Cozinha;switch;0 - Switch GB - TI - CISCO;Administração - Copinha/Cozinha;TICISCO
+TI27;1 - Switch GB - Biblioteca;switch;0 - Switch GB - TI - CISCO;Biblioteca;TICISCO
+TIM01;1 - Switch 100 - Mecânica;switch;0 - Switch GB - TI - CISCO;Oficina Mecânica Rack;TICISCO
+TISG;1 - Switch GB - TI - TPLINK;switch;0 - Switch GB - TI - CISCO;TI (Sala de TI);TICISCO
+TI16;1 - Switch 100 - Elétrica;switch;0 - Switch GB - TI - CISCO;Elétrica Sala Aux. Docentes;TICISCO
+TI15;1 - Rot/Switch - Robótica;roteador;0 - Switch GB - TI - CISCO;Sala de Robótica;TICISCO
+TIW;1 - AccessPoint - WIFITI;roteador;0 - Switch GB - TI - CISCO;TI (Sala de TI) WI-FI;TICISCO
+BN;1 - Rot/Switch - Quadra;roteador;0 - Switch GB - TI - CISCO;Quadra - Ed. Física;TICISCO
+01;TI - Aux. Docente 01;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Estação de Trabalho;TISG
+02;TI - Estagiário 01;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Estação de Trabalho;TISG
+03;TI - Bancada01;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI)  Bancada;TISG
+04;TI - Fundos - Testes;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Bancada de testes;TISG
+05;TI - Estagiário 02;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Estação de Trabalho;TISG
+06;TI - Aux. Docente 02;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Estação de Trabalho;TISG
+07;TI - Bancada02;pc;1 - Switch GB - TI - TPLINK;TI (Sala de TI) Bancada;TISG
+TI08;Almoxarifado 01;pc;1 - Switch GB - TI - TPLINK;Almoxarifado - Estação de Trabalho;TISG
+TI28;Almoxarifado 02;pc;1 - Switch GB - TI - TPLINK;Almoxarifado - Estação de Trabalho;TISG
+UX;Almoxarifado 03;pc;1 - Switch GB - TI - TPLINK;Almoxarifado - Estação de Trabalho;TISG
+TI29;Almoxarifado Impressora;impressora;1 - Switch GB - TI - TPLINK;Almoxarifado - Impressora;TISG
+TI09;Mecanica Aux. Docente;pc;1 - Switch GB - TI - TPLINK;Almoxarifado - Estação de Trabalho;TISG
