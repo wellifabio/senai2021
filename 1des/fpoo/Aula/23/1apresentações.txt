@@ -1,0 +1,11 @@
+Matheus Pignata - Programou com ajuda Amigo e aprendeu "java intellij effects" javafx (https://www.jetbrains.com/help/idea/javafx.html)
+(Porém não trabalhou em grupo, não implementou validações na entrada, adicionou campos desnecessários)
+
+Carlos, Helena, Jaqueline (Utilizaram postgre como BD para login e senha, com BackEnd via NodeJS) e integraram a solução com o grupo do Leonardo
+O tema Patrimônio, realizou a soma do patrimônio, implementou JTable, filtro ao pressionar tecla "sem necessidade de botões".
+
+Leonardo, Matheus Ricardo Belli , Lavínia (Utilizou as mesmas tecnologias que o grupo anterior Patrimônio) utilizou o plugIn Window builder
+O tema Orçamentos, feito pergunta aos integrantes do grupo e responderam corretamente.
+
+Danilo, Ana Júlia, Bárbara (Utilizaram além do eclipse o VSCode para codificar o trabalho)
+Tema Patrimônio. O CRUD ficou quase completo exceto o Alterar. Cumpriu o objetivo (Todos do grupo responderam corretamente as perguntas)
