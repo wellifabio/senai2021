@@ -13,5 +13,11 @@ Tema Patrimônio. O CRUD ficou quase completo exceto o Alterar. Cumpriu o objetiv
 Augusto, Allan, Diogo (Programação MVC com nomenclatura para rede) utilizou plugin Window builder
 Tema Orçamento. O CRUD ficou completo com todos os ítens funcionando (Todos responderam perguntas corretamente).
 
-Michael José da Silva, Michael Medeiros () plugin Window builder
-Tema Estacionamento.
+Michael José da Silva, Michael Medeiros () plugin Window builder (Apenas a validação da entrada de dados falhou, mas é item extra)
+Tema Estacionamento.  O CRUD ficou completo (Todos responderam perguntas corretamente).
+
+Rafael Tieppo, Roberto e Vitória - Cooncluiu todos os ítens solicitados, não utilizou nenhum plugin ou recurso externo, Adicionou JTable.
+Tema Redes. CRUD ficou completo com todos os ítens funcionando (Todos responderam perguntas corretamente).
+
+Felipe, Daniel, Gustavo e Gabriel - Cooncluiu todos os ítens solicitados, não utilizou nenhum plugin ou recurso externo
+Tema Manutenções - O CRUD ficou completo (Felipe apresentou e Daniel respondeu a perguntas).

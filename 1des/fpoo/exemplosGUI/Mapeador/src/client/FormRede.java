@@ -209,8 +209,8 @@ public class FormRede extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		//ProcessaPontos.preencheTestes();
-		ProcessaPontos.lerArquivo();
+		ProcessaPontos.preencheTestes();
+		//ProcessaPontos.lerArquivo();
 		new FormRede().setVisible(true);
 	}
 
