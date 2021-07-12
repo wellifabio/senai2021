@@ -1,19 +1,19 @@
 Matheus Pignata - Programou com ajuda Amigo e aprendeu "java intellij effects" javafx (https://www.jetbrains.com/help/idea/javafx.html)
 (Porém não trabalhou em grupo, não implementou validações na entrada, adicionou campos desnecessários)
 
-Carlos, Helena, Jaqueline (Utilizaram postgre como BD para login e senha, com BackEnd via NodeJS) e integraram a solução com o grupo do Leonardo
+Carlos, Helena, Jaqueline - (Utilizaram postgre como BD para login e senha, com BackEnd via NodeJS) e integraram a solução com o grupo do Leonardo
 O tema Patrimônio, realizou a soma do patrimônio, implementou JTable, filtro ao pressionar tecla "sem necessidade de botões".
 
-Leonardo, Matheus Ricardo Belli , Lavínia (Utilizou as mesmas tecnologias que o grupo anterior Patrimônio) utilizou o plugin Window builder
+Leonardo, Matheus Ricardo Belli , Lavínia - (Utilizou as mesmas tecnologias que o grupo anterior Patrimônio) utilizou o plugin Window builder
 O tema Orçamentos, feito pergunta aos integrantes do grupo e responderam corretamente.
 
-Danilo, Ana Júlia, Bárbara (Utilizaram além do eclipse o VSCode para codificar o trabalho)
+Danilo, Ana Júlia, Bárbara - (Utilizaram além do eclipse o VSCode para codificar o trabalho)
 Tema Patrimônio. O CRUD ficou quase completo exceto o Alterar. Cumpriu o objetivo (Todos do grupo responderam corretamente as perguntas)
 
-Augusto, Allan, Diogo (Programação MVC com nomenclatura para rede) utilizou plugin Window builder
+Augusto, Allan, Diogo - (Programação MVC com nomenclatura para rede) utilizou plugin Window builder
 Tema Orçamento. O CRUD ficou completo com todos os ítens funcionando (Todos responderam perguntas corretamente).
 
-Michael José da Silva, Michael Medeiros () plugin Window builder (Apenas a validação da entrada de dados falhou, mas é item extra)
+Michael José da Silva, Michael Medeiros - () plugin Window builder (Apenas a validação da entrada de dados falhou, mas é item extra)
 Tema Estacionamento.  O CRUD ficou completo (Todos responderam perguntas corretamente).
 
 Rafael Tieppo, Roberto e Vitória - Cooncluiu todos os ítens solicitados, não utilizou nenhum plugin ou recurso externo, Adicionou JTable.
@@ -21,3 +21,17 @@ Tema Redes. CRUD ficou completo com todos os ítens funcionando (Todos respondera
 
 Felipe, Daniel, Gustavo e Gabriel - Cooncluiu todos os ítens solicitados, não utilizou nenhum plugin ou recurso externo
 Tema Manutenções - O CRUD ficou completo (Felipe apresentou e Daniel respondeu a perguntas).
+
+***
+Elian, Felipe e Érick - Elian e Felipe fizeram o trabalho e participou Éryk - O Felipe apresentou junto com o Elian
+Tema Redes - 
+
+Raul, Vitor Hugo, Vitor Leme - Vitor Leme sem comunicação, Ajuda do Daniel de outro grupo, Raul apresentou explicando muito bem.
+Tema Manutenção - O CRUDO funcionou o excluir perfeitamente, porém Adicionar e Alterar apresentaram erro.
+
+Larissa, Gabriel Vital - Larissa apresentou muito bem, Gabriel participou, citou que programou no bloco de notas 
+Tema Orçamento - O CRUD ficou completo.
+
+Rodrigo Moraes e Rafael Faria - Não apresentou (Informou problemas no Teams), enviou o link do git.
+Tema Orçamento. (30)
+
