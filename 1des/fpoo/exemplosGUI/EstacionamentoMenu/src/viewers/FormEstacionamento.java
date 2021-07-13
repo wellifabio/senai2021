@@ -2,25 +2,26 @@ package viewers;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import controllers.ProcessaEstacionamento;
+import controllers.EstacionamentoProcess;
 import models.Estacionamento;
+import models.Vaga;
 
 public class FormEstacionamento extends JFrame implements ActionListener {
 
@@ -32,8 +33,7 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 	private JMenuItem itemBD, itemRelatorios, itemSair;
 	private ArrayList<JButton> carros = new ArrayList<>();
 	private ArrayList<JButton> motos = new ArrayList<>();
-	private SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
-	private SimpleDateFormat hora = new SimpleDateFormat("hh:mm");
+	private SimpleDateFormat hora = new SimpleDateFormat("HH:mm");
 
 	FormEstacionamento() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -67,34 +67,42 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 	}
 
 	private void desenhaVeiculos() {
-		ProcessaEstacionamento.obterEstacionados();
-		ProcessaEstacionamento.preencherVagas();
+		EstacionamentoProcess.obterEstacionados();
+		EstacionamentoProcess.preencherVagas();
 		for (int i = 1; i <= 8; i++) {
 			JButton c = new JButton();
+			JLabel p = new JLabel(EstacionamentoProcess.carros.get(i - 1).getPlaca());
 			if (i < 5) {
+				p.setBounds(i * 100 - 53, 65, 70, 20);
 				c.setBounds(i * 100 - 60, 50, 65, 121);
 			} else {
 				c.setBounds((850 - i * 100), 230, 65, 121);
+				p.setBounds((858 - i * 100), 312, 70, 20);
 			}
-			c.setIcon(ProcessaEstacionamento.carros.get(i - 1).getImg());
+			c.setIcon(EstacionamentoProcess.carros.get(i - 1).getImg());
 			c.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 			c.setContentAreaFilled(false);
 			c.setBorderPainted(false);
 			c.addActionListener(this);
+			painel.add(p);
 			painel.add(c);
 			carros.add(c);
 		}
 		for (int i = 1; i <= 3; i++) {
 			JButton m = new JButton();
+			JLabel p = new JLabel(EstacionamentoProcess.motos.get(i - 1).getPlaca());
 			m.setBounds(470, i * 70 - 65, 75, 75);
-			m.setIcon(ProcessaEstacionamento.motos.get(i - 1).getImg());
+			p.setBounds(470, i * 70 - 65, 75, 75);
+			m.setIcon(EstacionamentoProcess.motos.get(i - 1).getImg());
 			m.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 			m.setContentAreaFilled(false);
 			m.setBorderPainted(false);
 			m.addActionListener(this);
+			painel.add(p);
 			painel.add(m);
 			motos.add(m);
 		}
+		listar();
 	}
 
 	private class Painel extends JPanel {
@@ -104,6 +112,38 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 			super.paintComponent(g);
 			g.drawImage(img.getImage(), 0, 0, this);
 		}
+	}
+
+	private void registraVaga(Vaga vaga) {
+		if (vaga.getPlaca().length() > 0) {
+			EstacionamentoProcess.registros.get(vaga.getIndice()).setHoraSaida(hora.format(new Date()));
+			dispose();
+			new FormEstacionamento().setVisible(true);
+		} else {
+			String placa = JOptionPane.showInputDialog("Digite a Placa").toUpperCase();
+			if (placa.length() == 7) {
+				Estacionamento est = new Estacionamento(vaga.getCodigo(), placa, new Date(), hora.format(new Date()),
+						"", 5);
+				EstacionamentoProcess.registros.add(est);
+				dispose();
+				new FormEstacionamento().setVisible(true);
+			} else {
+				JOptionPane.showMessageDialog(null, "Placa inválida");
+			}
+		}
+
+	}
+
+	void listar() {
+		System.out.println("-----");
+		for (Estacionamento r : EstacionamentoProcess.registros) {
+			System.out.print(r.toString());
+		}
+		System.out.println("-----");
+		for (Estacionamento es : EstacionamentoProcess.estacionados) {
+			System.out.print(es.toString());
+		}
+		System.out.println("-----");
 	}
 
 	@Override
@@ -116,34 +156,34 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 			JOptionPane.showMessageDialog(null, "Obrigado por utilizar nosso sistema.");
 			dispose();
 		} else if (e.getSource() == carros.get(0)) {
-			try {
-				if (ProcessaEstacionamento.carros.get(0).isStatus()) {
-					ProcessaEstacionamento.estacionamentos.get(ProcessaEstacionamento.estacionamentos.indexOf(new Estacionamento(ProcessaEstacionamento.obterPlaca("C01"),
-							data.parse(data.format(new Date()))))).setHoraSaida(hora.format(new Date()));
-					dispose();
-					new FormEstacionamento().setVisible(true);					
-				} else {
-					Estacionamento est = new Estacionamento("C01", JOptionPane.showInputDialog("Digite a Placa"),
-							data.parse(data.format(new Date())), hora.format(new Date()), "", 5);
-					ProcessaEstacionamento.estacionamentos.add(est);
-					dispose();
-					new FormEstacionamento().setVisible(true);
-				}
-			} catch (HeadlessException e1) {
-				e1.printStackTrace();
-			} catch (ParseException e1) {
-				e1.printStackTrace();
-			}
-			for (Estacionamento es : ProcessaEstacionamento.estacionados) {
-				System.out.print(es.toString());
-			}
+			registraVaga(EstacionamentoProcess.carros.get(0));
+		} else if (e.getSource() == carros.get(1)) {
+			registraVaga(EstacionamentoProcess.carros.get(1));
+		} else if (e.getSource() == carros.get(2)) {
+			registraVaga(EstacionamentoProcess.carros.get(2));
+		} else if (e.getSource() == carros.get(3)) {
+			registraVaga(EstacionamentoProcess.carros.get(3));
+		} else if (e.getSource() == carros.get(4)) {
+			registraVaga(EstacionamentoProcess.carros.get(4));
+		} else if (e.getSource() == carros.get(5)) {
+			registraVaga(EstacionamentoProcess.carros.get(5));
+		} else if (e.getSource() == carros.get(6)) {
+			registraVaga(EstacionamentoProcess.carros.get(6));
+		} else if (e.getSource() == carros.get(7)) {
+			registraVaga(EstacionamentoProcess.carros.get(7));
+		} else if (e.getSource() == motos.get(0)) {
+			registraVaga(EstacionamentoProcess.motos.get(0));
+		} else if (e.getSource() == motos.get(1)) {
+			registraVaga(EstacionamentoProcess.motos.get(1));
+		} else if (e.getSource() == motos.get(2)) {
+			registraVaga(EstacionamentoProcess.motos.get(2));
 		}
-
 	}
 
 	public static void main(String[] args) {
 		// ProcessaEstacionamento.abrir();
-		ProcessaEstacionamento.preencherTestes();
+		Locale.setDefault(new Locale("pt", "BR"));
+		EstacionamentoProcess.preencherTestes();
 		new FormEstacionamento().setVisible(true);
 	}
 

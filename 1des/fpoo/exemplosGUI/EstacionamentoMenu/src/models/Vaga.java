@@ -3,25 +3,38 @@ package models;
 import javax.swing.ImageIcon;
 
 public class Vaga {
-	
-	private String codigo;
-	private ImageIcon img;
-	private boolean status;
 
-	public Vaga(String codigo, boolean status) {
+	private String codigo;
+	private String placa;
+	private ImageIcon img;
+	private int indice;
+
+	public Vaga(String codigo) {
 		this.codigo = codigo;
-		this.status = status;
-		String extensao = ".png";
-		if(!status)
-			extensao = "30.png";
+		this.placa = "";
+		this.indice = 0;
 		if (codigo.substring(0, 1).equals("M")) {
-			this.img = new ImageIcon("./assets/moto"+extensao);
+			this.img = new ImageIcon("./assets/moto30.png");
 		} else {
 			if (Integer.valueOf(codigo.substring(2, 3)) > 4) {
-				this.img = new ImageIcon("./assets/carro2"+extensao);
-
+				this.img = new ImageIcon("./assets/carro230.png");
 			} else {
-				this.img = new ImageIcon("./assets/carro1"+extensao);
+				this.img = new ImageIcon("./assets/carro130.png");
+			}
+		}
+	}
+
+	public Vaga(String codigo, String placa, int indice) {
+		this.codigo = codigo;
+		this.placa = placa;
+		this.indice = indice;
+		if (codigo.substring(0, 1).equals("M")) {
+			this.img = new ImageIcon("./assets/moto.png");
+		} else {
+			if (Integer.valueOf(codigo.substring(2, 3)) > 4) {
+				this.img = new ImageIcon("./assets/carro2.png");
+			} else {
+				this.img = new ImageIcon("./assets/carro1.png");
 			}
 		}
 	}
@@ -67,12 +80,20 @@ public class Vaga {
 		this.img = img;
 	}
 
-	public boolean isStatus() {
-		return status;
+	public String getPlaca() {
+		return placa;
 	}
 
-	public void setStatus(boolean status) {
-		this.status = status;
+	public void setPlaca(String placa) {
+		this.placa = placa;
 	}
-	
+
+	public int getIndice() {
+		return indice;
+	}
+
+	public void setIndice(int indice) {
+		this.indice = indice;
+	}
+
 }
