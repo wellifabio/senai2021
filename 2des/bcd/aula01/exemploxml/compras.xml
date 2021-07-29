@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compras>
+    <compra1>
+        <Produto>Impressora</Produto><Data>29/07/2021</Data><Preço>R$ 300,00</Preço><CPF>22222222222</CPF>
+    </compra1>
+    <compra2>
+        <Produto>Mouse</Produto><Data>29/07/2021</Data><Preço>R$ 50,00</Preço><CPF>22222222222</CPF>
+    </compra2>
+    <compra3>
+        <Produto>Teclado</Produto><Data>29/07/2021</Data><Preço>R$ 200,00</Preço><CPF>11111111111</CPF>
+    </compra3>
+</compras>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<clientes>
+    <cliente1>
+        <CPF>11111111111</CPF><Nome>Ana</Nome><Telefone>19 99999-9999</Telefone>
+    </cliente1>
+    <cliente2>
+        <CPF>22222222222</CPF><Nome>Maria</Nome><Telefone>19-88888-8888</Telefone>
+    </cliente2>
+    <cliente3>
+        <CPF>33333333333</CPF><Nome>Joaquin</Nome><Telefone>19-77777-7777</Telefone>
+    </cliente3>
+</clientes>
