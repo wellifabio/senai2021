@@ -1,1 +1,3 @@
 Programação WEB Back-End
+API - Uma aplicação WEB desenvolvida para responder a requisições vindas de outras aplicações.
+Exemplos de BackEnd com PHP, JAVA, Node
