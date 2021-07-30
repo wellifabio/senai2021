@@ -12,3 +12,4 @@ exit;
 MySQL é um SGBD (Sistema Gerenciador de Banco de Dados)
 Banco de Dados é um arquivo com dados ou informções (Dado é bruto e informação é refinada)
 Normalmente Banco de dados é estruturado em tabelas
+Uma tabela é classificada com campos e registros (Colunas são os campos e as linhas os registros)
