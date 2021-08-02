@@ -38,7 +38,7 @@ public class FormRede extends JFrame implements ActionListener {
 	FormRede() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setIconImage(new ImageIcon("./assets/roteador.jpg").getImage());
-		setTitle("Registro de Viagens");
+		setTitle("Registro de Pontos de Rede");
 		setSize(800, 520);
 		painel = new JPanel();
 		setContentPane(painel);
