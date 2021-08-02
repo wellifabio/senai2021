@@ -1,0 +1,7 @@
+1 - Dada a sequencia de números [5, 3, 8, 7, 2, 4], imprimir seus quadrados.
+
+2 - Dada a sequencia de números [5, 13, 8, 47, 2, 4, 28, 30, 12, 21], informe:
+	- Total de números impares;
+	- Total de números pares;
+	- A soma entre os números pares;
+	- A soma entre os números impares;
