@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
@@ -24,7 +25,8 @@ public class DialogMapa extends JDialog implements ActionListener {
 
 	DialogMapa() {
 		// setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setTitle("Arraste e Solte");
+		setTitle("Arraste e solte os objetos para mapear sua rede");
+		setIconImage(new ImageIcon("./assets/switch.png").getImage());
 		setSize(1300,700);
 		panel = new JPanel();
 		setContentPane(panel);

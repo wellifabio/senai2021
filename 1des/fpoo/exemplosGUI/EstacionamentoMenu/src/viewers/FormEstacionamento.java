@@ -102,7 +102,6 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 			painel.add(m);
 			motos.add(m);
 		}
-		listar();
 	}
 
 	private class Painel extends JPanel {
@@ -116,27 +115,31 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 
 	private void registraVaga(Vaga vaga) {
 		if (vaga.getPlaca().length() > 0) {
-			if(JOptionPane.showConfirmDialog(this, "Confirma saída do veículo "+ vaga.getPlaca() +" as "+hora.format(new Date())) == 0) {
+			if (JOptionPane.showConfirmDialog(this,
+					"Confirma saída do veículo " + vaga.getPlaca() + " as " + hora.format(new Date())) == 0) {
 				EstacionamentoProcess.registros.get(vaga.getIndice()).setHoraSaida(hora.format(new Date()));
 			}
 			dispose();
 			new FormEstacionamento().setVisible(true);
 		} else {
-			String placa = JOptionPane.showInputDialog("Digite a Placa").toUpperCase();
-			if (placa.length() == 7) {
-				Estacionamento est = new Estacionamento(EstacionamentoProcess.getLastId(),vaga.getCodigo(), placa, new Date(), hora.format(new Date()),
-						"", 5);
-				EstacionamentoProcess.registros.add(est);
-				dispose();
-				new FormEstacionamento().setVisible(true);
-			} else {
-				JOptionPane.showMessageDialog(null, "Placa inválida");
+			String placa = JOptionPane.showInputDialog("Digite a Placa");
+			if (placa != null) {
+				placa = placa.toUpperCase();
+				if (placa.length() == 7) {
+					Estacionamento est = new Estacionamento(EstacionamentoProcess.getLastId(), vaga.getCodigo(), placa,
+							new Date(), hora.format(new Date()), "", 5);
+					EstacionamentoProcess.registros.add(est);
+					dispose();
+					new FormEstacionamento().setVisible(true);
+				} else {
+					JOptionPane.showMessageDialog(null, "Placa inválida");
+				}
 			}
 		}
 
 	}
 
-	void listar() {
+	void listarTudo() {
 		System.out.println("-----");
 		for (Estacionamento r : EstacionamentoProcess.registros) {
 			System.out.print(r.toString());
@@ -157,7 +160,8 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 		} else if (e.getSource() == itemSair) {
 			JOptionPane.showMessageDialog(null, "Obrigado por utilizar nosso sistema.");
 			dispose();
-		} else if (e.getSource() == carros.get(0)) {
+		}
+		if (e.getSource() == carros.get(0)) {
 			registraVaga(EstacionamentoProcess.carros.get(0));
 		} else if (e.getSource() == carros.get(1)) {
 			registraVaga(EstacionamentoProcess.carros.get(1));
@@ -183,9 +187,9 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		// ProcessaEstacionamento.abrir();
+		//EstacionamentoProcess.preencherTestes();
+		EstacionamentoProcess.abrir();
 		Locale.setDefault(new Locale("pt", "BR"));
-		EstacionamentoProcess.preencherTestes();
 		new FormEstacionamento().setVisible(true);
 	}
 

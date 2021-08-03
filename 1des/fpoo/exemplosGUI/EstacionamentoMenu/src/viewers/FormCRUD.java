@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -27,8 +29,8 @@ public class FormCRUD extends JDialog implements ActionListener {
 	private JPanel painel;
 	private JLabel lbCabecalho = new JLabel(
 			"ID        Vaga              Placa                Data                 Entrada              Saída           Valor");
-	private JComboBox<String> cbVaga = new JComboBox<String>(
-			new String[] { "C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "M01", "M02", "M03" });
+	private String[] vagas = { "C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "M01", "M02", "M03" };
+	private JComboBox<String> cbVaga = new JComboBox<String>(vagas);
 	private JTextField tfId = new JTextField();
 	private JTextField tfPlaca = new JTextField();
 	private JTextField tfData = new JTextField();
@@ -96,6 +98,20 @@ public class FormCRUD extends JDialog implements ActionListener {
 		scroll.setBounds(10, 55, 559, 275);
 		painel.add(scroll);
 
+		// Evento que pega a linha da tabela que foi clicada.
+		table.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				int lin = table.getSelectedRow();
+				tfId.setText(table.getValueAt(lin, 0).toString());
+				cbVaga.setSelectedIndex(obterIndiceVaga(table.getValueAt(lin, 1).toString()));
+				tfPlaca.setText(table.getValueAt(lin, 2).toString());
+				tfData.setText(table.getValueAt(lin, 3).toString());
+				tfEntrada.setText(table.getValueAt(lin, 4).toString());
+				tfSaida.setText(table.getValueAt(lin, 5).toString());
+				tfValor.setText(table.getValueAt(lin, 6).toString());
+			}
+		});
+		
 		// Botão Deletar (DELETE)
 		btDel = new JButton("Del");
 		btDel.setBounds(278, 330, 59, 24);
@@ -115,7 +131,15 @@ public class FormCRUD extends JDialog implements ActionListener {
 		btSalvar.addActionListener(this);
 
 	}
-
+	
+	private int obterIndiceVaga(String vaga) {
+		for(int i = 0; i < vagas.length; i++) {
+			if(vagas[i].equals(vaga))
+				return i;
+		}
+		return 0;
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btDel) {
@@ -126,11 +150,10 @@ public class FormCRUD extends JDialog implements ActionListener {
 				JOptionPane.showMessageDialog(null, "Selecione uma linha");
 			}
 		} else if (e.getSource() == btCancelar) {
-			dispose();
+			this.dispose();
 		} else { // Senão, só resta o botão salvar
 			// Limpa a lista anterior
 			EstacionamentoProcess.registros = new ArrayList<>();
-			;
 			// Passando os dados da tabela para a Lista
 			for (int i = 0; i < tableModel.getRowCount(); i++) {
 				try {
@@ -148,11 +171,10 @@ public class FormCRUD extends JDialog implements ActionListener {
 				}
 			}
 			if (EstacionamentoProcess.salvar()) {
-				JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso");
+				JOptionPane.showMessageDialog(this, "Alterações salvas com sucesso");
 			} else {
-				JOptionPane.showMessageDialog(null, "Erro ao salvar alterações");
+				JOptionPane.showMessageDialog(this, "Erro ao salvar alterações");
 			}
-			dispose();
 		}
 	}
 }
