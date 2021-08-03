@@ -1,0 +1,3 @@
+Revisar os conceitos iniciais
+BackEnd em PHP, JSP, Node e JAVA-Servlet
+Trabalhar com o verbo http GET e listas com JSP
