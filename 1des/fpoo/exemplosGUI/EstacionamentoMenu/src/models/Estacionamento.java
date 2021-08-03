@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Estacionamento {
 
+	private int id;
 	private String vaga;
 	private String placa;
 	private Date data;
@@ -18,19 +19,27 @@ public class Estacionamento {
 	}
 
 	public Estacionamento(String placa, Date data) {
-		super();
 		this.placa = placa;
 		this.data = data;
 	}
 
-	public Estacionamento(String vaga, String placa, Date data, String horaEntrada, String horaSaida,
+	public Estacionamento(int id, String vaga, String placa, Date data, String horaEntrada, String horaSaida,
 			double valorHora) {
+		this.id = id;
 		this.vaga = vaga;
 		this.placa = placa;
 		this.data = data;
 		this.horaEntrada = horaEntrada;
 		this.horaSaida = horaSaida;
 		this.valorHora = valorHora;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getVaga() {
@@ -128,13 +137,18 @@ public class Estacionamento {
 
 	@Override
 	public String toString() {
-		return vaga + "\t" + placa + "\t" + sdf.format(data) + "\t" + horaEntrada + "\t" + horaSaida + "\t" + valorHora
-				+ "\t" + getTotal() + "\n";
+		return id + "\t" + vaga + "\t" + placa + "\t" + sdf.format(data) + "\t" + horaEntrada + "\t" + horaSaida + "\t"
+				+ valorHora + "\t" + getTotal() + "\n";
 	}
 
 	public String toCSV() {
-		return vaga + ";" + placa + ";" + sdf.format(data) + ";" + horaEntrada + ";" + horaSaida + ";" + valorHora
-				+ "\r\n";
+		return id + ";" + vaga + ";" + placa + ";" + sdf.format(data) + ";" + horaEntrada + ";" + horaSaida + ";"
+				+ valorHora + "\r\n";
+	}
+
+	public String[] toVetor() {
+		return new String[] { id + "", vaga, placa, sdf.format(data), horaEntrada, horaSaida, valorHora + "",
+				getTotal() + "" };
 	}
 
 }

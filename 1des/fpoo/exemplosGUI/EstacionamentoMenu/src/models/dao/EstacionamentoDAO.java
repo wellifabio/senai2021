@@ -26,7 +26,8 @@ public class EstacionamentoDAO {
 			String linha = "";
 			while ((linha = br.readLine()) != null) {
 				String[] campos = linha.split(";");
-				estacionamento = new Estacionamento(campos[0], campos[1], formato.parse(campos[2]), campos[3], campos[4], Double.valueOf(campos[5]));
+				estacionamento = new Estacionamento(Integer.valueOf(campos[0]), campos[1], campos[2],
+						formato.parse(campos[3]), campos[4], campos[5], Double.valueOf(campos[6]));
 				estacionamentos.add(estacionamento);
 			}
 			br.close();
@@ -43,7 +44,7 @@ public class EstacionamentoDAO {
 	public boolean salvar(ArrayList<Estacionamento> vs) {
 		try {
 			bw = new BufferedWriter(new FileWriter(arquivo, false));
-			for(Estacionamento v: vs) {
+			for (Estacionamento v : vs) {
 				bw.write(v.toCSV());
 			}
 			bw.close();

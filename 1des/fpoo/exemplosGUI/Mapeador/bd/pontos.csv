@@ -1,0 +1,16 @@
+RK01PT00;Switch Principal;switch;TI;TI;
+RK01PT01;PC Recepção;pc;TI;Recepção;RK01PT00
+RK01PT02;NoteBook Diretor;laptop;TI;Diretoria;RK01PT00
+RK01PT03;PC ADM1;pc;TI;Administração;RK01PT00
+RK01PT05;Impressora Recepção;impressora;TI;Recepção;RK01PT00
+RK01PT06;Notebook ADM;laptop;TI;Administração;RK01PT00
+RK01PT07;NoteBook Contabilidade;laptop;TI;Contabilidade;RK01PT00
+RK01PT08;PC ADM2;pc;TI;Administração;RK01PT00
+RK01PT04;Switch Secundário;switch;TI;Corredor 1;RK01PT00
+RK02PT01;PC Almoxarifado;pc;Corredor 1;Almoxarifado;RK01PT04
+RK02PT02;PC Balcão;pc;Corredor 1;Balcão 1;RK01PT04
+RK02PT03;PC Balcão;pc;Corredor 1;Balcão 2;RK01PT04
+RK01PT09;Roteador;roteador;TI;Produção;RK01PT00
+RK03PT01;NoteBook Produção 1;laptop;Corredor 2;Produção;RK01PT09
+RK03PT02;NoteBook Produção 2;laptop;Corredor 2;Produção;RK01PT09
+RK03PT03;NoteBook Produção 3;laptop;Corredor 2;Produção;RK01PT09

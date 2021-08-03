@@ -116,13 +116,15 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 
 	private void registraVaga(Vaga vaga) {
 		if (vaga.getPlaca().length() > 0) {
-			EstacionamentoProcess.registros.get(vaga.getIndice()).setHoraSaida(hora.format(new Date()));
+			if(JOptionPane.showConfirmDialog(this, "Confirma saída do veículo "+ vaga.getPlaca() +" as "+hora.format(new Date())) == 0) {
+				EstacionamentoProcess.registros.get(vaga.getIndice()).setHoraSaida(hora.format(new Date()));
+			}
 			dispose();
 			new FormEstacionamento().setVisible(true);
 		} else {
 			String placa = JOptionPane.showInputDialog("Digite a Placa").toUpperCase();
 			if (placa.length() == 7) {
-				Estacionamento est = new Estacionamento(vaga.getCodigo(), placa, new Date(), hora.format(new Date()),
+				Estacionamento est = new Estacionamento(EstacionamentoProcess.getLastId(),vaga.getCodigo(), placa, new Date(), hora.format(new Date()),
 						"", 5);
 				EstacionamentoProcess.registros.add(est);
 				dispose();

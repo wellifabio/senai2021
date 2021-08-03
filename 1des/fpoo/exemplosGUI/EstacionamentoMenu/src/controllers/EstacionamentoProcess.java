@@ -74,22 +74,30 @@ public class EstacionamentoProcess {
 
 	public static void preencherTestes() {
 		try {
-			registros.add(new Estacionamento("C01", "AAA1111", sdf.parse("30/06/2021"), "07:00", "10:00", 5.0));
-			registros.add(new Estacionamento("C02", "AAA2222", sdf.parse("30/06/2021"), "07:00", "10:00", 5.0));
-			registros.add(new Estacionamento("C05", "AAA3333", sdf.parse("30/06/2021"), "08:00", "11:00", 5.0));
-			registros.add(new Estacionamento("C04", "AAA4444", sdf.parse("30/06/2021"), "08:00", "16:00", 5.0));
-			registros.add(new Estacionamento("C03", "AAA5555", sdf.parse("30/06/2021"), "09:00", "15:00", 5.0));
-			registros.add(new Estacionamento("C06", "AAA6666", sdf.parse("30/06/2021"), "09:00", "14:00", 5.0));
-			registros.add(new Estacionamento("C08", "AAA7777", sdf.parse("30/06/2021"), "10:00", "12:00", 5.0));
-			registros.add(new Estacionamento("M01", "AAA8888", sdf.parse("30/06/2021"), "10:00", "11:00", 3.0));
-			registros.add(new Estacionamento("M02", "AAA9999", sdf.parse("30/06/2021"), "11:00", "12:00", 3.0));
-			registros.add(new Estacionamento("C01", "AAA0000", new Date(), "07:00", "10:00", 5.0));
-			registros.add(new Estacionamento("C02", "AAA1111", new Date(), "07:00", "", 5.0));
-			registros.add(new Estacionamento("C03", "AAA2222", new Date(), "08:00", "", 5.0));
-			registros.add(new Estacionamento("C07", "AAA3333", new Date(), "09:00", "", 5.0));
-			registros.add(new Estacionamento("M01", "AAA4444", new Date(), "08:00", "", 3.0));
+			registros.add(new Estacionamento(getLastId(),"C01", "AAA1111", sdf.parse("30/06/2021"), "07:00", "10:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C02", "AAA2222", sdf.parse("30/06/2021"), "07:00", "10:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C05", "AAA3333", sdf.parse("30/06/2021"), "08:00", "11:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C04", "AAA4444", sdf.parse("30/06/2021"), "08:00", "16:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C03", "AAA5555", sdf.parse("30/06/2021"), "09:00", "15:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C06", "AAA6666", sdf.parse("30/06/2021"), "09:00", "14:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C08", "AAA7777", sdf.parse("30/06/2021"), "10:00", "12:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"M01", "AAA8888", sdf.parse("30/06/2021"), "10:00", "11:00", 3.0));
+			registros.add(new Estacionamento(getLastId(),"M02", "AAA9999", sdf.parse("30/06/2021"), "11:00", "12:00", 3.0));
+			registros.add(new Estacionamento(getLastId(),"C01", "AAA0000", new Date(), "07:00", "10:00", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C02", "AAA1111", new Date(), "07:00", "", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C03", "AAA2222", new Date(), "08:00", "", 5.0));
+			registros.add(new Estacionamento(getLastId(),"C07", "AAA3333", new Date(), "09:00", "", 5.0));
+			registros.add(new Estacionamento(getLastId(),"M01", "AAA4444", new Date(), "08:00", "", 3.0));
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	public static int getLastId() {
+		if(registros.size() == 0) {
+			return 1;
+		}else {
+			return registros.get(registros.size() - 1).getId() + 1;
+		}
+	} 
 }
