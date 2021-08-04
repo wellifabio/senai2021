@@ -1,0 +1,14 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class MainClass extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "Alô Mundo");
+	}
+
+}

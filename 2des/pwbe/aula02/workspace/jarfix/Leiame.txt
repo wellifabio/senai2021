@@ -1,0 +1,3 @@
+Este programa corrige o erro, quando o arquivo .JAR não está abrindo
+Apontando para o JRE correto.
+É necessário que o JRE esteja instalado no computador.
