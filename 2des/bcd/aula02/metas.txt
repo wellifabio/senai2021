@@ -1,0 +1,44 @@
+SGBD (Sistema Gerenciador de Banco de Dados)
+Tipos(
+	Relacionamantos entre tabelas
+		Exemplos não relacionais: DBU, Twitch, Excel
+		Exemplos relacionais: MySQL, Oracle, SQLServer, PostGree, MongoDB, Access.
+
+	Linguagem
+		Exemplos de SGBD SQL: MySQL, Oracle, SQLServer, PostGree, Access.
+		Exemplos de SGBD não SQL: MongoDB (JSON), DBU(CSV)
+)
+
+Estrutura de dados
+TXT, CSV, XML, JSON
+SQL “Structured Query Language”
+
+Banco de dados:
+Estrutura Base -> Tabela -> Linhas e Colunas
+Tabela -> Colunas = Campos
+Tabela -> Linhas = Registros (Dados)
+
+Banco de Dados Relacional
+Chaves (Primária x Estrangeira)
+Chave Primária ou PK = Um campo que não se repete e serve de índice para um relacionamento entre tabelas
+Chave Estrangeira ou FK = Um campo que normalmente se repete e serve de índice para um relacionamento entre tabelas
+
+Modelo:
+Modelo Conceitual
+Modelo Lógico ou Relacional
+Entidade -> 1 ou maisTabela
+Atributos -> 1 ou mais Campos ou até uma tabela
+Tuplas -> 1 ou mais Registros
+
+Atividade:
+Modelem os seguintes temas (MER-DER Conceitual) utilizando draw.io, paint, figma, etc ou papel e caneta.
+Escolha dois temas e se divirta:
+Conta Bancária (O processo de Criar uma nova Conta corrente e fazer as operações básicas saque e depósito)
+PetShop (Registro de Serviços e ou Produtos)
+Escola (Cadastrar Professores, Turmas e Alunos)
+Ônibus Urbano(Cadastro de Itinerários, motoristas, escala de motoristas)
+Delivery (Entrega de comida, estabelecimentos, clientes e pratos)
+Futebol Society (Grupos de pessoas e horários, agenda)
+
+Entrega: Em formato de imagem jpg ou png anexo a atividade ou no seu git ou drive e o link na atividade.
+

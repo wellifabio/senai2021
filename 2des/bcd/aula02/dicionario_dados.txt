@@ -1,0 +1,38 @@
+Exemplo baseado no Modelo Relacional (MER)
+Exemplo de Dicionádio de Dados de um BD Tema:Cartão do Cidadão de Jaguariúna
+MER - Conceitual
+Cidadãos(
+	NumeroCartao: Numero(5):PK,
+	CPF:Texto(12),
+	Nome: Texto(50),
+	Endereços (Multivalorado) (
+		Endereço: Texto(50) ,//Rua, Número e Complemento
+		CEP: Texto(9),
+		Bairro:  Texto(30),
+		Cidade: Texto(50),
+		UF: Texto(2),
+		Principal: booleano)
+	Telefones (Multivalorado)
+)
+
+MER - Relacional
+Cidadãos(
+	NumeroCartao: Numero(5):PK,
+	CPF:Texto(12),
+	Nome: Texto(50),
+)
+
+Endereços(
+	NumeroCartao: Numero(5):FK,
+	Endereço: Texto(50) ,//Rua, Número e Complemento
+	CEP: Texto(9),
+	Bairro:  Texto(30),
+	Cidade: Texto(50),
+	UF: Texto(2),
+	Principal: booleano
+)
+
+Telefones(
+	NumeroCartao: Numero(5):FK,
+	numero: Texto(15)
+)
