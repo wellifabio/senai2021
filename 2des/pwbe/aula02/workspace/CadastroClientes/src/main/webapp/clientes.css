@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+table{
+	border: 1px solid #ccc;
+}
+
+tr:nth-child(even) {background: #FFF}
+tr:nth-child(odd) {background: #EEE}
+
+th{
+	background: #999;
+	font-style: bold;
+	color: #FFF;
+	padding:10px;
+}
+
+td{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding:5px;
+}
