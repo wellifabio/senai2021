@@ -2,5 +2,6 @@ eclipse.preferences.version=1
 encoding//src/main/java/ctr/ClienteProcess.java=UTF-8
 encoding//src/main/java/vo/Cliente.java=UTF-8
 encoding//src/main/java/vo/dao/ClienteDAO.java=UTF-8
-encoding//src/main/webapp/clientes.css=UTF-8
+encoding//src/main/webapp/cadastro.jsp=UTF-8
 encoding//src/main/webapp/clientes.jsp=UTF-8
+encoding//src/main/webapp/estilo.css=UTF-8

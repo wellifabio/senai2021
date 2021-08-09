@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="read.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
 <meta charset="UTF-8">
-<title>Lista todos os clientes</title>
+<title>Lista com todos os clientes (READ)</title>
 </head>
 <body>
 	<table>

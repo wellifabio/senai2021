@@ -3,6 +3,7 @@
 body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center
 }
@@ -25,4 +26,26 @@ td{
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding:5px;
+}
+
+form{
+	border: 1px solid #ccc;
+	display: grid;
+	grid-template-columns: 100px 200px;
+	padding:10px;
+}
+
+label{
+	margin:10px;
+}
+
+input{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin:5px;
+	padding:10px;
+}
+
+input[type=submit],input[type=reset]{
+	cursor: pointer;
 }
