@@ -19,7 +19,7 @@
 	String opcao = request.getParameter("opcao");
 
 	String formulario1 = "<form method='GET'>"
-			+ "<label>CPF:</label><input type='number' name='cpf'>"
+			+ "<label>CPF:</label><input type='text' name='cpf'>"
 			+ "<input type='reset' value='Limpar'><input type='submit' value='Buscar'>" + "</form>";
 
 	if (cliente.getCpf() == null || cliente.getCpf().equals("")) {
@@ -29,7 +29,7 @@
 		if (ClienteProcess.clientes.contains(cliente)) {
 			cliente = ClienteProcess.clientes.get(indice);
 			String formulario2 = "<form method='GET'>"
-				+ "<label>CPF:</label><input type='number' name='cpf' value='"	+ cliente.getCpf() + "'>"
+				+ "<label>CPF:</label><input type='text' name='cpf' value='"	+ cliente.getCpf() + "'>"
 				+ "<label>Nome:</label><input type='text' name='nome' value='" + cliente.getNome() + "'>"
 				+ "<label>Telefone:</label><input type='text' name='telefone' value='" + cliente.getTelefone() + "'>"
 				+ "<div><label>Excluir</label><input type='radio' name='opcao' value='excluir'></div>"

@@ -35,8 +35,9 @@ td {
 
 form {
 	border: 1px solid #ccc;
+	border-radius: 4px;
 	display: grid;
-	grid-template-columns: 100px 200px;
+	grid-template-columns: 150px 250px;
 	padding: 10px;
 }
 

@@ -11,7 +11,7 @@
 </head>
 <body>
 	<form method="POST">
-		<label>CPF:</label><input type="number" name="cpf" required>
+		<label>CPF:</label><input type="text" name="cpf" required>
 		<label>Nome:</label><input type="text" name="nome" required>
 		<label>Telefone:</label><input type="text" name="telefone" required>
 		<input type="reset" value="Limpar"><input type="submit" value="Enviar">
