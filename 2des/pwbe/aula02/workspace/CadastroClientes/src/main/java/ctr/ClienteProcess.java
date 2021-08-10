@@ -13,7 +13,7 @@ public class ClienteProcess {
 	public static void testes() {
 		clientes = new ArrayList<>();
 		clientes.add(new Cliente("11111111111","Jacinto Pena","19 11111-1111"));
-		clientes.add(new Cliente("22222222222","Jacinto Paixão","19 22222-2222"));
+		clientes.add(new Cliente("22222222222","Jacinto PaixÃ£o","19 22222-2222"));
 		clientes.add(new Cliente("33333333333","Osmar Motta","19 33333-3333"));
 		clientes.add(new Cliente("44444444444","Osmar Manjo","19 44444-4444"));
 		clientes.add(new Cliente("55555555555","Paula Ramos","19 55555-5555"));
@@ -24,9 +24,9 @@ public class ClienteProcess {
 	
 	public static String salvar() {
 		if(cd.salvar(clientes)) {
-			return "Dados registrados";
+			return "<p>Dados registrados</p>";
 		}
-		return "Erro ao registrar dados";
+		return "<p>Erro ao registrar dados</p>";
 	}
 	
 	public static void abrir() {

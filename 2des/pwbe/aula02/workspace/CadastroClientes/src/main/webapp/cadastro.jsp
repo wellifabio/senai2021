@@ -11,22 +11,23 @@
 </head>
 <body>
 	<form method="POST">
-		<label>CPF:</label><input type="number" name="cpf">
-		<label>Nome:</label><input type="text" name="nome">
-		<label>Telefone:</label><input type="text" name="telefone">
+		<label>CPF:</label><input type="number" name="cpf" required>
+		<label>Nome:</label><input type="text" name="nome" required>
+		<label>Telefone:</label><input type="text" name="telefone" required>
 		<input type="reset" value="Limpar"><input type="submit" value="Enviar">
 	</form>
 	<%
-		String cpf = request.getParameter("cpf");
-		String nome = request.getParameter("nome");
-		String telefone = request.getParameter("telefone");
-		if(cpf == null || nome == null || telefone == null){
+		Cliente cliente = new Cliente();
+		cliente.setCpf(request.getParameter("cpf"));
+		cliente.setNome(request.getParameter("nome"));
+		cliente.setTelefone(request.getParameter("telefone"));	
+		if(cliente.getCpf() == null || cliente.getCpf().equals("")){
 			out.print("<p>Aguardando dados</p>");
 		}else{
-			Cliente cliente = new Cliente(cpf, nome, telefone);
 			ClienteProcess.clientes.add(cliente);
 			out.print(ClienteProcess.salvar());
 		}
 	%>
+	<a href="clientes.jsp">Listar todos</a>
 </body>
 </html>
