@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="carro">
+    <input type="text" id="ano">
+    <input type="text" id="preco">
+    <button onclick="cadastrar()">Cadastrar</button>
+    <br>
+    <input type="text" id="busca" placeholder="Localize o veiculo">
+    <button onclick="apagar()">Apagar</button>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <tr>
+                <td>Carro 1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Carro 2</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Carro 3</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Carro 4</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Carro 5</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Carro 6</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script src="index.js"></script>
+</html>
