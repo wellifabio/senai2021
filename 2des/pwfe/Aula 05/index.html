@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="carro">
+    <input type="text" id="ano">
+    <input type="text" id="preco">
+    <button onclick="cadastrar()" id="bombril">Cadastrar</button>
+    <br>
+    <input type="text" id="busca" placeholder="Localize o aluno">
+    <button onclick="apagar()">Apagar</button>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th>Nome</th>
+                <th>Turma</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <tr>
+                <td>111111</td>
+                <td>Fulano</td>
+                <td>2 DES</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+                <td><button onclick="alterarCadastro(this)">Editar</button></td>
+            </tr>
+            <tr>
+                <td>22222</td>
+                <td>Beltrano</td>
+                <td>2 DES</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+                <td><button onclick="alterarCadastro(this)">Editar</button></td>
+            </tr>
+            <tr>
+                <td>3333333</td>
+                <td>Ciclano</td>
+                <td>2 DES</td>
+                <td><button onclick="apagarButton(this)">Apagar</button></td>
+                <td><button onclick="alterarCadastro(this)">Editar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script src="index.js"></script>
+</html>
