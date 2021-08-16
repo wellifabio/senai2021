@@ -1,0 +1,42 @@
+<%@page import="java.util.Date"%>
+<%@page import="vo.Bem"%>
+<%@page import="ctr.BensProcess"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<title>Cadastro de Bens (CREATE)</title>
+</head>
+<body>
+	<form>
+		<label>ID</label><input type="number" name="id" required>
+		<label>Descrição</label><input type="text" name="descricao" required>
+		<label>Valor</label><input type="number" name="valor" required> 
+		<input type="reset" value="Limpar">
+		<input type="submit" value="Enviar">
+	</form>
+	<%
+		Bem bem;
+		String id = request.getParameter("id");
+		String desc = request.getParameter("descricao");
+		String val = request.getParameter("valor");
+		
+		if(id != null && desc != null && val != null){
+			bem = new Bem(Integer.valueOf(id),desc,new Date(),Double.valueOf(val));
+			//bem = new Bem();
+			//bem.setId(Integer.valueOf(id));
+			//bem.setDescricao(desc);
+			//bem.setData(new Date());
+			//bem.setValor(Double.valueOf(val));
+			BensProcess.bens.add(bem);
+			out.print(BensProcess.salvar());
+		}else{
+			out.print("<p>Aguardando dados</p>");
+		}
+	
+	%>
+</body>
+</html>
