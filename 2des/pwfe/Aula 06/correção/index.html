@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <input type="text" id="nome">        
+        <input type="text" id="endereco">
+        <select name="lanche" id="lanche">
+            <option value="" disabled>Selecione um lanche</option>
+            <option>X-Tudo</option>
+            <option>X-Ratao</option>
+            <option>X-Lanche</option>
+        </select>
+        <button type="button" onclick="lancarpedido()">Lançar pedido</button>
+    </form>
+    <div class="pedidos">
+        <div class="producao">
+            <h4>Lanches em produção</h4>
+            <div class="card">
+                <div class="dadoscli">
+                    <p id="pnome">Nome do cliente</p>
+                    <p id="pende">Endereço do cliente</p>
+                </div>
+                <p id="planche">Opção selecionada</p>
+                <button>Enviar para entrega</button>
+            </div>
+        </div>
+        <div class="entrega">
+            <h4>Lanches em entrega</h4>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
