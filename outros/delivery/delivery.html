@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Lanchão</title>
+</head>
+
+<body>
+    <div class="pedido">
+        <form>
+            <label>Cliente:</label><input type="text" id="cliente">
+            <label>Endereço:</label><input type="text" id="endereco">
+            <label>Produto:</label><select id="produto">
+                <option>X-Burguer</option>
+                <option>X-Egg</option>
+                <option>X-Bacon</option>
+                <option>X-Tudo</option>
+                <option>X-Franco</option>
+                <option>X-Burguer</option>
+            </select>
+            <button onclick="addProducao()">Gerar Pedido</button>
+        </form>
+    </div>
+    <div class="pedidos">
+        <div class="producao">
+            <label>Em execução</label>
+        </div>
+        <div class="entrega">
+            <label>A caminho</label>
+        </div>
+    </div>
+</body>
+<script src="delivery.js"></script>
+</html>
