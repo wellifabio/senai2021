@@ -3,6 +3,7 @@ var endereco = document.querySelector("#endereco");
 var lanche = document.querySelector("#lanche");
 
 var prod = document.querySelector(".producao");
+var entrega = document.querySelector(".entrega");
 
 function lancarpedido() {
     let card = document.createElement("div");
@@ -28,6 +29,13 @@ function lancarpedido() {
 
     let button = document.createElement("button");
     button.innerHTML = "Enviar para entrega";
+    button.addEventListener("click", () => {
+        entrega.appendChild(card);
+        button.innerHTML = "Pedido entregue";
+        button.addEventListener("click", () => {
+            card.remove();
+        });
+    });
 
     card.appendChild(data);
     card.appendChild(planche);
