@@ -10,6 +10,8 @@
 <title>Listar todos os Bens (READ)</title>
 </head>
 <body>
+	<a href="cadastro.jsp">Cadastrar Novo</a>
+	<a href="buscar.jsp">Alterar ou Excluir</a>
 	<table>
 		<tr>
 			<th>ID</th>

@@ -18,10 +18,25 @@ public class Bem {
 	public Bem() {
 	}
 
+	public Bem(int id) {
+		this.id = id;
+	}
+	
 	public Bem(int id, String descricao, Date data, double valor) {
 		this.id = id;
 		this.descricao = descricao;
 		this.data = data;
+		this.valor = valor;
+	}
+	
+	public Bem(int id, String descricao, String data, double valor) {
+		this.id = id;
+		this.descricao = descricao;
+		try {
+			this.data = sdf.parse(data);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 		this.valor = valor;
 	}
 
@@ -102,4 +117,8 @@ public class Bem {
 				+ "</td></tr>";
 	}
 
+	public String toURL() {
+		return "?id=" + id + "&descricao=" + descricao + "&data=" + sdf.format(data) + "&valor=" + valor;
+	}
+		
 }

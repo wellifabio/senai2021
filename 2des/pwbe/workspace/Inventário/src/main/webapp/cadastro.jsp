@@ -11,7 +11,7 @@
 <title>Cadastro de Bens (CREATE)</title>
 </head>
 <body>
-	<form>
+	<form method="post">
 		<label>ID</label><input type="number" name="id" required>
 		<label>Descrição</label><input type="text" name="descricao" required>
 		<label>Valor</label><input type="number" name="valor" required> 
@@ -24,15 +24,17 @@
 		String desc = request.getParameter("descricao");
 		String val = request.getParameter("valor");
 		
-		if(id != null && desc != null && val != null){
+		if(id != null && desc != null && val != null){//Checar se chegaram dados
+			//Acrescenta um novo registro
 			bem = new Bem(Integer.valueOf(id),desc,new Date(),Double.valueOf(val));
 			//bem = new Bem();
 			//bem.setId(Integer.valueOf(id));
 			//bem.setDescricao(desc);
 			//bem.setData(new Date());
 			//bem.setValor(Double.valueOf(val));
-			BensProcess.bens.add(bem);
-			out.print(BensProcess.salvar());
+			BensProcess.bens.add(bem); //Acrescenta a lista
+			out.print(BensProcess.salvar()); // Da uma mensagem curta de erro ou sucesso
+			response.sendRedirect("listar.jsp"); //Responde direcionando para o listar
 		}else{
 			out.print("<p>Aguardando dados</p>");
 		}
@@ -40,3 +42,4 @@
 	%>
 </body>
 </html>
+
