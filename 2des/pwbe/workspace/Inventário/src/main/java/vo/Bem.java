@@ -22,6 +22,10 @@ public class Bem {
 		this.id = id;
 	}
 	
+	public Bem(String id) {
+		this.id = Integer.parseInt(id);
+	}
+	
 	public Bem(int id, String descricao, Date data, double valor) {
 		this.id = id;
 		this.descricao = descricao;
@@ -29,15 +33,15 @@ public class Bem {
 		this.valor = valor;
 	}
 	
-	public Bem(int id, String descricao, String data, double valor) {
-		this.id = id;
-		this.descricao = descricao;
+	public Bem(String id, String descricao, String data, String valor) {
 		try {
+			this.id = Integer.parseInt(id);
+			this.descricao = descricao;
 			this.data = sdf.parse(data);
+			this.valor = Double.parseDouble(valor);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		this.valor = valor;
 	}
 
 	public Bem(String[] vetor) {

@@ -23,12 +23,12 @@
 			if(opcao != null){
 				switch(opcao){
 					case "excluir":
-						bem = new Bem(Integer.parseInt(id));
+						bem = new Bem(id);
 						indice = BensProcess.bens.indexOf(bem);
 						BensProcess.bens.remove(indice);
 						break;
 					case "alterar":
-						bem = new Bem(Integer.parseInt(id),desc,dat,Double.parseDouble(val));
+						bem = new Bem(id,desc,dat,val);
 						indice = BensProcess.bens.indexOf(bem);
 						BensProcess.bens.set(indice,bem);
 						break;

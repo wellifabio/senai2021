@@ -25,13 +25,7 @@
 		String val = request.getParameter("valor");
 		
 		if(id != null && desc != null && val != null){//Checar se chegaram dados
-			//Acrescenta um novo registro
 			bem = new Bem(Integer.valueOf(id),desc,new Date(),Double.valueOf(val));
-			//bem = new Bem();
-			//bem.setId(Integer.valueOf(id));
-			//bem.setDescricao(desc);
-			//bem.setData(new Date());
-			//bem.setValor(Double.valueOf(val));
 			BensProcess.bens.add(bem); //Acrescenta a lista
 			out.print(BensProcess.salvar()); // Da uma mensagem curta de erro ou sucesso
 			response.sendRedirect("listar.jsp"); //Responde direcionando para o listar
@@ -40,6 +34,7 @@
 		}
 	
 	%>
+
 </body>
 </html>
 

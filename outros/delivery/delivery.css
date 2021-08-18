@@ -8,31 +8,6 @@ body {
 	align-items: center
 }
 
-table {
-	border: 1px solid #ccc;
-}
-
-tr:nth-child(even) {
-	background: #FFF
-}
-
-tr:nth-child(odd) {
-	background: #EEE
-}
-
-th {
-	background: #999;
-	font-style: bold;
-	color: #FFF;
-	padding: 10px;
-}
-
-td {
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 5px;
-}
-
 form {
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -45,28 +20,39 @@ label {
 	margin: 10px;
 }
 
-input {
+input, select, button {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin: 5px;
 	padding: 10px;
 }
 
-input[type=submit], input[type=reset] {
+button {
 	cursor: pointer;
 }
 
-a {
-	text-decoration: none;
+.pedidos{
 	border: 1px solid #ccc;
-	background: #eee;
-	color: #111; border-radius : 5px;
-	margin: 5px;
+	border-radius: 4px;
+	display: grid;
+	grid-template-columns: 300px 300px;
 	padding: 10px;
-	border-radius: 5px;
+	margin: 10px
 }
 
-div {
+.card{
+	display: grid;
+	grid-template-columns: 150px 100px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 	margin: 5px;
 	padding: 10px;
+}
+
+.producao .card{
+	background: #eee;
+}
+
+.entrega .card{
+	background: #ddd;
 }

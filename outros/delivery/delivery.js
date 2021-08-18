@@ -27,7 +27,7 @@ function lancarPedido(){
         entrega.appendChild(card);
         botao.innerHTML = "Pedido entregue";
         botao.addEventListener("click", () => {
-            botao.remove();
+            card.remove();
         });
     });
 
