@@ -48,15 +48,15 @@ function geraProdutos() {
 //Lê um arquivo de texto com uma coluna de dados e retorna uma lista
 function lerArquivoLista(file) {
     let dados = 'File not found'
-    let rawFile = new XMLHttpRequest()
-    rawFile.open("GET", file, false)
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status == 0) {
-                dados = rawFile.responseText;
+    let xml = new XMLHttpRequest()
+    xml.open("GET", file, false)
+    xml.onreadystatechange = function () {
+        if (xml.readyState === 4) {
+            if (xml.status === 200 || rawFile.status == 0) {
+                dados = xml.responseText;
             }
         }
     }
-    rawFile.send(null)
+    xml.send(null)
     return dados.split("\n")
 }
