@@ -2,6 +2,7 @@
 
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: small;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,7 +13,7 @@ form {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	display: grid;
-	grid-template-columns: 150px 250px;
+	grid-template-columns: 250px 550px;
 	padding: 10px;
 }
 
@@ -35,18 +36,27 @@ button {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	display: grid;
-	grid-template-columns: 300px 300px;
+	grid-template-columns: 400px 400px;
 	padding: 10px;
-	margin: 10px
+	margin: 10px;
 }
 
 .card{
 	display: grid;
-	grid-template-columns: 150px 100px;
+	grid-template-columns: 300px 80px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin: 5px;
 	padding: 10px;
+}
+
+.card button{
+	border: 0px;
+}
+
+.dados{
+	display: grid;
+	grid-template-columns: 200px 100px;
 }
 
 .producao .card{

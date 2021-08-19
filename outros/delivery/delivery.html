@@ -6,33 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="delivery.css">
+    <link rel="shortcut icon" href="./assets/icon-motoboy.png">
     <title>Delivery Lanchão</title>
 </head>
 
-<body>
+<body onload="preencherForm(), obterAgora()">
     <div class="pedido">
         <form>
             <label>Cliente:</label><input type="text" id="cliente">
             <label>Endereço:</label><input type="text" id="endereco">
             <label>Produto:</label><select id="produto">
-                <option>X-Burguer</option>
-                <option>X-Egg</option>
-                <option>X-Bacon</option>
-                <option>X-Tudo</option>
-                <option>X-Franco</option>
-                <option>X-Burguer</option>
             </select>
-            <button type="button" onclick="lancarPedido()">Gerar Pedido</button>
+            <button type="button" onclick="lancarPedido(), preencherForm(), obterAgora()">Gerar Pedido</button>
+            <input type="text" id="agora" readonly="readonly">
         </form>
     </div>
     <div class="pedidos">
         <div class="producao">
-            <label>Em execução</label>
+            <h4>Em execução</h4>
         </div>
         <div class="entrega">
-            <label>A caminho</label>
+            <h4>A caminho</h4>
         </div>
     </div>
 </body>
 <script src="delivery.js"></script>
+<script src="./uteis/uteis.js"></script>
 </html>
