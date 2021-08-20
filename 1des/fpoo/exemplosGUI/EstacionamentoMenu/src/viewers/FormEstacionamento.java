@@ -1,9 +1,18 @@
 package viewers;
-
+/*
+ * Exemplo de uma aplicação Java DeskTop Completa que utiliza arquivo
+ * .CSV como Banco de Dados, possui interface gráfica GUI com imagens
+ * captura eventos como clik do mouse, e abre o arquivo de dados em uma
+ * aplicação para editar os relatórios (Excel) como exemplo. 
+ * 
+ * */
 import java.awt.Cursor;
+import java.awt.Desktop;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -154,9 +163,15 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == itemBD) {
-			new FormCRUD().setModal(true);
+			new FormCRUD().setVisible(true);
 		} else if (e.getSource() == itemRelatorios) {
-			new FormRelatorio().setModal(true);
+			//Abre o arquivo CSV no editor padrão, ex: Excel
+			File f = new File("bd/estacionamentos.csv");
+			try {
+				Desktop.getDesktop().open(f);
+			} catch (IOException er) {
+				System.out.println("Erro ao abrir arquivo: " + er);
+			}
 		} else if (e.getSource() == itemSair) {
 			JOptionPane.showMessageDialog(null, "Obrigado por utilizar nosso sistema.");
 			dispose();
@@ -187,7 +202,7 @@ public class FormEstacionamento extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		//EstacionamentoProcess.preencherTestes();
+		// EstacionamentoProcess.preencherTestes();
 		EstacionamentoProcess.abrir();
 		Locale.setDefault(new Locale("pt", "BR"));
 		new FormEstacionamento().setVisible(true);

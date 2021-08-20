@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+	background: #cdc;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: small;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+form {
+	border: 1px solid #030;
+	background: #acb;
+	border-radius: 4px;
+	display: grid;
+	grid-template-columns: 250px 550px;
+	padding: 10px;
+}
+
+label {
+	margin: 10px;
+}
+
+input, select, button {
+	border: 1px solid #030;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 10px;
+}
+
+button {
+	cursor: pointer;
+	background: #055;
+	color: #eee;
+}
+
+.pedidos{
+	border: 1px solid #030;
+	background: #acb;
+	border-radius: 4px;
+	display: grid;
+	grid-template-columns: 400px 400px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 300px 80px;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+}
+
+.card button{
+	border: 0px;
+}
+
+.dados{
+	display: grid;
+	grid-template-columns: 200px 100px;
+}
+
+.producao .card{
+	background: #bb9;
+}
+
+.entrega .card{
+	background: #6a9;
+}

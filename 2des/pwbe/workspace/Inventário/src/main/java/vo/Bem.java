@@ -106,7 +106,7 @@ public class Bem {
 		return id == other.id;
 	}
 
-	// toString, CSV, HTML
+	// toString, CSV, HTML, URL
 	@Override
 	public String toString() {
 		return id + "\t" + descricao + "\t" + sdf.format(data) + "\t" + valor + "\n";

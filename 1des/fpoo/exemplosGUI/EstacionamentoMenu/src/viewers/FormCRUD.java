@@ -37,7 +37,7 @@ public class FormCRUD extends JDialog implements ActionListener {
 	private JTextField tfEntrada = new JTextField();
 	private JTextField tfSaida = new JTextField();
 	private JTextField tfValor = new JTextField();
-	private JButton btAtt, btDel, btCancelar, btSalvar;;
+	private JButton btAdd, btDel, btCancelar, btSalvar;;
 	private JTable table;
 	private DefaultTableModel tableModel;
 	private JScrollPane scroll;
@@ -72,11 +72,11 @@ public class FormCRUD extends JDialog implements ActionListener {
 		painel.add(tfSaida);
 		painel.add(tfValor);
 
-		// Botão Atualizar
-		btAtt = new JButton("Atualizar");
-		btAtt.setBounds(480, 30, 88, 24);
-		painel.add(btAtt);
-		btAtt.addActionListener(this);
+		// Botão Adicionar
+		btAdd = new JButton("Novo");
+		btAdd.setBounds(480, 30, 88, 24);
+		painel.add(btAdd);
+		btAdd.addActionListener(this);
 
 		// Tabela de Professores (READ, UPDATE)
 		tableModel = new DefaultTableModel();
@@ -111,7 +111,7 @@ public class FormCRUD extends JDialog implements ActionListener {
 				tfValor.setText(table.getValueAt(lin, 6).toString());
 			}
 		});
-		
+
 		// Botão Deletar (DELETE)
 		btDel = new JButton("Del");
 		btDel.setBounds(278, 330, 59, 24);
@@ -131,15 +131,15 @@ public class FormCRUD extends JDialog implements ActionListener {
 		btSalvar.addActionListener(this);
 
 	}
-	
+
 	private int obterIndiceVaga(String vaga) {
-		for(int i = 0; i < vagas.length; i++) {
-			if(vagas[i].equals(vaga))
+		for (int i = 0; i < vagas.length; i++) {
+			if (vagas[i].equals(vaga))
 				return i;
 		}
 		return 0;
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btDel) {
@@ -149,9 +149,23 @@ public class FormCRUD extends JDialog implements ActionListener {
 			} else {
 				JOptionPane.showMessageDialog(null, "Selecione uma linha");
 			}
+		} else if (e.getSource() == btAdd) {
+			try {
+				estacionamento = new Estacionamento();
+				estacionamento.setId(Integer.parseInt((String) tfId.getText()));
+				estacionamento.setVaga((String) cbVaga.getSelectedItem());
+				estacionamento.setPlaca((String) tfPlaca.getText());
+				estacionamento.setData(data.parse((String) tfData.getText()));
+				estacionamento.setHoraEntrada((String) tfEntrada.getText());
+				estacionamento.setHoraSaida((String) tfSaida.getText());
+				estacionamento.setValorHora(Double.valueOf((String) tfValor.getText()));
+				tableModel.addRow(estacionamento.toVetor());	
+			} catch (ParseException e1) {
+				e1.printStackTrace();
+			}
 		} else if (e.getSource() == btCancelar) {
 			this.dispose();
-		} else { // Senão, só resta o botão salvar
+		} else if (e.getSource() == btSalvar) { // Senão, só resta o botão salvar
 			// Limpa a lista anterior
 			EstacionamentoProcess.registros = new ArrayList<>();
 			// Passando os dados da tabela para a Lista
@@ -175,6 +189,7 @@ public class FormCRUD extends JDialog implements ActionListener {
 			} else {
 				JOptionPane.showMessageDialog(this, "Erro ao salvar alterações");
 			}
+			this.dispose();
 		}
 	}
 }
