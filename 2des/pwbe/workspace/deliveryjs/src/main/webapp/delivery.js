@@ -1,68 +1,90 @@
-const cliente = document.querySelector("#cliente")
-const endereco = document.querySelector("#endereco")
-const produto = document.querySelector("#produto")
-
 const producao = document.querySelector(".producao")
 const entrega = document.querySelector(".entrega")
+var dh = new Date();
 
 function lancarPedido() {
-    let card = document.createElement("div")
-    let dados = document.createElement("div")
-    let pCliente = document.createElement("p")
-    let pEndereco = document.createElement("p")
-    let pProduto = document.createElement("p")
-    let pData = document.createElement("p")
-    let pHora = document.createElement("p")
-    let botao = document.createElement("button")
-
-    card.className = "card"
-    dados.className = "dados"
-    pCliente.innerHTML = cliente.value
-    pEndereco.innerHTML = endereco.value
-    pProduto.innerHTML = produto.value
-    pData.innerHTML = dh.getDate() + "/" + (dh.getMonth() + 1) + "/" + dh.getFullYear()
-    pHora.innerHTML = dh.getHours() + ":" + dh.getMinutes()
-
-    dados.appendChild(pCliente)
-    dados.appendChild(pData)
-    dados.appendChild(pEndereco)
-    dados.appendChild(pHora)
-    dados.appendChild(pProduto)
-
-    botao.innerHTML = "<img width='50px' src='./assets/icon-check.png'>Enviar Entrega"
-	botao.setAttribute("onclick","entrega(this)");
-    botao.addEventListener("click", () => {
-        entrega.appendChild(card)
-        dh = new Date
-        pHora.innerHTML = dh.getHours() + ":" + dh.getMinutes()
-        botao.innerHTML = "<img width='50px' src='./assets/icon-motoboy.png'>Pedido entregue";
-        botao.addEventListener("click", () => {
-            card.remove();
-        });
-    });
-
-    card.appendChild(dados)
-    card.appendChild(botao)
-    producao.appendChild(card)
-	registra(cliente.value,endereco.value,produto.value);
+	//Cria um objeto e pega os dados do formulário
+	let pedido = {
+		cliente: document.querySelector("#cliente").value,
+		endereco: document.querySelector("#endereco").value,
+		produto: document.querySelector("#produto").value
+	}
+	//Chama a função que envia os dados para o BackEnd
+	registraPedido(pedido);
 }
 
-function entrega(e){
+function criaCard(obj) {
+	//Cria o CARD na div Pedidos
+	let card = document.createElement("div")
+	let dados = document.createElement("div")
+	let botao = document.createElement("button")
+	card.className = "card"
+	dados.className = "dados"
+	dados.innerHTML = `<p>${obj.id}</p><p>${obj.cliente}</p><p>${obj.endereco}</p><p>${obj.produto}</p><p>${obj.data}</p><p>${obj.hora}</p>`
+	botao.innerHTML = "<img width='50px' src='./assets/icon-check.png'>Enviar Entrega"
+	botao.setAttribute("onClick", "iniciaEntrega(this)");
+	card.appendChild(dados)
+	card.appendChild(botao)
+	producao.appendChild(card)
+}
+
+function iniciaEntrega(e) {
+	let id = e.parentNode.children[0].children[0].innerText
+	registraInicioEntrega(id)
 	entrega.appendChild(e.parentNode)
+	e.innerHTML = "<img width='50px' src='./assets/icon-motoboy.png'>Pedido entregue";
+	e.addEventListener("click", () => {
+		registraFimEntrega(id)
+		e.parentNode.remove();
+	});
 }
 
-function registra(cli,endr,prod){
-	let data = "?cliente="+cli
-	data += "&endereco="+endr
-	data +="&produto="+prod
-	
+function finalizaEntrega(e) {
+	let id = e.parentNode.children[0].children[0].innerText
+	registraFimEntrega(id)
+	e.parentNode.remove();
+}
+
+function registraPedido(obj) {
+	let data = "?cliente=" + obj.cliente
+	data += "&endereco=" + obj.endereco
+	data += "&produto=" + obj.produto
 	let xhr = new XMLHttpRequest()
-	xhr.addEventListener("readystatechange", function () {
-	  if (this.readyState === this.DONE) {
-	    console.log(this.responseText);
-	  }
+	xhr.addEventListener("readystatechange", function() {
+		if (this.readyState === this.DONE) {
+			obj.id = this.responseXML.getElementsByTagName("id")[0].textContent
+			obj.data = dh.getDate() + "/" + (dh.getMonth() + 1) + "/" + dh.getFullYear()
+			obj.hora = dh.getHours() + ":" + dh.getMinutes()
+			console.log(obj.id + "," + obj.cliente + "," + obj.endereco + ", " + obj.produto + "," + obj.data + "," + obj.hora)
+			criaCard(obj)
+		}
 	})
-	
-	xhr.open("POST", "./registra.jsp"+data)
+	xhr.open("POST", "registra" + data)
+	xhr.send(data)
+}
+
+function registraInicioEntrega(id) {
+	let data = "?inicio=" + id
+	let xhr = new XMLHttpRequest()
+	xhr.addEventListener("readystatechange", function() {
+		if (this.readyState === this.DONE) {
+			id = this.responseXML
+			console.log(id)
+		}
+	})
+	xhr.open("PUT", "registra"+data)
+	xhr.send(data)
+}
+
+function registraFimEntrega(id) {
+	let data = "?fim=" + id
+	let xhr = new XMLHttpRequest()
+	xhr.addEventListener("readystatechange", function() {
+		if (this.readyState === this.DONE) {
+			id = this.responseXML
+			console.log(id)
+		}
+	})
+	xhr.open("DELETE", "registra"+data)
 	xhr.send(data)
 }

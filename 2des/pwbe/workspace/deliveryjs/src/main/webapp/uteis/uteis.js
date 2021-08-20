@@ -1,10 +1,13 @@
 /******Funcções específicas para este tema*******/
-const nomes = lerArquivoLista("./uteis/nomes.txt")
-const sobrenomes = lerArquivoLista("./uteis/sobrenomes.txt")
-const logradouros = lerArquivoLista("./uteis/logradouros.txt")
-const bairros = lerArquivoLista("./uteis/bairros.txt")
-const cidades = lerArquivoLista("./uteis/cidades.txt")
 const produtos = ['X-Burguer', 'X-Egg', 'X-Bacon', 'X-Tudo', 'X-Frango', 'Refrigerante - Lata', 'Refrigerante - 2L']
+const xml = carregaXML('./uteis/randomicos.xml');
+const rand = {
+    nomes : xml.getElementsByTagName("nomes")[0].textContent.substr(1).split("\n"),
+    sobrenomes : xml.getElementsByTagName("sobrenomes")[0].textContent.substr(1).split("\n"),
+    logradouros : xml.getElementsByTagName("logradouros")[0].textContent.substr(1).split("\n"),
+    bairros : xml.getElementsByTagName("bairros")[0].textContent.substr(1).split("\n"),
+    cidades : xml.getElementsByTagName("cidades")[0].textContent.substr(1).split("\n")
+}
 
 function obterAgora() {
     let agora = document.getElementById('agora');
@@ -25,9 +28,9 @@ function preencherForm() {
 }
 
 function geraNomeCompleto() {
-    let nome = nomes[Math.floor(Math.random() * nomes.length)]
-    let sobrenome = sobrenomes[Math.floor(Math.random() * sobrenomes.length)]
-    let sobrenome2 = sobrenomes[Math.floor(Math.random() * sobrenomes.length)]
+    let nome = rand.nomes[Math.floor(Math.random() * rand.nomes.length)]
+    let sobrenome = rand.sobrenomes[Math.floor(Math.random() * rand.sobrenomes.length)]
+    let sobrenome2 = rand.sobrenomes[Math.floor(Math.random() * rand.sobrenomes.length)]
     if (Math.floor(Math.random() * 2) == 1) {
         return nome + " " + sobrenome + " " + sobrenome2
     } else {
@@ -35,9 +38,9 @@ function geraNomeCompleto() {
     }
 }
 function geraEnderecos() {
-    let logradouro = logradouros[Math.floor(Math.random() * logradouros.length)]
-    let bairro = bairros[Math.floor(Math.random() * bairros.length)]
-    let cidade = cidades[Math.floor(Math.random() * cidades.length)]
+    let logradouro = rand.logradouros[Math.floor(Math.random() * rand.logradouros.length)]
+    let bairro = rand.bairros[Math.floor(Math.random() * rand.bairros.length)]
+    let cidade = rand.cidades[Math.floor(Math.random() * rand.cidades.length)]
     return logradouro + ", " + bairro + ", " + cidade
 }
 function geraProdutos() {
@@ -46,17 +49,17 @@ function geraProdutos() {
 
 /**************Funções úteis Gerais ***************/
 //Lê um arquivo de texto com uma coluna de dados e retorna uma lista
-function lerArquivoLista(file) {
-    let dados = 'File not found'
+function carregaXML(arquivo) {
+    let dados = '<mensagem>File not found</mensagem>'
     let xml = new XMLHttpRequest()
-    xml.open("GET", file, false)
+    xml.open("GET", arquivo, false)
     xml.onreadystatechange = function () {
         if (xml.readyState === 4) {
-            if (xml.status === 200 || rawFile.status == 0) {
-                dados = xml.responseText;
+            if (xml.status === 200 || xml.status == 0) {
+                dados = xml.responseXML.getElementsByTagName("dados")[0]
             }
         }
     }
-    xml.send(null)
-    return dados.split("\n")
+    xml.send()
+    return dados
 }

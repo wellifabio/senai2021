@@ -19,7 +19,7 @@ public class PedidoProcess {
 	}
 	
 	public static int autoIncrementId() {
-		if(pedidos.size()<=1) {
+		if(pedidos.size()<1) {
 			return 1;
 		}else {
 			return pedidos.get(pedidos.size()-1).getId()+1;

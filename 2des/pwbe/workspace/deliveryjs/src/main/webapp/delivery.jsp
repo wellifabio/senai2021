@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="delivery.css">
-<link rel="shortcut icon" href="./assets/icon-motoboy.png">
+<link rel="shortcut icon" href="./assets/icon.png">
 <title>Delivery Lanchão</title>
 </head>
 
@@ -17,13 +17,10 @@
 	%>
 	<div class="pedido">
 		<form>
-			<label>Cliente:</label><input type="text" id="cliente"> <label>Endereço:</label><input
-				type="text" id="endereco"> <label>Produto:</label><select
-				id="produto">
-			</select>
-			<button type="button"
-				onclick="lancarPedido(), preencherForm(), obterAgora()">Gerar
-				Pedido</button>
+			<label>Cliente:</label><input type="text" id="cliente">
+			<label>Endereço:</label><input type="text" id="endereco">
+			<label>Produto:</label><select id="produto"></select>
+			<button type="button" onclick="lancarPedido(), preencherForm(), obterAgora()">Gerar Pedido</button>
 			<input type="text" id="agora" readonly="readonly">
 		</form>
 	</div>
@@ -32,22 +29,24 @@
 			<h4>Em execução</h4>
 			<%
 			for (Pedido p : PedidoProcess.pedidos) {
-				if(p.getHoraInicioEntrega() == null && p.getHoraFimEntrega() == null){
+				if (p.getHoraInicioEntrega() == null && p.getHoraFimEntrega() == null) {
 					out.print("<div class='card'><div class='dados'>");
 					out.print(p.toHTML());
-					out.print("</div><button type='button'><img width='50px' src='./assets/icon-check.png'>Enviar Entrega</button></div>");
+					out.print(
+					"</div><button type='button' onclick='iniciaEntrega(this)'><img width='50px' src='./assets/icon-check.png'>Enviar Entrega</button></div>");
 				}
 			}
 			%>
 		</div>
 		<div class="entrega">
 			<h4>A caminho</h4>
-						<%
+			<%
 			for (Pedido p : PedidoProcess.pedidos) {
-				if(p.getHoraInicioEntrega() != null && p.getHoraFimEntrega() == null){
+				if (p.getHoraInicioEntrega() != null && p.getHoraFimEntrega() == null) {
 					out.print("<div class='card'><div class='dados'>");
 					out.print(p.toHTML());
-					out.print("</div><button type='button'><img width='50px' src='./assets/icon-check.png'>Enviar Entrega</button></div>");
+					out.print(
+					"</div><button type='button' onclick='finalizaEntrega(this)'><img width='50px' src='./assets/icon-motoboy.png'>Enviar Entrega</button></div>");
 				}
 			}
 			%>
