@@ -1,0 +1,18 @@
+[
+    {
+        "nome":"teste",
+        "doc":123456
+    },
+    {
+        "nome":"Ciclano dos Trotes",
+        "idade":25,
+        "doc":1245783265,
+        "cursos":["Ensino Medio", "Faculdade"], 
+        "residencia":{
+            "bairro":"Jd das Flores",
+            "rua":"Rua do asfalto",
+            "numero":3,
+            "cep":222222222
+        }
+    }
+]
