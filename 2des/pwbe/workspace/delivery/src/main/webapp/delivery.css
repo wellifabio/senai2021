@@ -59,6 +59,13 @@ table tr td:nth-child(9){
 	flex-direction: row;
 }
 
+table tr th{
+	height:30px;
+	background-color: #055;
+	color: #eee;
+	border-radius:3px;
+}
+
 .cadastro {
 	border: 1px solid #030;
 	background: #acb;

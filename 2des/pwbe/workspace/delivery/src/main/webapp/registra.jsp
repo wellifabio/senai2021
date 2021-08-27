@@ -67,6 +67,7 @@ if (verboHttp.equals("GET")){
 		if (PedidoProcess.pedidos.contains(pedido)){
 			int indice = PedidoProcess.pedidos.indexOf(pedido);
 			pedido = PedidoProcess.pedidos.get(indice);
+			response.setCharacterEncoding("UTF-8");
 			response.sendRedirect("update.jsp"+pedido.toURL());
 		}
 	}

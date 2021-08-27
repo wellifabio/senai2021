@@ -205,14 +205,14 @@ public class Pedido {
 					+ fd.format(data) + "</p><p>" + fh.format(horaPedido) + "</p>";
 		} else if (horaFimEntrega == null) {
 			return "<p>" + id + "</p><p>" + cliente + "</p><p>" + endereco + "</p><p>" + produto + "</p><p>"
-					+ fd.format(data) + "</p><p>" + fh.format(horaPedido) + " " + fh.format(horaInicioEntrega)
-					+ "</p>";
+					+ fd.format(data) + "</p><p>" + fh.format(horaPedido) + " " + fh.format(horaInicioEntrega) + "</p>";
 		} else {
 			return "<p>" + id + "</p><p>" + cliente + "</p><p>" + endereco + "</p><p>" + produto + "</p><p>"
 					+ fd.format(data) + "</p><p>" + fh.format(horaPedido) + " " + fh.format(horaInicioEntrega) + " "
 					+ fh.format(horaFimEntrega) + "</p>";
 		}
 	}
+
 	public String toTableHTML() {
 		if (horaInicioEntrega == null) {
 			return "<td>" + id + "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
@@ -223,15 +223,24 @@ public class Pedido {
 					+ "</td><td>null</td>";
 		} else {
 			return "<td>" + id + "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
-					+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega) + "</td><td>"
-					+ fh.format(horaFimEntrega) + "</td>";
+					+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega)
+					+ "</td><td>" + fh.format(horaFimEntrega) + "</td>";
 		}
 	}
-	
-	public String toURL() {
-		return "?id=" + id; //+ "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
-					//+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega) + "</td><td>"
-					//+ fh.format(horaFimEntrega) + "</td>";
-	}
 
+	public String toURL() {
+		if (horaInicioEntrega == null) {
+			return "?id=" + id + "&cliente=" + cliente + "&endereco=" + endereco + "&produto=" + produto + "&data="
+					+ fd.format(data) + "&horaPedido=" + fh.format(horaPedido)
+					+ "&horaInicioEntrega=null&horaFimEntrega=null";
+		} else if (horaFimEntrega == null) {
+			return "?id=" + id + "&cliente=" + cliente + "&endereco=" + endereco + "&produto=" + produto + "&data="
+					+ fd.format(data) + "&horaPedido=" + fh.format(horaPedido) + "&horaInicioEntrega="
+					+ fh.format(horaInicioEntrega) + "&horaFimEntrega=null";
+		} else {
+			return "?id=" + id + "&cliente=" + cliente + "&endereco=" + endereco + "&produto=" + produto + "&data="
+					+ fd.format(data) + "&horaPedido=" + fh.format(horaPedido) + "&horaInicioEntrega="
+					+ fh.format(horaInicioEntrega) + "&horaFimEntrega=" + fh.format(horaFimEntrega);
+		}
+	}
 }
