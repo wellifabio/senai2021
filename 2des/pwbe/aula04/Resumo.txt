@@ -1,0 +1,9 @@
+Plugin para desenhar diagramas de Classes automaticamente no Eclipse
+https://objectaid.com/install-objectaid
+No menu ao lado esquerdo do site clique em "Install ObjectAid" e siga o passo a passo para instalá-lo no Eclipse
+
+Para fazer o diagrama de Classes
+É necessário ter um projeto aberto.
+Crie uma pasta chamada "docs" ou "documentos" dentro do seu projeto
+Botão direito nesta pasta, New, Other, escreva ObjectAid, Next coloque um nome no seu diagrama.
+Agora é só arrastar suas classes e ou pacotes para o seu diagrama.

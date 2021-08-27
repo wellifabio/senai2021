@@ -213,5 +213,25 @@ public class Pedido {
 					+ fh.format(horaFimEntrega) + "</p>";
 		}
 	}
+	public String toTableHTML() {
+		if (horaInicioEntrega == null) {
+			return "<td>" + id + "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
+					+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>null</td><td>null</td>";
+		} else if (horaFimEntrega == null) {
+			return "<td>" + id + "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
+					+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega)
+					+ "</td><td>null</td>";
+		} else {
+			return "<td>" + id + "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
+					+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega) + "</td><td>"
+					+ fh.format(horaFimEntrega) + "</td>";
+		}
+	}
+	
+	public String toURL() {
+		return "?id=" + id; //+ "</td><td>" + cliente + "</td><td>" + endereco + "</td><td>" + produto + "</td><td>"
+					//+ fd.format(data) + "</td><td>" + fh.format(horaPedido) + "</td><td>" + fh.format(horaInicioEntrega) + "</td><td>"
+					//+ fh.format(horaFimEntrega) + "</td>";
+	}
 
 }

@@ -1,19 +1,19 @@
 <%@page import="java.util.Date"%>
 <%@page import="vo.Bem"%>
 <%@page import="ctr.BensProcess"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <title>Cadastro de Bens (CREATE)</title>
 </head>
 <body>
 	<form method="post">
 		<label>ID</label><input type="number" name="id" required>
-		<label>Descrição</label><input type="text" name="descricao" required>
+		<label>DescriÃ§Ã£o</label><input type="text" name="descricao" required>
 		<label>Valor</label><input type="number" name="valor" required> 
 		<input type="reset" value="Limpar">
 		<input type="submit" value="Enviar">

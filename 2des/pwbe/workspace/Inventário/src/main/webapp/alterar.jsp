@@ -1,12 +1,12 @@
 <%@page import="java.util.Date"%>
 <%@page import="vo.Bem"%>
 <%@page import="ctr.BensProcess"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <title>Alterar ou Excluir Bem(CREATE)</title>
 </head>
@@ -39,7 +39,7 @@
 				String formulario = "";
 				formulario += "<form method='get'>";
 				formulario += "<label>ID</label><input type='number' value='"+id+"' name='id' required>";
-				formulario += "<label>Descrição</label><input type='text' value='"+desc+"' name='descricao' required>";
+				formulario += "<label>DescriÃ§Ã£o</label><input type='text' value='"+desc+"' name='descricao' required>";
 				formulario += "<label>Data</label><input type='text' value='"+dat+"' name='data' required>";
 				formulario += "<label>Valor</label><input type='number' value='"+val+"' name='valor' required>";
 				formulario += "<div><label>Excluir</label><input type='radio' name='opcao' value='excluir'>";
@@ -49,7 +49,7 @@
 				out.print(formulario);
 			}	
 		}else{
-			out.print("<p>não chegaram dados para serem alterados ou excluidos</p>");
+			out.print("<p>nï¿½o chegaram dados para serem alterados ou excluidos</p>");
 		}
 	%>
 </body>

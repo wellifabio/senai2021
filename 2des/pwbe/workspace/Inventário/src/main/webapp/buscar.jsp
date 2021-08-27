@@ -1,12 +1,12 @@
 <%@page import="java.util.Date"%>
 <%@page import="vo.Bem"%>
 <%@page import="ctr.BensProcess"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <title>Buscar ou localizar item</title>
 </head>
@@ -19,14 +19,14 @@
 		String id = request.getParameter("id");
 		Bem bem; //Instanciamos um item (Bem)
 		if(id != null){//Verifica se o cliente enviou um ID
-			bem = new Bem(Integer.parseInt(id));//Cria o objeto só com o ID
-			if(BensProcess.bens.contains(bem)){//Verifica se este bem está na lista
-				int indice = BensProcess.bens.indexOf(bem); //Obtem o índice
+			bem = new Bem(Integer.parseInt(id));//Cria o objeto sÃ³ com o ID
+			if(BensProcess.bens.contains(bem)){//Verifica se este bem estÃ¡ na lista
+				int indice = BensProcess.bens.indexOf(bem); //Obtem o Ã­ndice
 				bem = BensProcess.bens.get(indice); //Pega todos os dados
 				String url = "alterar.jsp"+bem.toURL();
 				response.sendRedirect(url);
 			}else{
-				out.print("<p>Bem não foi encontrado</p>");
+				out.print("<p>Bem nÃ£o foi encontrado</p>");
 			}
 		}else{
 			out.print("<p>Digite um id e clique em Buscar</p>");

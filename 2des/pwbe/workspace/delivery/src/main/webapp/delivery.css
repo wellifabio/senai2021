@@ -27,6 +27,38 @@ button {
 	color: #eee;
 }
 
+a {
+	margin-top: 10px;
+	width: 300px;
+	height: 33px;
+	border: 1px solid #030;
+	border-radius: 3px;
+	text-decoration: none;
+	background: #055;
+	color: #eee;
+	text-align: center;
+	line-height: 33px;
+}
+
+table tr:nth-child(even){
+	background-color: #acb;
+}
+table tr:nth-child(odd){
+	background-color: #eee;
+}
+
+table tr td:nth-child(2){
+	min-width:150px;
+}
+table tr td:nth-child(3){
+	min-width:200px;
+}
+table tr td:nth-child(9){
+	min-width:80px;
+	display: flex;
+	flex-direction: row;
+}
+
 .cadastro {
 	border: 1px solid #030;
 	background: #acb;
@@ -36,7 +68,7 @@ button {
 	padding: 10px;
 }
 
-.pedidos{
+.pedidos {
 	border: 1px solid #030;
 	background: #acb;
 	border-radius: 4px;
@@ -46,7 +78,7 @@ button {
 	margin: 10px;
 }
 
-.card{
+.card {
 	display: grid;
 	grid-template-columns: 300px 80px;
 	border-radius: 5px;
@@ -54,19 +86,38 @@ button {
 	padding: 10px;
 }
 
-.card button{
+.card button {
 	border: 0px;
 }
 
-.dados{
+.dados {
 	display: grid;
 	grid-template-columns: 200px 100px;
 }
 
-.producao .card{
+.producao .card {
 	background: #bb9;
 }
 
-.entrega .card{
+.entrega .card {
 	background: #6a9;
+}
+
+.del{
+	background-image: url("./assets/icon-del.png");
+	background-size: cover;
+	background-color: RGBA(0,0,0,0);
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+.update{
+	background-image: url("./assets/icon-update.png");
+	background-size: cover;
+	background-color: RGBA(0,0,0,0);
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
 }

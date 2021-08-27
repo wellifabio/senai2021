@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="delivery.css">
-<link rel="shortcut icon" href="./assets/icon-motoboy.png">
+<link rel="shortcut icon" href="./assets/icon.png">
 <title>Delivery Lanchão</title>
 </head>
 
@@ -27,6 +27,7 @@
 			<input type="text" id="agora" readonly="readonly">
 		</form>
 	</div>
+	<a href="crud.jsp">Todos os pedidos Relatório</a>
 	<div class="pedidos">
 		<div class="producao">
 			<h4>Em execução</h4>

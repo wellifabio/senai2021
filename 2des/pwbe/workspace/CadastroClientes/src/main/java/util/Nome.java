@@ -34,11 +34,11 @@ public class Nome {
 	}
 
 	// Retorna um nome aleatório
-	public String getAleatorio() {
+	public String getNome() {
 		return nomes[new Random().nextInt(nomes.length)] + " " + sobrenomes[new Random().nextInt(sobrenomes.length)];
 	}
 
-	public String getAleatorio(int n) {
+	public String getNome(int n) {
 		String retorno = nomes[new Random().nextInt(nomes.length)] + " ";
 		for (int i = 0; i < n; i++) {
 			retorno += sobrenomes[new Random().nextInt(sobrenomes.length)] + " ";

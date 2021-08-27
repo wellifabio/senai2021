@@ -14,14 +14,13 @@ public class ClienteProcess {
 	public static ClienteDAO cd = new ClienteDAO();
 
 	public static void testes() {
-		
 		clientes = new ArrayList<>();
 		String[] nomes = { "Marcos", "Lúcia", "Ana", "Maria", "Renata" };
 		String[] sobrenomes = { "Silva", "da Silva", "Castro", "Souza", "de Souza", "e Silva", "Oliveira", "de Oliveira" };
 		Nome n = new Nome(nomes, sobrenomes);
 		
 		for (int i = 0; i < n.getAll().length; i++)
-			clientes.add(new Cliente(new CPF().getFormat() + "", n.getAleatorio(2), new Telefone().getFormat()));
+			clientes.add(new Cliente(new CPF().getFormat() + "", n.getNome(2), new Telefone().getFormat()));
 	}
 
 	public static String salvar() {
