@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./assets/verso.png">
+    <title>Jogo da Memória Flores</title>
+</head>
+
+<body onload="embaralhar()">
+    <div class="head">
+        <button type="button" onclick="embaralhar()">Embaralhar</button>
+        <button type="button" onclick="mostarTodas()">Mostrar Todas</button>
+        <button type="button" onclick="esconderTodas()">Esconder Todas</button>
+    </div>
+    <div class="cards">
+        <button type="button" class="card" id="bt1" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt2" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt3" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt4" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt5" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt6" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt7" onclick="viraCarta(this)"></button>
+        <button type="button" class="card" id="bt8" onclick="viraCarta(this)"></button>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

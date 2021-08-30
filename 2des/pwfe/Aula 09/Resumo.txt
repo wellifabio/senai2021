@@ -1,0 +1,8 @@
+Atividade:
+Desenvolver um jogo da memória com no mínimo 6 cartas
+1 - Escolha o tema, copie imagens da internet e monte sua estrutura de pastas do frontEnd.
+2 - Utilize CSS para alinhar as cartas na tela (As cartas podem ser botões ou divs com ids diferentes)
+3 - Crie as primeiras funções em JavaScript para virar as cartas(Alterar a imagem delas ao clicar)
+4 - Funções para embaralhar as cartas
+5 - Funções para verificar se as viradas estão certas
+6 - Funções para contar os pontos.
