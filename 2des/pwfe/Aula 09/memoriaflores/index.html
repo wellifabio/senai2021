@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="index.css">
     <title>Jogo da Memória Flores</title>
 </head>
-<body>
+<body onload="virarTodas()">
+    <div class="head">
+        <h2>Olá bem vindo ao jogo da memória</h2>
+        <button class="botao" type="button" onclick="virarTodas()">Iniciar</button>
+    </div>
     <div class="quadro">
-        <button class="card" type="button" id="bt1" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt2" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt3" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt4" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt5" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt6" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt7" onclick="virarCarta(this)"></button>
-        <button class="card" type="button" id="bt8" onclick="virarCarta(this)"></button>
+        <button class="card" type="button" id="bt1" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt2" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt3" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt4" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt5" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt6" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt7" onclick="jogar(this)"></button>
+        <button class="card" type="button" id="bt8" onclick="jogar(this)"></button>
     </div>
 </body>
 <script src="index.js"></script>

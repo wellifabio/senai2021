@@ -9,12 +9,70 @@ var frentes = [
     "background-image: url('./assets/tulipas.png');",
     "background-image: url('./assets/tulipas.png');"
 ]
+frentes = shuffleArray(frentes)//Embaralha o array
+var cardObj = {
+    "bt1": [document.getElementById("bt1"), frentes[0], false],
+    "bt2": [document.getElementById("bt2"), frentes[1], false],
+    "bt3": [document.getElementById("bt3"), frentes[2], false],
+    "bt4": [document.getElementById("bt4"), frentes[3], false],
+    "bt5": [document.getElementById("bt5"), frentes[4], false],
+    "bt6": [document.getElementById("bt6"), frentes[5], false],
+    "bt7": [document.getElementById("bt7"), frentes[6], false],
+    "bt8": [document.getElementById("bt8"), frentes[7], false]
+}
 const verso = "background-image: url('./assets/verso.png');"
-//Embaralha o array
-frentes = shuffleArray(frentes)
+var ultima = ""
 
 function virarCarta(e) {
-    e.setAttribute("style",frentes[0]);
+    if (cardObj[e.id][2]) {
+        e.setAttribute("style", verso)
+        cardObj[e.id][2] = false
+    } else {
+        e.setAttribute("style", cardObj[e.id][1])
+        cardObj[e.id][2] = true
+    }
+}
+
+function virarTodas() {
+    for (i = 1; i <= 8; i++)
+        virarCarta(cardObj["bt" + i][0])
+}
+
+function jogar(e) {
+    if (ultima === "") {
+        virarCarta(e)
+        e.removeAttribute("onclick")
+        ultima = e.id
+    } else {
+        virarCarta(e)
+        if (cardObj[e.id][1] == cardObj[ultima][1]) {
+            console.log("acertou")
+            e.removeAttribute("onclick")
+            ultima = ""
+        } else {
+            console.log("errou")
+            espere()
+            setTimeout(() => {
+                virarCarta(e)
+                virarCarta(cardObj[ultima][0])
+                ultima = ""
+                deVoltaAoJogo()
+            }
+                , 1000)
+            cardObj[ultima][0].setAttribute("onclick", "jogar(this)")
+        }
+    }
+}
+
+function espere(){
+    for (i = 1; i <= 8; i++)
+        cardObj["bt" + i][0].removeAttribute("onclick")
+}
+
+function deVoltaAoJogo(){
+    for (i = 1; i <= 8; i++)
+        if(!cardObj["bt" + i][2])
+            cardObj["bt" + i][0].setAttribute("onclick", "jogar(this)")
 }
 
 // Função para embaralhar array
@@ -29,3 +87,14 @@ function shuffleArray(arr) {
     // Retornando array com aleatoriedade
     return arr;
 }
+
+/*
+//Exemplo de função para criar um botão
+function criarBotao(){
+    let bt = document.createElement("button")
+    bt.setAttribute("click","virarCarta(this)")
+    bt.innerHTML = "Sou um botão criado"
+    let local = document.getElementById("teste")
+    local.appendChild(bt)
+}
+*/

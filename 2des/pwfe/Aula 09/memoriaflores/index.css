@@ -16,3 +16,12 @@ body{
     height: 200px;
     cursor: pointer;
 }
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.botao{
+    width: 240px;
+    height: 50px;
+    margin: 30px;
+}
