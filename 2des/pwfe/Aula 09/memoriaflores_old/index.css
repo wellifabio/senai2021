@@ -4,16 +4,6 @@ body{
     align-items: center;
 }
 
-.titulo{
-    margin: 30px;
-    margin-top: 35px;
-}
-
-.botao{
-    width: 240px;
-    height: 50px;
-    margin: 30px;
-}
 .quadro{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
@@ -29,4 +19,9 @@ body{
 .head{
     display: flex;
     flex-direction: row;
+}
+.botao{
+    width: 240px;
+    height: 50px;
+    margin: 30px;
 }

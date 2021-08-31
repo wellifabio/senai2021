@@ -10,9 +10,6 @@ var frentes = [
     "background-image: url('./assets/tulipas.png');"
 ]
 frentes = shuffleArray(frentes)//Embaralha o array
-
-//Objeto JavaScript para armazenar todos os botões(cards),
-//suas imagens e seus status(frente ou verso)
 var cardObj = {
     "bt1": [document.getElementById("bt1"), frentes[0], false],
     "bt2": [document.getElementById("bt2"), frentes[1], false],
@@ -24,17 +21,7 @@ var cardObj = {
     "bt8": [document.getElementById("bt8"), frentes[7], false]
 }
 const verso = "background-image: url('./assets/verso.png');"
-
-//Variavel para armazenar a útima carta clicada
 var ultima = ""
-
-//Emelementos para contar erros
-var erros = 0
-const placar = document.createElement("h2")
-placar.setAttribute("class","titulo")
-placar.innerHTML = "Erros = "+erros
-const head = document.querySelector(".head")
-head.appendChild(placar)
 
 function virarCarta(e) {
     if (cardObj[e.id][2]) {
@@ -59,12 +46,12 @@ function jogar(e) {
     } else {
         virarCarta(e)
         if (cardObj[e.id][1] == cardObj[ultima][1]) {
+            console.log("acertou")
             e.removeAttribute("onclick")
             ultima = ""
         } else {
+            console.log("errou")
             espere()
-            erros++
-            placar.innerHTML = "Erros = "+erros
             setTimeout(() => {
                 virarCarta(e)
                 virarCarta(cardObj[ultima][0])
@@ -75,16 +62,6 @@ function jogar(e) {
             cardObj[ultima][0].setAttribute("onclick", "jogar(this)")
         }
     }
-}
-
-function iniciar(e){
-    virarTodas()
-    e.innerHTML = "Reiniciar"
-    e.setAttribute("onclick","reiniciar()")
-}
-
-function reiniciar(){
-    window.location.reload()
 }
 
 function espere(){
