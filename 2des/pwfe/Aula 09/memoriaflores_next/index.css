@@ -2,9 +2,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
-.quadro{
+.head button {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+
+.cards{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 250px 250px;
@@ -12,7 +19,9 @@ body{
 
 .card{
     background-image: url("./assets/verso.png");
-    width: 240px;
+    background-size: cover;
+    border: none;
+    width: 250px;
     height: 200px;
     cursor: pointer;
 }
