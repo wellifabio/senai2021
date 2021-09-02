@@ -12,6 +12,10 @@ public class Livro {
 	public Livro() {
 	}
 
+	public Livro(String id) {
+		this.id = Integer.valueOf(id);
+	}
+	
 	public Livro(String[] vetor) {
 		this.id = Integer.valueOf(vetor[0]);
 		this.autor = vetor[1];

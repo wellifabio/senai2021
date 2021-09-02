@@ -28,13 +28,24 @@
 	</form>
 	<div class="msg">
 		<%
-		//Validando se chagaram dados ou não
+		//Validando se chagaram todos os dados
 		if (id != null && autor != null && titulo != null && preco != null) {
-			LivroProcess.livros.add(new Livro(id,autor,titulo,preco));
-			LivroProcess.salvar();
-			response.sendRedirect("crud.jsp");
+			Livro livro = new Livro(id,autor,titulo,preco); //Preenche um novo modelo
+			if(LivroProcess.livros.contains(livro)){ //Verifica se não é duplicado
+				out.print("Id duplicado"); //Da uma mensagem
+			}else{//Se não for duplicado
+				LivroProcess.livros.add(livro); //Adicona o livro na lista
+				LivroProcess.salvar();//Salva a lista no arquivo
+				response.sendRedirect("crud.jsp");//Redireciona limpando o verbo GET
+			}
 		} else {
-			out.print("Aguardando requisições");
+			if(id != null){//Se chegou apenas um id para ser removido
+				LivroProcess.livros.remove(new Livro(id)); //Remove da lista
+				LivroProcess.salvar(); //Salva a lista sem o item removido
+				response.sendRedirect("crud.jsp");
+			}else{
+				out.print("Aguardando requisições");
+			}
 		}
 		%>
 	</div>
@@ -44,12 +55,19 @@
 			<th>Autor</th>
 			<th>Título</th>
 			<th>Preço</th>
+			<th>Ações</th>
 		</tr>
 		<%
 		//Listar todos
 		for (Livro l : LivroProcess.livros) {
 			out.print("<tr>");
+			out.print("<form>");
 			out.print(l.toHTML());
+			out.print("<td>");
+			out.print("<input type='hidden' name='id' value='"+l.getId()+"'/>");
+			out.print("<button type='submit'>Del</button>");
+			out.print("</td>");
+			out.print("</form>");
 			out.print("</tr>");
 		}
 		%>

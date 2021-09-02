@@ -27,6 +27,7 @@ button{
     width: auto;
     height: 30px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .msg{
