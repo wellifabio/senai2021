@@ -1,0 +1,3 @@
+HTTP
+URL=VERBO:DNS:porta:diretorio:paginaweb:parametros
+URL=http://coisa.com.br:8080/teste/index.jsp?juca=oi&jorge=coisa&teste=25/08/2021

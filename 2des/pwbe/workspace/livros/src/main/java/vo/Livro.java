@@ -9,7 +9,6 @@ public class Livro {
 	private String titulo;
 	private float preco;
 	
-	
 	public Livro() {
 	}
 
@@ -20,11 +19,11 @@ public class Livro {
 		this.preco = Float.valueOf(vetor[3]);
 	}
 	
-	public Livro(int id, String autor, String titulo, float preco) {
-		this.id = id;
+	public Livro(String id, String autor, String titulo, String preco) {
+		this.id = Integer.valueOf(id);
 		this.autor = autor;
 		this.titulo = titulo;
-		this.preco = preco;
+		this.preco = Float.valueOf(preco);
 	}
 
 	public int getId() {
