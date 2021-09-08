@@ -39,7 +39,7 @@
 					out.print("</div>");
 					out.print("<form method='POST' action='registra.jsp'>");
 					out.print("<input type='hidden' name='inicio' value='"+p.getId()+"'>");
-					out.print("<button type='submit'><img width='50px' src='./assets/icon-check.png'>Enviar Entrega</button>");
+					out.print("<button type='submit'><img width='50px' src='./assets/icon-motoboy.png'>Enviar Entrega</button>");
 					out.print("</form></div>");
 				}
 			}
@@ -55,7 +55,7 @@
 					out.print("</div>");
 					out.print("<form method='POST' action='registra.jsp'>");
 					out.print("<input type='hidden' name='fim' value='"+p.getId()+"'>");
-					out.print("<button type='submit'><img width='50px' src='./assets/icon-motoboy.png'>Enviar Entrega</button>");
+					out.print("<button type='submit'><img width='50px' src='./assets/icon-check.png'>Concluir Entrega</button>");
 					out.print("</form></div>");
 				}
 			}

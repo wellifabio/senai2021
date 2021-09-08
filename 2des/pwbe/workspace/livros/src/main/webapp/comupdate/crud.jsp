@@ -72,7 +72,7 @@
 			}
 		} else {
 			//Delete
-			if (id != null && acao == "del") {
+			if (id != null && acao.equals("del")) {
 				LivroProcess.livros.remove(new Livro(id)); //Remove da lista
 				LivroProcess.salvar(); //Salva a lista sem o item removido
 				response.sendRedirect("crud.jsp");
