@@ -8,7 +8,7 @@ body{
 }
 
 label{
-    width: 100%;
+    width: 350px;
     margin: 5px;
 }
 .corpo{
@@ -24,12 +24,22 @@ label{
 
 .card{
     width: 100%;
-    height: 70px;
+    height: 40px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+}
+
+#compromisso{
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    margin: 5px;
 }
 
 #add{
@@ -39,14 +49,7 @@ label{
     background-size: cover;
     width: 50px;
     height: 50px;
-}
-
-#compromisso{
-    width:100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 50px;
-    margin: 5px;
+    cursor: pointer;
 }
 
 .importante{
@@ -54,9 +57,10 @@ label{
     background: none;
     background-image: url(./assets/alert.png);
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .excluir{
@@ -64,6 +68,7 @@ label{
     background: none;
     background-image: url(./assets/trash.png);
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
