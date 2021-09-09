@@ -30,7 +30,7 @@ var ultima = ""
 
 //Emelementos para contar erros
 var erros = 0
-const placar = document.createElement("h2")
+const placar = document.createElement("h3")
 placar.setAttribute("class","titulo")
 placar.innerHTML = "Erros = "+erros
 const head = document.querySelector(".head")
