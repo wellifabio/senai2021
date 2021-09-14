@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.novaTarefa {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 25px;
+}
