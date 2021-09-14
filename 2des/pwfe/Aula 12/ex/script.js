@@ -11,12 +11,14 @@ function loadData(e) {
 }
 
 function generateHTML(data) {
-    let card = document.querySelector(".card").cloneNode(true);
-    card.classList.remove("model");
-
-    card.querySelector("img").src = data.foto;
-    card.querySelector("#title").innerHTML = `${data.nome} - ${data.ano}`;
-    card.querySelector("#genero").innerHTML = data.genero;
-
-    body.appendChild(card);
+    data.forEach(item => {
+        let card = document.querySelector(".card").cloneNode(true);
+        card.classList.remove("model");
+    
+        card.querySelector("img").src = item.foto;
+        card.querySelector("#title").innerHTML = `${item.nome} - ${item.ano}`;
+        card.querySelector("#genero").innerHTML = item.genero;
+    
+        body.appendChild(card);
+    })
 }
