@@ -87,7 +87,12 @@ insert into telefones values
 -- e finalmente a tabela "fraca" que liga o cliente o veículo "locacoes"
 insert into locacoes values
 (null,"2021-08-05","2021-08-07","",150.00,"AAA1111","12345678999"),
-(default,"2021-08-10","2021-08-12",null,200.00,"CCC1111","12345678999");
+(default,"2021-08-10","2021-08-12",null,200.00,"CCC1111","12345678999"),
+(1000,"2021-08-10","2021-08-12",null,120.00,"BBB3333","12345678999"),
+(null,"2021-08-15","2021-08-18",null,300.00,"CCC1111","45646579879");
+insert into locacoes(data_retirada, placa, cpf) values
+(curdate(),"CCC1111","48798798798"),
+(curdate(),"DDD3333","12345678999");
 
 select * from veiculos;
 select * from clientes;
