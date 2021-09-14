@@ -1,0 +1,16 @@
+[
+    {
+        "titulo":"A Seleção",
+        "autor":"Tite",
+        "ano":2012,
+        "paginas":230,
+        "capa":"https://a-static.mlcdn.com.br/1500x1500/livro-a-selecao/magazineluiza/088626300/3a5c729a0fda045ab5153be45e37f307.jpg"
+    },
+    {
+        "titulo":"Harry Potter",
+        "autor":"J.K. Rowling Stones",
+        "ano":2011,
+        "paginas":300,
+        "capa":"https://a-static.mlcdn.com.br/618x463/livro-harry-potter-e-a-pedra-filosofal/magazineluiza/089060600/f96b58b6223ece09dfbdae30e4c6253b.jpg"
+    }
+]

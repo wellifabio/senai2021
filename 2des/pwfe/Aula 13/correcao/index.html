@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lista">
+        <div class="card">
+            <p id="tarefa">
+                Levar a vo jiujitsu
+                <a href=""></a>
+            </p>
+            <img onclick="markAlert(this)" src="./assets/alert.png" alt="Marcar como importante">
+            <img onclick="removeTask(this)" src="./assets/trash.png" alt="Remover Atividade">
+        </div>
+    </div>
+
+    <div class="novaTarefa">
+        <input type="text" id="nova">
+        <img onclick="newTask()" src="./assets/add.png" alt="Adicionar Tarefa">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
