@@ -10,15 +10,17 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import models.Produto;
 
-@WebServlet("/rotaget")
+@WebServlet("/rotarest")
 public class ProdutoServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setCharacterEncoding("UTF-8");
-		ProdutoProcess.iniciar();
+		if(ProdutoProcess.produtos == null) {
+			ProdutoProcess.iniciar();
+		}
 		String id = req.getParameter("id");
 		if(id != null) {
 			for(Produto p: ProdutoProcess.produtos) {
@@ -36,7 +38,6 @@ public class ProdutoServlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		ProdutoProcess.iniciar();
 		String id = req.getParameter("id");
 		if(id != null) {
 			Produto prod = new Produto();
@@ -46,6 +47,7 @@ public class ProdutoServlet extends HttpServlet{
 			prod.setValor(req.getParameter("valor"));
 			prod.setQuantidade(req.getParameter("quantidade"));
 			ProdutoProcess.produtos.add(prod);
+			resp.getWriter().print("Post Recebido");
 		}
 	}
 }
