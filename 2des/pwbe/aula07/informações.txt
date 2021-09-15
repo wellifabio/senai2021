@@ -1,0 +1,5 @@
+Introdução a API REST
+REST é a sigla em inglês para transferência representacional de estado.
+Utilização dos verbos HTTP
+(GET, POST, PUT, DELETE)
+E padrão de dados JSON
