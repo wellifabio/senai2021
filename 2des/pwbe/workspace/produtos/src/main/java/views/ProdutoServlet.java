@@ -20,7 +20,24 @@ public class ProdutoServlet extends HttpServlet{
 		resp.setCharacterEncoding("UTF-8");
 		ProdutoProcess.iniciar();
 		String id = req.getParameter("id");
-		
+		if(id != null) {
+			for(Produto p: ProdutoProcess.produtos) {
+				if(p.getId() == Integer.valueOf(id)) {
+					resp.getWriter().print(p.toString());
+				}
+			}
+		} else {
+			for(Produto p: ProdutoProcess.produtos) {
+				resp.getWriter().print(p.toString());
+			}
+		}
+
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		ProdutoProcess.iniciar();
+		String id = req.getParameter("id");
 		if(id != null) {
 			Produto prod = new Produto();
 			prod.setId(req.getParameter("id"));
@@ -29,10 +46,6 @@ public class ProdutoServlet extends HttpServlet{
 			prod.setValor(req.getParameter("valor"));
 			prod.setQuantidade(req.getParameter("quantidade"));
 			ProdutoProcess.produtos.add(prod);
-		}
-				
-		for(Produto p: ProdutoProcess.produtos) {
-			resp.getWriter().print(p.toString());
 		}
 	}
 }
