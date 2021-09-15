@@ -3,3 +3,5 @@ REST é a sigla em inglês para transferência representacional de estado.
 Utilização dos verbos HTTP
 (GET, POST, PUT, DELETE)
 E padrão de dados JSON
+Códigos das requisições HTTP
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status

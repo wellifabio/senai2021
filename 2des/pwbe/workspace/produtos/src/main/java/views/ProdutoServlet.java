@@ -47,7 +47,7 @@ public class ProdutoServlet extends HttpServlet {
 			prod.setValor(req.getParameter("valor"));
 			prod.setQuantidade(req.getParameter("quantidade"));
 			ProdutoProcess.produtos.add(prod);
-			resp.getWriter().print("Post Recebido");
+			resp.setStatus(HttpServletResponse.SC_CREATED);
 		}
 	}
 
@@ -59,7 +59,7 @@ public class ProdutoServlet extends HttpServlet {
 			if (ProdutoProcess.produtos.contains(produto)) {
 				ProdutoProcess.produtos.remove(produto);
 			} else {
-				resp.getWriter().print("Produto não encontrado");
+				resp.setStatus(HttpServletResponse.SC_FOUND);
 			}
 		}
 	}
