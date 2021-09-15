@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 public class Produto {
 
 	private int id;
@@ -9,6 +11,10 @@ public class Produto {
 	private int quantidade;
 	
 	public Produto() {
+	}
+	
+	public Produto(String id) {
+		this.id = Integer.parseInt(id);
 	}
 
 	public Produto(int id, String nome, String descricao, float valor, int quantidade) {
@@ -57,6 +63,23 @@ public class Produto {
 
 	public void setQuantidade(String quantidade) {
 		this.quantidade = Integer.parseInt(quantidade);
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Produto other = (Produto) obj;
+		return id == other.id;
 	}
 
 	@Override
