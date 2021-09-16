@@ -7,11 +7,11 @@ import controllers.ProdutoProcess;
 public class Produto {
 
 	// Atributos básicos
-	int id;
-	String nome;
-	String descricao;
-	float valor;
-	int quantidade;
+	private int id;
+	private String nome;
+	private String descricao;
+	private float valor;
+	private int quantidade;
 
 	// Construtores
 	public Produto() {
