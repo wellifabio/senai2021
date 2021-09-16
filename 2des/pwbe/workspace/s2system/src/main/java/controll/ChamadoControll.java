@@ -3,7 +3,6 @@ package controll;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -84,7 +83,7 @@ public class ChamadoControll {
 			File temp = new File("c:/dbs/temp.csv");//Abre arquivo para renomear
 			File base = new File("c:/dbs/base.csv");//Abre para excluir
 			base.delete(); //Excluir o arquivo antigo
-			temp.renameTo(new File("d:/base.csv")); //Renomear o novo
+			temp.renameTo(new File("c:/dbs/base.csv")); //Renomear o novo
 			return encontrado;
 		} catch (IOException e) {
 			e.printStackTrace();

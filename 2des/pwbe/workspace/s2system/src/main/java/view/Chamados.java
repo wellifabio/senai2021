@@ -14,6 +14,8 @@ import model.ChamadoModel;
 @WebServlet("/chamados")
 public class Chamados extends HttpServlet {
 	
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		PrintWriter pw = resp.getWriter();		
