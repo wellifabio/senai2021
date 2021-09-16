@@ -53,10 +53,10 @@ public class ChamadoControll {
 			}
 			br.close();
 			bw.close();
-			File temp = new File("d:/temp.csv");//Abre arquivo para renomear
-			File base = new File("d:/base.csv");//Abre para excluir
+			File temp = new File("c:/dbs/temp.csv");//Abre arquivo para renomear
+			File base = new File("c:/dbs/base.csv");//Abre para excluir
 			base.delete(); //Excluir o arquivo antigo
-			temp.renameTo(new File("d:/base.csv")); //Renomear o novo
+			temp.renameTo(new File("c:/dbs/base.csv")); //Renomear o novo
 			return true;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -67,8 +67,8 @@ public class ChamadoControll {
 	public boolean alterar(ChamadoModel c) {
 		try {
 			boolean encontrado = false;
-			BufferedReader br = new BufferedReader(new FileReader("d:/base.csv"));
-			BufferedWriter bw = new BufferedWriter(new FileWriter("d:/temp.csv", false));
+			BufferedReader br = new BufferedReader(new FileReader("c:/dbs/base.csv"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("c:/dbs/temp.csv", false));
 			String linha = "";
 			while( (linha = br.readLine()) != null ) {
 				String[] colunas = linha.split(";");
@@ -81,8 +81,8 @@ public class ChamadoControll {
 			}
 			br.close();
 			bw.close();
-			File temp = new File("d:/temp.csv");//Abre arquivo para renomear
-			File base = new File("d:/base.csv");//Abre para excluir
+			File temp = new File("c:/dbs/temp.csv");//Abre arquivo para renomear
+			File base = new File("c:/dbs/base.csv");//Abre para excluir
 			base.delete(); //Excluir o arquivo antigo
 			temp.renameTo(new File("d:/base.csv")); //Renomear o novo
 			return encontrado;
