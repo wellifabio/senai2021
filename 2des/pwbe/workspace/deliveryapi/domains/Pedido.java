@@ -5,6 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import controllers.PedidoProcess;
 
 public class Pedido {
@@ -19,8 +22,8 @@ public class Pedido {
 	private Date horaInicioEntrega;
 	private Date horaFimEntrega;
 
-	// Atributos uteis para manipula��o de data e hora
-	SimpleDateFormat fd = new SimpleDateFormat("dd/MM/yyyy");
+	// Atributos uteis para manipulação de data e hora
+	SimpleDateFormat fd = new SimpleDateFormat("yyyy-MM-dd");
 	SimpleDateFormat fh = new SimpleDateFormat("hh:mm");
 
 	// Construtores
@@ -197,5 +200,22 @@ public class Pedido {
 					+ fh.format(horaPedido) + ";" + fh.format(horaInicioEntrega) + ";" + fh.format(horaFimEntrega)
 					+ "\r\n";
 		}
+	}
+
+	public String toJSON() {
+		JSONObject json = new JSONObject();
+		try {
+			json.put("id", this.id);
+			json.put("cliente", this.cliente);
+			json.put("endereco", this.endereco);
+			json.put("produto", this.produto);
+			json.put("data", fd.format(this.data));
+			json.put("horaPedido", fh.format(this.horaPedido));
+			if(horaInicioEntrega != null)json.put("horaInicioEntrega", fh.format(this.horaInicioEntrega));
+			if(horaFimEntrega != null)json.put("horaFimEntrega", fh.format(this.horaFimEntrega));
+		} catch (JSONException e) {
+			System.out.println("Erro na conversão JSON " + e);
+		}		
+		return json.toString();
 	}
 }

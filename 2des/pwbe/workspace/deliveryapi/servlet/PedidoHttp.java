@@ -1,5 +1,36 @@
 package servlet;
 
-public class PedidoHttp{
+import java.io.IOException;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import controllers.PedidoProcess;
+import domains.Pedido;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/pedidos")
+public class PedidoHttp extends HttpServlet{
+	
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		PedidoProcess.testes();
+		JSONObject json;
+		for(Pedido p: PedidoProcess.pedidos) {
+			json = new JSONObject();
+			try {
+				json.put("teste","oi");
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			resp.getWriter().print(p.toString());
+		}
+	}
 
 }
