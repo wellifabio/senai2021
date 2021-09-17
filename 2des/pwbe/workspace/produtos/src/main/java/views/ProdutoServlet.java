@@ -52,6 +52,26 @@ public class ProdutoServlet extends HttpServlet {
 	}
 
 	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String id = req.getParameter("id");
+		if (id != null) {
+			Produto produto = new Produto(id);
+			if (ProdutoProcess.produtos.contains(produto)) {
+				int indice = ProdutoProcess.produtos.indexOf(produto); 
+				produto.setNome(req.getParameter("nome"));
+				produto.setDescricao(req.getParameter("descricao"));
+				produto.setValor(req.getParameter("valor"));
+				produto.setQuantidade(req.getParameter("quantidade"));
+				ProdutoProcess.produtos.set(indice,produto);
+			} else {
+				resp.setStatus(HttpServletResponse.SC_FOUND);
+			}
+		} else {
+			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+		}
+	}
+	
+	@Override
 	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String id = req.getParameter("id");
 		if (id != null) {
