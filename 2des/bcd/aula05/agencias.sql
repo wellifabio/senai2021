@@ -33,7 +33,8 @@ create table vendas(
 show tables;
 
 -- DML (Data Manipulation Language)
--- CRUD em MYSQL (INSERT INTO, SELECT, UPDATE e DELETE)
+-- CRUD em MYSQL DDL (CREATE, SHOW DESCRIBE, ALTER, DROP)
+-- CRUD em MYSQL DML (INSERT, SELECT, UPDATE e DELETE)
 
 describe agencias;
 insert into agencias(cidade,uf) values
