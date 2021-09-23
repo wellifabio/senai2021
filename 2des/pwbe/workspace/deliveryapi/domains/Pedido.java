@@ -202,7 +202,7 @@ public class Pedido {
 		}
 	}
 
-	public String toJSON() {
+	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		try {
 			json.put("id", this.id);
@@ -216,6 +216,6 @@ public class Pedido {
 		} catch (JSONException e) {
 			System.out.println("Erro na conversão JSON " + e);
 		}		
-		return json.toString();
+		return json;
 	}
 }
