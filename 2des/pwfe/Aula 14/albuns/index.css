@@ -31,3 +31,72 @@ li {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.albuns {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.album {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.model {
+    visibility: hidden;
+    display: none;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photos {
+    width: 80%;
+    height: 80%;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.photos > span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.photos > span > img {
+    width: 30px;
+}
+
+.lista {
+    width: 95%;
+    height: 85%;
+    overflow-y: scroll;
+}

@@ -1,9 +1,6 @@
 const list = document.querySelector(".list");
-
 var username = document.querySelector("#username");
-
 username.innerHTML = localStorage.getItem("name");
-
 const url = "https://jsonplaceholder.typicode.com/todos?userId=" + localStorage.getItem("id");
 
 fetch(url)
