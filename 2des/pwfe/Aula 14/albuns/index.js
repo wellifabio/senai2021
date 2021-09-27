@@ -36,7 +36,14 @@ function getPhotos(id) {
     fetch(urlPhoto)
     .then(resp => { return resp.json() })
     .then(data => {
-        console.log(data);
+        let lista = document.querySelector(".lista");
+        lista.innerHTML = "";
+        data.forEach(foto => {
+            let img = document.createElement("img");
+            img.style.width = "100%";
+            img.src = foto.url;
+            lista.appendChild(img);
+        })
     })
     .catch(err => { console.log(err) })
 }
