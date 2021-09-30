@@ -1,0 +1,9 @@
+ORM ou MOR
+(Object-Relational Mapping)
+(Mapeamento Objeto Relacional)
+Fontes:
+https://blog.geekhunter.com.br/mapeamento-objeto-relacional/
+https://www.treinaweb.com.br/blog/o-que-e-orm
+
+
+

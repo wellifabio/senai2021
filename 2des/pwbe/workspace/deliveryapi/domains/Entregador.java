@@ -6,7 +6,7 @@ import org.json.JSONObject;
 public class Entregador {
 	
 	//Atributos	
-	private int id_entregador;
+	private int idEntregador;
 	private String nomeCompleto;
 	private String veiculo;
 	
@@ -14,24 +14,24 @@ public class Entregador {
 	public Entregador() {
 	}
 	
-	public Entregador(int id_entregador, String nomeCompleto, String veiculo) {
-		this.id_entregador = id_entregador;
+	public Entregador(int idEntregador, String nomeCompleto, String veiculo) {
+		this.idEntregador = idEntregador;
 		this.nomeCompleto = nomeCompleto;
 		this.veiculo = veiculo;
 	}
 	
-	public Entregador(String id_entregador, String nomeCompleto, String veiculo) {
-		this.id_entregador = Integer.valueOf(id_entregador);
+	public Entregador(String idEntregador, String nomeCompleto, String veiculo) {
+		this.idEntregador = Integer.valueOf(idEntregador);
 		this.nomeCompleto = nomeCompleto;
 		this.veiculo = veiculo;
 	}
 	
 	//Getters && Setters
-	public int getId_entregador() {
-		return id_entregador;
+	public int getIdEntregador() {
+		return idEntregador;
 	}
-	public void setId_entregador(int id_entregador) {
-		this.id_entregador = id_entregador;
+	public void setIdEntregador(int idEntregador) {
+		this.idEntregador = idEntregador;
 	}
 	public String getNomeCompleto() {
 		return nomeCompleto;
@@ -46,16 +46,16 @@ public class Entregador {
 		this.veiculo = veiculo;
 	}
 
-	//Saídas
+	//Saï¿½das
 	@Override
 	public String toString() {
-		return id_entregador + "\t" + nomeCompleto + "\t" + veiculo + "\n";
+		return idEntregador + "\t" + nomeCompleto + "\t" + veiculo + "\n";
 	}
 	
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		try {
-			json.put("id_entregador", this.id_entregador);
+			json.put("idEntregador", this.idEntregador);
 			json.put("nomeCompleto", this.nomeCompleto);
 			json.put("veiculo", this.veiculo);
 		} catch (JSONException e) {
