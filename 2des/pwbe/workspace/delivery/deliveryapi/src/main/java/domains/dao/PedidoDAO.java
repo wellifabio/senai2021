@@ -1,4 +1,4 @@
-package controllers.dao;
+package domains.dao;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
