@@ -62,7 +62,7 @@ show tables;
 
 -- DML(Manipulação)
 -- Importando os dados de produtos.csv
-LOAD DATA INFILE 'D:/wellington/senai2021/2des/bcd/aula09/produtos.csv'
+LOAD DATA INFILE 'D:/wellington/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/produtos.csv'
 INTO TABLE produtos
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -70,7 +70,7 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
 -- Importando os dados de clientes.csv
-LOAD DATA INFILE 'D:/wellington/senai2021/2des/bcd/aula09/clientes.csv'
+LOAD DATA INFILE 'D:/wellington/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/clientes.csv'
 INTO TABLE clientes
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -78,7 +78,7 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
 -- Importando os dados de entregadores.csv
-LOAD DATA INFILE 'D:/wellington/senai2021/2des/bcd/aula09/entregadores.csv'
+LOAD DATA INFILE 'D:/wellington/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/entregadores.csv'
 INTO TABLE entregadores
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
