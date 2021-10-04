@@ -2,7 +2,7 @@
 -- Editora SENAI - 2019
 -- Comandos DDL para criar a estrutura do banco de dados
 drop database Pizzaria;
-create database Pizzaria;
+create database Pizzaria charset=UTF8 collate utf8_general_ci;
 use Pizzaria;
 
 create table Cliente(
