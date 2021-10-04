@@ -1,0 +1,30 @@
+1 - Acrescente este CPF 123456789-44
+para o Cliente Evandro Silva.
+
+update clientes set cpf="123456789-44"
+where id_cliente = 3;
+select * from clientes;
+
+2 - Acrescente este telefone: 19 99999-8888
+para a cliente Tatiane Silva Souza
+
+update clientes set telefone = "19 99999-8888"
+where id_cliente = 8;
+
+3 - Mostre apenas os 10 primeiros clientes.
+select * from clientes where id_cliente <= 10;
+select * from clientes limit 10;
+
+4 - Mostre apenas o s 10 últimos clientes.
+select * from clientes where id_cliente >= 19;
+select * from clientes order by id_cliente desc;
+select * from clientes
+order by id_cliente desc
+limit 10;
+
+5 - Mostre os pedidos agrupados por Entregadores.
+select * from pedidos group by id_entregador;
+
+6 - Conte quantos pedidos cada entregador já fez.
+select id_entregador, count(id_pedido) from pedidos
+group by id_entregador;
