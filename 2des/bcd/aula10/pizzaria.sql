@@ -56,7 +56,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ana Claudia Maciel","Rua Suéllen Rodolfo Martinelli",1214,"Frente","Dom Bosco","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Argemiro Pentian Junior","Rua Silvia Roberta de Jesus Garcia",1216,"","Dom Bosco","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Bento Rafael Siqueira","Rua Sergio Willians Poneli",1218,"","Dom Bosco","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Bernardo Moreira Zabadal","Rua Sara Luzia de Melo",1220,"","Dom Bosco","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Bernardo Moreira Zabadal","Rua Sara Luzia de Melo",1220,"","Dom Bosco","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Carlos Roberto de Oliveira Cazelatto Junior","Rua Raphael Hungaro Moretti",1222,"","Dom Bosco","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Carlos Roberto Do Nascimento Costa","Rua Ramon Simões Abílio",1224,"","Dom Bosco","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Cesar Augusto Pascali Rago","Rua Rafaela de Jesus Alencar",1226,"","Dom Bosco","");
@@ -72,7 +72,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Diego Rafael Moraes","Rua Lucas Hermann Negri",1353,"","Zambom","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Diogo Matos da Silva","Rua Liliam Sayuri Sakamoto",1447,"Segundo andar","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Diogo Paulino da Cruz dos Santos","Rua Juliana de Sousa Ribeiro",1541,"","Zambom","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Douglas Brito damalio","Rua Josiane Rosa de Oliveira Gaia Pimenta",1635,"","Zambom","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Douglas Brito damalio","Rua Josiane Rosa de Oliveira Gaia Pimenta",1635,"","Zambom","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Draylson Micael de Souza","Rua José Santiago Moreira de Mello",205,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Eder Almeida Batista de Oliveira","Rua José Renato Paviotti",206,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ederlon Barbosa Cruz","Rua José Rafael Pilan",207,"","Zambom","");
@@ -88,7 +88,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Esteic Janaina Santos Batista","Rua Helder Pestana",2857,"","Santa Cruz","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Everaldo Costa Silva Neto","Rua Gustavo Moreira Calixto",2951,"","Santa Cruz","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Everaldo Silva de Freitas","Rua Giovanna Nascimento Antonieti",3045,"","Santa Cruz","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ewerton José da Silva","Rua Giovani Bertolla Sampaio",3139,"","Santa Cruz","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ewerton José da Silva","Rua Giovani Bertolla Sampaio",3139,"","Santa Cruz","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Fabio Luiz de Paula","Rua Gerson Luiz Camillo",3233,"","Santa Cruz","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Fabio Serafim","Rua Gabriel Spadon de Souza",3327,"","Santa Cruz","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Felipe Gobo Bruno","Rua Gabriel Sgorlon Tininis",3421,"","Bela Vista","Igreja");
@@ -99,7 +99,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Floriano Ferreira dos Reis Filho","Rua Francisco Assis da Silva",204,"","Bela Vista","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Frances Albert Santos","Rua Frances Albert Santos",205,"","Bela Vista","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Francisco Assis da Silva","Rua Floriano Ferreira dos Reis Filho",206,"","Bela Vista","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Francisco Edigleison da Silva Barbosa","Rua Flávia Zenaro Nogueira E Silva",207,"","Zambom","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Francisco Edigleison da Silva Barbosa","Rua Flávia Zenaro Nogueira E Silva",207,"","Zambom","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Francisco José Nardi Filho","Rua Fernando Henrique Campos",208,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Gabriel Ferreira Teles Gomes","Rua Fernando Claudio dos Santos Junior",209,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Gabriel Morais Silveira","Rua Fernanda Zampieri Canaver",210,"","Zambom","");
@@ -116,7 +116,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ingrid Marçal","Rua Elis Cristina Montoro Hernandes Ervolino",2575,"","Santa Cruz","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Jeane Aparecida Menegueli","Rua Elias Adriano Nogueira da Silva",222,"","Santa Cruz","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Jefferson Barbosa Belo da Silva","Rua Elaine Cecília Gatto",223,"","Santa Cruz","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Jefferson Carlos Pedroso","Rua Eduardo Henrique Spies",224,"","Santa Cruz","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Jefferson Carlos Pedroso","Rua Eduardo Henrique Spies",224,"","Santa Cruz","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Jessé Italo Silva","Rua Eduardo de Paula Lima Nascimento",225,"","Santa Cruz","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("José Eugênio de Mira","Rua Ednei Jose de Almeida Junior",226,"","Bela Vista","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("José Rafael Pilan","Rua Edinilson da Silva Vida",227,"","Bela Vista","");
@@ -132,7 +132,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Marcelo José Vigorito Campara","Rua Deysiane Matos Sande",237,"","Zambom","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Murilo Gleyson Gazzola","Rua Denis Henrique Caixeta",238,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Ovídio José Francisco","Rua Deivison Shindi Takatu",239,"","Dom Bosco","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Patrícia Fernanda da Silva Freitas","Rua Debora Barbosa Aires",240,"","Dom Bosco","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Patrícia Fernanda da Silva Freitas","Rua Debora Barbosa Aires",240,"","Dom Bosco","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Paula Leticia Santos Lima","Rua Darvin Ames",241,"","Dom Bosco","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Rafael Tomé de Souza","Rua Danilo César Pereira",242,"","Dom Bosco","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Rafaela de Jesus Alencar","Rua Claudiney Ramos Tinoco",243,"","Dom Bosco","Igreja");
@@ -143,7 +143,7 @@ insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) v
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Silvia Roberta de Jesus Garcia","Rua Carlos Roberto de Oliveira Cazelatto Junior",248,"","Dom Bosco","Campinho");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Suéllen Rodolfo Martinelli","Rua Carlos César Farias de Souza",249,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Taynara Cerigueli Dutra","Rua Bernardo Moreira Zabadal",250,"","Zambom","");
-insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Thamires de Campos Luz","Rua Bento Rafael Siqueira",251,"","Zambom","Suermercado");
+insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Thamires de Campos Luz","Rua Bento Rafael Siqueira",251,"","Zambom","suermercado");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Viviane Mello Bonadia dos Santos","Rua Argemiro Pentian Junior",252,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Walter Paulo Costenaro","Rua Anisio Alfredo da Silva Junior",253,"","Zambom","");
 insert into Cliente(nome, logradouro, numero, complemento, bairro, referencia) values("Wellington Fabio de Oliveira Martins","Rua André Luyde da Silva Souza",254,"","Zambom","");
