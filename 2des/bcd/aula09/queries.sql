@@ -24,6 +24,11 @@ from pedidos group by id_entregador;
 -- e o nome do entregador
 select * from pedidos;
 select nome_completo from entregadores;
+-- Join
+-- inner join
+-- left join
+-- right join
+-- outher join
 -- Completo
 select
     pedidos.id_entregador,
@@ -41,12 +46,24 @@ select pedidos.id_entregador, data, id_cliente, nome_completo
 from pedidos inner join entregadores
 on pedidos.id_entregador = entregadores.id_entregador;
 
--- Join
--- inner join
--- left join
--- right join
--- outher join
+-- 7 A tabela de "itens" possui (id_pedido, id_produto e quantidade)
+-- Mostre também o nome e o preço do produto
+select i.id_pedido, i.id_produto, i.quantidade, p.nome, p.preco
+from itens i inner join produtos p
+on i.id_produto = p.id_produto
+order by i.id_pedido;
 
+-- Se quisessemos somar o total
+select sum(p.preco)
+from itens i inner join produtos p
+on i.id_produto = p.id_produto;
 
+-- Se quisessemos agrupar por produto e obter um subtotal
+select
+    i.id_pedido, i.id_produto, i.quantidade,
+    p.nome, sum(p.preco) as subtotal
+from itens i inner join produtos p
+on i.id_produto = p.id_produto
+group by i.id_produto;
 
 
