@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    let url = "http://10.87.207.2:8080/api/livro";
+
+    let obj = {
+        "id": 12,
+        "titulo": "Biblia",
+        "autor": "Jesus",
+        "editora": "Os Apostolos",
+        "idioma": "TODOS",
+        "urlImagem": "https://m.media-amazon.com/images/I/618iHJVMh4L.jpg",
+        "lancamento": "0000-00-00T03:00:00.000+00:00",
+        "numeroPaginas": 950,
+        "estoque": 10,
+        "preco": 10.3
+    }
+
+    //Incluso segundo parametro para configuração da requisição
+    //Objeto JSON informando o tipo do metodo
+    //Os dados a serem inseridos são enviados via body
+    //JSON.stringify converte o nosso obj JSON para o formato de string
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(obj)
+    })
+    .then(res => { return res.json() })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(err => { console.log(err) })
+
+</script>
+
+</html>
