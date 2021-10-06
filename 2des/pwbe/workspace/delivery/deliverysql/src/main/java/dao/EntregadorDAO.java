@@ -10,11 +10,13 @@ import domains.Entregador;
 
 public class EntregadorDAO {
 
+	//Atributos Básicos
 	private Connection con;
 	private PreparedStatement ps;
 	private ArrayList<Entregador> entregadores;
 	private Entregador entregador;
 
+	//Listar todos
 	public ArrayList<Entregador> readAll() throws SQLException {
 		entregadores = new ArrayList<>();
 		String query = "select * from entregadores";

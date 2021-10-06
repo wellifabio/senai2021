@@ -24,6 +24,10 @@ public class Produto {
 		this.preco = Double.valueOf(preco);
 	}
 
+	public Produto(String idProduto) {
+		this.idProduto = Integer.valueOf(idProduto);
+	}
+
 	public int getIdProduto() {
 		return idProduto;
 	}

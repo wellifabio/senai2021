@@ -4,6 +4,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Pedido {
 
 	private int idPedido;
@@ -44,6 +47,10 @@ public class Pedido {
 		} catch (ParseException e) {
 			System.out.println("Erro converter data/hora: "+e);
 		}
+	}
+
+	public Pedido(String idPedido) {
+		this.idPedido = Integer.valueOf(idPedido);
 	}
 
 	public int getIdPedido() {
@@ -100,6 +107,28 @@ public class Pedido {
 
 	public void setHoraFim(Date horaFim) {
 		this.horaFim = horaFim;
+	}
+
+	@Override
+	public String toString() {
+		return idPedido + "\t" + cliente.toString() + "\t" + entregador.toString() + "\t" + d.format(data)
+				+ "\t" + h.format(horaPedido) + "\t" + h.format(horaEntrega) + "\t" + h.format(horaFim) + "\n";
+	}
+	
+	public JSONObject toJSON() {
+		JSONObject json = new JSONObject();
+		try {
+			json.put("idPedido", idPedido);
+			json.put("cliente", cliente.toJSON());
+			json.put("entregador", entregador.toJSON());
+			json.put("data", d.format(data));
+			json.put("horaPedido", d.format(horaPedido));
+			json.put("horaEntrega", d.format(horaEntrega));
+			json.put("horaFim", d.format(horaFim));		
+		} catch (JSONException e) {
+			System.out.println("Erro ao converter JSON: "+e);
+		}
+		return json;
 	}
 
 }
