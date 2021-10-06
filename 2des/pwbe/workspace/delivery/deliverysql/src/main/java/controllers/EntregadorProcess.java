@@ -1,4 +1,4 @@
-package controllers;
+package domains;
 
 
 public class EntregadorProcess {

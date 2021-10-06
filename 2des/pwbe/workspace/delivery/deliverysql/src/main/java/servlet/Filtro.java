@@ -13,7 +13,7 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 
 @WebFilter("/*")
-public class PedidoFiltro implements Filter {
+public class Filtro implements Filter {
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
