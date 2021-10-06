@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 public class Entregador {
 	
-	//Atributos Básicos
+	//Atributos BÃ¡sicos
 	private int idEntregador;
 	private String nomeCompleto;
 	private String veiculo;
@@ -13,7 +13,12 @@ public class Entregador {
 	//Construtores - vazio
 	public Entregador() {
 	}
-
+	
+	//Construtores com apenas o id no formato String
+	public Entregador(String idEntregador) {
+		this.idEntregador = Integer.valueOf(idEntregador);
+	}
+	
 	//Construtores - Cheio
 	public Entregador(int idEntregador, String nomeCompleto, String veiculo) {
 		this.idEntregador = idEntregador;
