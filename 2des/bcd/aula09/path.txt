@@ -1,1 +1,1 @@
-source D:/wellington/senai2021/2des/bcd/aula09
+source D:/wellington/senai2021/2des/bcd/aula09/script.sql;

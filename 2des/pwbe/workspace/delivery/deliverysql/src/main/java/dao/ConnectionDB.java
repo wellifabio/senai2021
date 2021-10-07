@@ -6,13 +6,13 @@ import java.sql.SQLException;
 
 public class ConnectionDB {
 
-	//Atributos para Conexão com o Banco de dados
+	//Atributos para Conexï¿½o com o Banco de dados
 	private static String dns = "jdbc:mysql://localhost:3306/delivery";
 	private static String usuario = "root";
 	private static String senha = "";
-	private static Connection con;
+	private static Connection con;//Este objeto que efetivamente obtem conexÃ£o com o BD
 	
-	//Método que faz a conexão efetivamente
+	//Mï¿½todo que faz a conexï¿½o efetivamente
 	public static Connection getConnection() {
 		try {
 			if(con == null || con.isClosed()) {

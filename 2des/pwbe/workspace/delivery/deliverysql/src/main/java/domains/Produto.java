@@ -11,6 +11,10 @@ public class Produto {
 
 	public Produto() {
 	}
+	
+	public Produto(String idProduto) {
+		this.idProduto = Integer.valueOf(idProduto);
+	}
 
 	public Produto(int idProduto, String nome, double preco) {
 		this.idProduto = idProduto;

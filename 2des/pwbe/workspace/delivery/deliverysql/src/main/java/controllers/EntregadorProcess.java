@@ -8,8 +8,4 @@ public class EntregadorProcess {
 	
 	public static ArrayList<Entregador> entregadores;
 	
-	public static void listarTodos() {
-		
-	}
-	
 }

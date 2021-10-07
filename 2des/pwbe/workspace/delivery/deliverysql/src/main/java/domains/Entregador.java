@@ -14,6 +14,10 @@ public class Entregador {
 	public Entregador() {
 	}
 	
+	public Entregador(String idEntregador) {
+		this.idEntregador = Integer.valueOf(idEntregador);
+	}
+	
 	public Entregador(int idEntregador, String nomeCompleto, String veiculo) {
 		this.idEntregador = idEntregador;
 		this.nomeCompleto = nomeCompleto;
