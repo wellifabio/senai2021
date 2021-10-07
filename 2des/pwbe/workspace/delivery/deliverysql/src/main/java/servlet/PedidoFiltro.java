@@ -12,8 +12,8 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 
-@WebFilter("/*")
-public class Filtro implements Filter {
+@WebFilter("/pedidos")
+public class PedidoFiltro implements Filter {
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)

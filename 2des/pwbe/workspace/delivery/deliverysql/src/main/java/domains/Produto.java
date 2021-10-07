@@ -17,15 +17,11 @@ public class Produto {
 		this.nome = nome;
 		this.preco = preco;
 	}
-	
+
 	public Produto(String idProduto, String nome, String preco) {
 		this.idProduto = Integer.valueOf(idProduto);
 		this.nome = nome;
 		this.preco = Double.valueOf(preco);
-	}
-
-	public Produto(String idProduto) {
-		this.idProduto = Integer.valueOf(idProduto);
 	}
 
 	public int getIdProduto() {
@@ -56,7 +52,7 @@ public class Produto {
 	public String toString() {
 		return idProduto + "\t" + nome + "\t" + preco + "\n";
 	}
-	
+
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		try {
@@ -64,11 +60,9 @@ public class Produto {
 			json.put("nome", nome);
 			json.put("preco", preco);
 		} catch (JSONException e) {
-			System.out.println("Erro ao converter JSON: "+e);
+			System.out.println("Erro ao converter JSON: " + e);
 		}
 		return json;
 	}
 	
-	
-
 }

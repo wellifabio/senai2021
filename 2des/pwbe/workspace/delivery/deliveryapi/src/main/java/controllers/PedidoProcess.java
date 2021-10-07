@@ -3,7 +3,7 @@ package controllers;
 import java.util.ArrayList;
 
 import domains.Pedido;
-import controllers.dao.PedidoDAO;
+import domains.dao.PedidoDAO;
 
 public class PedidoProcess {
 
