@@ -24,7 +24,7 @@ public class Pedido {
 
 	public Pedido() {
 	}
-	
+
 	public Pedido(String idPedido) {
 		this.idPedido = Integer.valueOf(idPedido);
 	}
@@ -121,12 +121,18 @@ public class Pedido {
 		JSONObject json = new JSONObject();
 		try {
 			json.put("idPedido", idPedido);
-			json.put("cliente", cliente.toJSON());
-			json.put("entregador", entregador.toJSON());
-			json.put("data", d.format(data));
-			json.put("horaPedido", h.format(horaPedido));
-			json.put("horaEntrega", h.format(horaEntrega));
-			json.put("horaFim", h.format(horaFim));
+			if (cliente != null)
+				json.put("cliente", cliente.toJSON());
+			if (entregador != null)
+				json.put("entregador", entregador.toJSON());
+			if (data != null)
+				json.put("data", d.format(data));
+			if (horaPedido != null)
+				json.put("horaPedido", h.format(horaPedido));
+			if (horaEntrega != null)
+				json.put("horaEntrega", h.format(horaEntrega));
+			if (horaFim != null)
+				json.put("horaFim", h.format(horaFim));
 		} catch (JSONException e) {
 			System.out.println("Erro ao converter JSON: " + e);
 		}
