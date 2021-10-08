@@ -30,6 +30,7 @@ public class EntregadorDAO {
 			entregador.setVeiculo(rs.getString("veiculo"));
 			entregadores.add(entregador);
 		}
+		con.close(); //Fechar a conexão
 		return entregadores;
 	}
 }

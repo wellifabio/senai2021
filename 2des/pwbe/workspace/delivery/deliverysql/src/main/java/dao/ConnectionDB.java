@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class ConnectionDB {
 
 	//Atributos para Conex�o com o Banco de dados
-	private static String dns = "jdbc:mysql://localhost:3306/delivery";
-	private static String usuario = "root";
-	private static String senha = "";
+	private static final String DNS = "jdbc:mysql://localhost:3306/delivery";
+	private static final String USUARIO = "root";
+	private static final String SENHA = "";
 	private static Connection con;//Este objeto que efetivamente obtem conexão com o BD
 	
 	//M�todo que faz a conex�o efetivamente
@@ -17,7 +17,7 @@ public class ConnectionDB {
 		try {
 			if(con == null || con.isClosed()) {
 				DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-				con = DriverManager.getConnection(dns,usuario,senha);
+				con = DriverManager.getConnection(DNS,USUARIO,SENHA);
 			}
 			return con;
 		} catch (SQLException e) {

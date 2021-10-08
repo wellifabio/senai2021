@@ -34,6 +34,9 @@ public class ProdutoDAO {
 			produtos.add(produto);
 		}
 		
+		//Fecha a conexão com o BD
+		con.close();
+		
 		//Retorna a lista completa
 		return produtos;
 	}

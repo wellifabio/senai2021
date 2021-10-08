@@ -21,7 +21,7 @@ public class EntregadorREST extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
-			EntregadorProcess.carregarLista();
+			EntregadorProcess.carregarDados();
 			JSONArray ja = new JSONArray();
 			for(Entregador e: EntregadorProcess.entregadores) {
 				ja.put(e.toJSON());

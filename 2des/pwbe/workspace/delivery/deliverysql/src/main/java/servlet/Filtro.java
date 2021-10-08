@@ -30,7 +30,6 @@ public class Filtro implements Filter {
 				System.out.println("Erro na conversão JSON " + e);
 			}
 			resp.getWriter().print(json.toString());
-		}
-				
+		}		
 	}
 }
