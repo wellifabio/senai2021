@@ -15,7 +15,7 @@ create table produtos(
 );
 create table clientes(
     id_cliente integer not null primary key auto_increment,
-    cpf varchar(12),
+    cpf varchar(15),
     nome_completo varchar(50) not null,
     endereco varchar(100) not null,
     telefone varchar(15) not null
