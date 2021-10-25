@@ -1,5 +1,7 @@
 package domains;
 
+import java.util.Objects;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -75,6 +77,23 @@ public class Cliente {
 	}
 
 	@Override
+	public int hashCode() {
+		return Objects.hash(idCliente);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return idCliente == other.idCliente;
+	}
+
+	@Override
 	public String toString() {
 		return idCliente + "\t" + nomeCompleto + "\t" + cpf + "\t" + telefone + "\t" + endereco + "\n";
 	}
@@ -82,8 +101,8 @@ public class Cliente {
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		try {
-			json.put("idCliente", idCliente);
-			json.put("nomeCompleto", nomeCompleto);
+			json.put("id_cliente", idCliente);
+			json.put("nome_completo", nomeCompleto);
 			json.put("cpf", cpf);
 			json.put("telefone", telefone);
 			json.put("endereco", endereco);

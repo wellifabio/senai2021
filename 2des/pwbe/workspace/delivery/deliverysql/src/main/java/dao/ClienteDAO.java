@@ -43,23 +43,39 @@ public class ClienteDAO {
 		String sql = "insert into clientes(cpf,nome_completo,endereco,telefone) value (?,?,?,?);";
 		con = ConnectionDB.getConnection();
 		ps = con.prepareStatement(sql);
-		ps.setString(1, cliente.getCpf());
+		// Verifica se o cpf não possui comprimento zero
+		if (cliente.getCpf().length() == 0)
+			ps.setString(1, null);
+		else
+			ps.setString(1, cliente.getCpf());
 		ps.setString(2, cliente.getNomeCompleto());
 		ps.setString(3, cliente.getEndereco());
 		ps.setString(4, cliente.getTelefone());
-		if(ps.executeUpdate() > 0) {
+		if (ps.executeUpdate() > 0) {
 			rs = ps.getGeneratedKeys();
 			rs.next();
 			con.close();
-			return rs.getInt(1);	
-		}else {
+			return rs.getInt(1);
+		} else {
 			con.close();
 			return 0;
 		}
 	}
 
-	public void update(Cliente cliente) {
-
+	public int update(Cliente cliente) throws SQLException {
+		String sql = "update clientes set cpf = ?, nome_completo = ?, endereco = ?, telefone = ? where id_cliente = ?;";
+		con = ConnectionDB.getConnection();
+		ps = con.prepareStatement(sql);
+		// Verifica se o cpf não possui comprimento zero
+		if (cliente.getCpf().length() == 0)
+			ps.setString(1, null);
+		else
+			ps.setString(1, cliente.getCpf());
+		ps.setString(2, cliente.getNomeCompleto());
+		ps.setString(3, cliente.getEndereco());
+		ps.setString(4, cliente.getTelefone());
+		ps.setInt(5, cliente.getIdCliente());
+		return ps.executeUpdate();
 	}
 
 	public boolean delete(String id) throws SQLException {
@@ -67,12 +83,12 @@ public class ClienteDAO {
 		con = ConnectionDB.getConnection();
 		ps = con.prepareStatement(sql);
 		ps.setInt(1, Integer.valueOf(id));
-		if(ps.executeUpdate() > 0) {
+		if (ps.executeUpdate() > 0) {
 			con.close();
 			return true;
-		}else {
+		} else {
 			con.close();
-			return false;			
+			return false;
 		}
 	}
 
