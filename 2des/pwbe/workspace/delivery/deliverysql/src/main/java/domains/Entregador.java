@@ -59,8 +59,8 @@ public class Entregador {
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		try {
-			json.put("idEntregador", this.idEntregador);
-			json.put("nomeCompleto", this.nomeCompleto);
+			json.put("id_entregador", this.idEntregador);
+			json.put("nome_completo", this.nomeCompleto);
 			json.put("veiculo", this.veiculo);
 		} catch (JSONException e) {
 			System.out.println("Erro na conversão JSON " + e);

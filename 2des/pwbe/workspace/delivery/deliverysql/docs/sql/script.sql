@@ -1,6 +1,6 @@
 -- DDL (Desenvolvimento)
 drop database if exists delivery;
-create database delivery charset=UTF8 collate utf8_general_ci;
+create database delivery charset=utf8 collate utf8_general_ci;
 use delivery;
 
 create table entregadores(
@@ -18,7 +18,8 @@ create table clientes(
     cpf varchar(15),
     nome_completo varchar(50) not null,
     endereco varchar(100) not null,
-    telefone varchar(15) not null
+    telefone varchar(15) not null,
+	unique(cpf)
 );
 create table pedidos(
     id_pedido integer not null primary key auto_increment,
@@ -62,7 +63,7 @@ show tables;
 
 -- DML(Manipulação)
 -- Importando os dados de produtos.csv
-LOAD DATA INFILE 'D:/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/produtos.csv'
+LOAD DATA INFILE 'C:/Users/wellington.martins/Desktop/workspace/deliverysql/docs/sql/produtos.csv'
 INTO TABLE produtos
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -70,15 +71,16 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
 -- Importando os dados de clientes.csv
-LOAD DATA INFILE 'D:/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/clientes.csv'
+LOAD DATA INFILE 'C:/Users/wellington.martins/Desktop/workspace/deliverysql/docs/sql/clientes.csv'
 INTO TABLE clientes
+character set utf8
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
 -- Importando os dados de entregadores.csv
-LOAD DATA INFILE 'D:/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/entregadores.csv'
+LOAD DATA INFILE 'C:/Users/wellington.martins/Desktop/workspace/deliverysql/docs/sql/entregadores.csv'
 INTO TABLE entregadores
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
