@@ -12,4 +12,4 @@ D:/wellington/senai2021/2des/pwbe/workspace/delivery/deliverysql/docs/sql/produt
 5 - Rode o script com o comando abaixo, também com o path correto em um terminal SQL
 
 mysql -u root -p
-source C:/Users/wellington.martins/Desktop/workspace/deliverysql/docs/sql/script.sql
+source D:/wellington/senai2021/2des/pwbe/workspace/delivery/docs/sql/script.sql
