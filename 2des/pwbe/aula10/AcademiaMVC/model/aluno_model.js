@@ -1,14 +1,17 @@
-const aluno_model = (id, nome, peso, altura, nascimento) => {
-    let data = (nascimento + "").split('T')
+const aluno_model = (objeto) => {
+    
+    let data = (objeto.nascimento + "").split('T')
+    
     let json = {
-        "id": id,
-        "nome": nome,
-        "peso": peso,
-        "altura": altura,
+        "id": objeto.id,
+        "nome": objeto.nome,
+        "peso": objeto.peso,
+        "altura": objeto.altura,
         "nascimento": data[0],
-        "imc": (peso / (altura * altura)).toFixed(2),
+        "imc": (objeto.peso / (objeto.altura * objeto.altura)).toFixed(2)
     }
-    let imc = peso / (altura ** 2)
+
+    let imc = objeto.peso / (objeto.altura ** 2)
     if (imc < 18.5) {
         json.status = 'Só o chassi do grilo'
     } else if (imc < 25) {

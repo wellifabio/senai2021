@@ -1,1 +1,1 @@
-source C:/Users/Aluno.DSN5131112167/Desktop/senai2021/senai2021/2des/bcd/aula11/Node/BD/script.sql
+source C:/Users/Aluno.DSN5131112167/Desktop/senai2021/senai2021/2des/pwbe/aula10/BD/script.sql
