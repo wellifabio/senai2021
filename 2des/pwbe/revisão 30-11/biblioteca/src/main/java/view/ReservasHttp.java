@@ -54,8 +54,13 @@ public class ReservasHttp extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		ReservasProcess rp = new ReservasProcess();
-		JSONArray arr = rp.read();
 		pw = resp.getWriter();
+		
+		String nomePessoa = req.getParameter("nome_pessoa");
+		String nomeLivro = req.getParameter("nome_livro");
+		
+		JSONArray arr = rp.read(nomePessoa, nomeLivro);
+				
 		pw.write(arr.toString());
 	}
 	

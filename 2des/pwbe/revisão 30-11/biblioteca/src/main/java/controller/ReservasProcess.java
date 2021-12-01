@@ -50,14 +50,29 @@ public class ReservasProcess {
 		
 	}
 	
-	public JSONArray read() {
-		
+	public JSONArray read(String nomePessoa, String nomeLivro) {		
 		JSONArray arr = new JSONArray();
 		
 		String query = "SELECT * FROM reservas";
 		
+		if(nomePessoa != null && nomeLivro != null) {
+			query += " WHERE nome_livro = ? AND nome_pessoa = ?";
+		}else if(nomePessoa != null || nomeLivro != null) {
+			String part = (nomePessoa != null) ? "nome_pessoa" : "nome_livro";
+			query += " WHERE " + part + " = ?";
+		}
+		
 		try {
 			ps = con.prepareStatement(query);
+			
+			if(nomePessoa != null && nomeLivro != null) {
+				ps.setString(1, nomeLivro);
+				ps.setString(2, nomePessoa);
+			}else if(nomePessoa != null || nomeLivro != null) {
+				//SELECT * FROM reservas WHERE nome_livro = ?
+				String busca = (nomePessoa != null) ? nomePessoa : nomeLivro;
+				ps.setString(1, busca);
+			}
 			
 			rs = ps.executeQuery();
 			
