@@ -64,4 +64,35 @@ public class ReservasHttp extends HttpServlet {
 		pw.write(arr.toString());
 	}
 	
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		pw = resp.getWriter();
+		ReservasProcess rp = new ReservasProcess();
+		
+		String body = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+		
+		try {
+			JSONObject obj = new JSONObject(body);
+			
+			String nomePessoa = obj.getString("nome_pessoa");
+			String nomeLivro = obj.getString("nome_livro");
+			String data = obj.getString("data_devolucao");
+			int id = obj.getInt("id");
+			
+			Reservas reserva = new Reservas();
+			reserva.setId(id);
+			reserva.setNomePessoa(nomePessoa);
+			reserva.setNomeLivro(nomeLivro);
+			reserva.setDataDevolucao(data);
+			
+			if(rp.update(reserva) == true) {
+				pw.write(obj.toString());
+			}else {
+				resp.setStatus(401);
+			}
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+	
 }

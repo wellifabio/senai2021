@@ -99,4 +99,32 @@ public class ReservasProcess {
 		
 	}
 	
+	public boolean update(Reservas reserva) {
+		
+		String query = "UPDATE reservas SET nome_pessoa = ?, nome_livro = ?, " +
+					   "data_devolucao = ? WHERE id = ?";
+		
+		try {
+			ps = con.prepareStatement(query);
+			
+			ps.setString(1, reserva.getNomePessoa());
+			ps.setString(2, reserva.getNomeLivro());
+			ps.setString(3, reserva.getDataDevolucao());
+			ps.setInt(4, reserva.getId());
+			
+			if(ps.executeUpdate() > 0) {
+				ps.close();
+				return true;
+			}
+			
+			ps.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+		
+	}
+	
 }
