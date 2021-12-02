@@ -95,4 +95,16 @@ public class ReservasHttp extends HttpServlet {
 		}		
 	}
 	
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		pw = resp.getWriter();
+		ReservasProcess rp = new ReservasProcess();
+		
+		String tempId = req.getParameter("id");
+		int id = Integer.parseInt(tempId);
+		
+		if(rp.delete(id) == false) {
+			resp.setStatus(401);
+		}
+	}
+	
 }

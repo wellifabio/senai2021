@@ -127,4 +127,28 @@ public class ReservasProcess {
 		
 	}
 	
+	public boolean delete(int id) {
+		
+		String query = "DELETE FROM reservas WHERE id = ?";
+		
+		try {
+			ps = con.prepareStatement(query);
+		
+			ps.setInt(1, id);
+			
+			if(ps.executeUpdate() > 0) {
+				ps.close();
+				return true;
+			}
+			
+			ps.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+		
+	}
+	
 }
