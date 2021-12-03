@@ -1,0 +1,8 @@
+{
+    "mysql": {
+        "user":"root",
+        "host":"localhost",
+        "database":"irrf",
+        "port":"3306"
+    }
+}
