@@ -1,0 +1,24 @@
+.div1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.div2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid purple;
+    border-radius: 50%;
+}
+
+.backColor {
+    background-color: aquamarine;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: inherit;
+    border: 1px solid black;
+    border-radius: 10px;
+}
