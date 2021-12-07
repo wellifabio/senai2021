@@ -1,0 +1,7 @@
+{
+    "mysql" : {
+        "host" : "localhost",
+        "database" : "servicos",
+        "user" : "root"
+    }
+}
