@@ -22,3 +22,9 @@ button {
     border: 1px solid black;
     border-radius: 10px;
 }
+
+#clone {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}

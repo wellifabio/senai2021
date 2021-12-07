@@ -29,6 +29,8 @@ let div = document.querySelector("div");
 let divGerada = document.createElement("div");
 let body = document.querySelector("body");
 
+console.log(div.parentNode);
+
 body.appendChild(divGerada);
 
 /*div.classList.add("div1");
@@ -42,3 +44,23 @@ div.addEventListener("click", () => {
 div.remove();
 
 divGerada.className = "div2";
+
+var clone = document.querySelector("#clone");
+
+var temp = clone.cloneNode(true);
+
+temp.querySelector("h3").innerHTML = "FUI CLONADO";
+temp.querySelector("input").value = "Nome da Pessoa";
+
+body.appendChild(temp);
+
+var data = new Date();
+
+console.log(data);
+console.log(data.getDate());
+console.log(data.getMonth()+1);
+console.log(data.getFullYear());
+console.log(data.getHours());
+console.log(data.getMinutes());
+
+console.log(data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear());
