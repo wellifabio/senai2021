@@ -4,7 +4,7 @@ create database servicos;
 use servicos;
 
 create table servicos(
-	id integer not null primary key auto_increment,
+	id_servico integer not null primary key auto_increment,
 	prestador varchar(256) not null,
 	valor_hora decimal(6,2) not null,
 	horas_trabalhadas decimal(6,2) not null

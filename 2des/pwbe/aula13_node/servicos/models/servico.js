@@ -9,8 +9,8 @@ const servico = (sqlJson) => {
         "total": 0
     }
 
-    json.subTotal = (sqlJson.valor_hora * sqlJson.horas_trabalhadas).toFixed(2)
-    json.iss = (json.subTotal * 2 / 100).toFixed(2)
+    json.subTotal = (sqlJson.valor_hora * sqlJson.horas_trabalhadas).toFixed(2) * 1
+    json.iss = (json.subTotal * 2 / 100).toFixed(2) * 1
     json.total = json.subTotal + json.iss
 
     return json
