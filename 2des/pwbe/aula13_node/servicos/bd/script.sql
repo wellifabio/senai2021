@@ -11,7 +11,11 @@ create table servicos(
 );
 
 insert into servicos values
-(default, "Juca", 75, 35),
-(default, "Mariana", 100, 24),
-(default, "Juca", 125.5, 16);
+(default, "Juca Silva", 75, 35),
+(default, "Mariana Lima", 100, 24),
+(default, "Jacinto Pena", 125.5, 16),
+(default, "Mariana Pena", 115.0, 5),
+(default, "Luiza Pena", 200.0, 13),
+(default, "Ana Souza", 75.5, 25),
+(default, "Maria Silva", 100.0, 16);
 select * from servicos;
