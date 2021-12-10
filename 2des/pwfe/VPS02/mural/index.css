@@ -10,15 +10,9 @@ body{
     background: rgb(233, 201, 141);
     box-shadow: 0 0 1em black;
     width: 950px;
-    height: 200px;
-    margin: 5px;
-    padding: 10px;
-}
-
-#avisos{
-    width: 950px;
     height: 150px;
     margin: 5px;
+    padding: 10px;
 }
 
 #novo{
@@ -48,16 +42,19 @@ body{
 }
 
 #novo input[type=button]{
+    border: none;
+    box-shadow: 0 0 5px black;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     font-weight: bold;
     width: 150px;
     height: 60px;
     margin: 10px;
+    cursor: pointer;
 }
 
 #mural{
-    background-image: url('./assets/cortica.png');
+    background: rgb(233, 201, 141);
     background-size: 970px 620px;
     box-shadow: 0 0 1em black;
     width: 950px;
@@ -70,35 +67,32 @@ body{
 }
 
 ::-webkit-scrollbar{
-    background: rgba(233, 201, 141,0.5);
+    background: rgba(49, 34, 3, 0.5);
 }
-
+.card {
+    box-shadow: 0 0 1em black;
+    font-size: medium;
+    width: 300px;
+    height:190px;
+    margin: 5px;
+}
 .Normal{
     background: rgb(233, 201, 141);
-    box-shadow: 0 0 1em black;
-    width: 220px;
-    height:150px;
-    margin: 5px;
 }
 
 .Importante{
-    background: rgb(44, 25, 219);
-    box-shadow: 0 0 1em black;
-    width: 220px;
-    height:150px;
-    margin: 5px;
+    background: rgb(199, 140, 12);
 }
 
 .Urgente{
-    background: rgb(151, 45, 3);
-    box-shadow: 0 0 1em black;
-    width: 220px;
-    height:150px;
-    margin: 5px;
+    background: rgb(238, 106, 29);
 }
 
-button{
+.fechar{
     font-size: large;
+    font-style: italic;
+    color: white;
+    margin: 5px;
     background: transparent;
     border: none;
     cursor:pointer;
@@ -106,4 +100,8 @@ button{
 
 p{
     text-align: center;
+}
+a{
+    text-decoration: none;
+    color:#000;
 }
