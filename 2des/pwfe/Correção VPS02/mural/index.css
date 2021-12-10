@@ -1,0 +1,109 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('./assets/fundo.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avisos{
+    background: rgb(233, 201, 141);
+    box-shadow: 0 0 1em black;
+    width: 950px;
+    height: 200px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#avisos{
+    width: 950px;
+    height: 150px;
+    margin: 5px;
+}
+
+#novo{
+    display: flex;
+    flex-direction: row;
+}
+
+#novo textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    width: 400px;
+    height: 40px;
+}
+
+#novo input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    width: 180px;
+    height: 40px;
+}
+
+#novo select{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    width: 180px;
+    height: 45px;
+}
+
+#novo input[type=button]{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+}
+
+#mural{
+    background-image: url('./assets/cortica.png');
+    background-size: 970px 620px;
+    box-shadow: 0 0 1em black;
+    width: 950px;
+    height: 600px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    background: rgba(233, 201, 141,0.5);
+}
+
+.Normal{
+    background: rgb(233, 201, 141);
+    box-shadow: 0 0 1em black;
+    width: 220px;
+    height:150px;
+    margin: 5px;
+}
+
+.Importante{
+    background: rgb(44, 25, 219);
+    box-shadow: 0 0 1em black;
+    width: 220px;
+    height:150px;
+    margin: 5px;
+}
+
+.Urgente{
+    background: rgb(151, 45, 3);
+    box-shadow: 0 0 1em black;
+    width: 220px;
+    height:150px;
+    margin: 5px;
+}
+
+button{
+    font-size: large;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+p{
+    text-align: center;
+}

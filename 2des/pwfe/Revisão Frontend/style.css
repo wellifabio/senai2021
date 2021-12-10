@@ -21,6 +21,13 @@ button {
     background: inherit;
     border: 1px solid black;
     border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 #clone {

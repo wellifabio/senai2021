@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>Mural de Avisos</title>
+</head>
+
+<body>
+    <div id="avisos">
+        <center>
+            <h2>Mural de Avisos</h2>
+        </center>
+        <div id="novo">
+            <div style="margin: 5px;">
+                <label>Tipo de aviso:</label>
+                <select id="tipo">
+                    <option>Normal</option>
+                    <option>Importante</option>
+                    <option>Urgente</option>
+                </select>
+            </div>
+            <div style="margin: 5px;">
+                <label>Descrição da menságem:</label>
+                <textarea id="aviso"></textarea>
+            </div>
+            <div style="margin: 5px;">
+                <label>Link de destino:</label>
+                <input type="text" id="link" />
+            </div>
+            <input type="button" value="Adicionar" onclick="add()"/>
+        </div>
+    </div>
+    <div id="mural"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

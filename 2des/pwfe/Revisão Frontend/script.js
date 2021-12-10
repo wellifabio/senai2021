@@ -41,7 +41,7 @@ div.addEventListener("click", () => {
     div.classList.toggle("backColor");
 })
 
-div.remove();
+//div.remove();
 
 divGerada.className = "div2";
 
