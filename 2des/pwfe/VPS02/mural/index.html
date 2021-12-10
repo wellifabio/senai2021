@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="shortcut icon" href="./assets/fundo.jpg">
     <title>Mural de Avisos</title>
 </head>
 
-<body onload="estilizarInput()">
+<body onload="preencherForm(), estilizarInput()">
     <div id="avisos">
         <center>
             <h2>Mural de Avisos</h2>
@@ -24,18 +25,18 @@
                 </select>
             </div>
             <div style="margin: 5px;">
-                <label>Descrição da menságem:</label>
+                <label>Descrição da mensagem:</label>
                 <textarea id="aviso"></textarea>
             </div>
             <div style="margin: 5px;">
                 <label>Link de destino:</label>
                 <input type="text" id="link" />
             </div>
-            <input type="button" value="Adicionar" onclick="add()" id="add"/>
+            <input type="button" value="Adicionar" onclick="add(), preencherForm(), estilizarInput()" id="add"/>
         </div>
     </div>
     <div id="mural"></div>
-    <script src="./index.js"></script>
 </body>
-
+<script src="./index.js"></script>
+<script src="./uteis/uteis.js"></script>
 </html>
