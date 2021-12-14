@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import style from './style.js'
-export default function Home({ navigation }) {
+export default function Listar({ navigation }) {
 
     const [lista, setlista] = useState([
         {
@@ -20,7 +20,7 @@ export default function Home({ navigation }) {
         }).then(resp => {
             return resp.json()
         }).then(data => {
-            setlista(data);
+            setlista(data)
         }).catch(err => {
         })
     },[lista])
@@ -28,7 +28,7 @@ export default function Home({ navigation }) {
     return (
         <View style={style.pag}>
             {lista.map((item, index) => 
-                <TouchableOpacity key={index} style={style.item}>
+                <TouchableOpacity key={index} style={style.item} onPress={() => { navigation.navigate('Detalhes', item) }}>
                     <Text>{item.id}</Text>
                     <Text>{item.nome}</Text>
                     <Image style={style.icone} source={require('../../assets/favicon.png')} />

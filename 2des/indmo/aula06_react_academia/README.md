@@ -1,7 +1,8 @@
 #ReactNative
 #Academia
 #IMC
-- Aplicativo simples que consome API e realiza as funcionalidades CRUD
+#CRUD
+- Aplicativo simples que consome API e realiza as 4 funcionalidades CRUD
 - Necessário o BackEnd https://github.com/wellifabio/senai2021/tree/master/2des/pwbe/aula10_node em execução:
 - Requisitos: VsCode, SGBD MySQL MariaDB, Node versão 16.13.1 LTS ou superior e expo-cli
 - Para testar:

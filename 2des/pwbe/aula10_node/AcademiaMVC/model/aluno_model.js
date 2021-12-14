@@ -1,13 +1,11 @@
 const aluno_model = (objeto) => {
-    
-    let data = (objeto.nascimento + "").split('T')
-    
+      
     let json = {
         "id": objeto.id,
         "nome": objeto.nome,
         "peso": objeto.peso,
         "altura": objeto.altura,
-        "nascimento": data[0],
+        "nascimento": objeto.nascimento,
         "imc": (objeto.peso / (objeto.altura * objeto.altura)).toFixed(2)
     }
 

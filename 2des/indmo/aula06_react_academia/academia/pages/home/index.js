@@ -12,7 +12,7 @@ export default function Home({ navigation }) {
                 <Image style={style.icone} source={require('../../assets/favicon.png')}/>
                 <Text style={{margin:12,fontSize:16,fontWeight:'bold'}}>Cadastrar Aluno</Text>
             </TouchableOpacity>
-            <Image style={style.img} source={{uri:'https://lh3.googleusercontent.com/proxy/MkI_c0TMjs-wMLdPIsP9EQxpwihS_cav6j7l5h0niZ13-YcswvC_lvyAsy7K2Apty-VOb-nNIKYYtxFCv5iZl3C695doQ1V0wQv8JwcB_bXrGXlR'}}/>
+            <Image style={style.img} source={{uri:'https://news.gympass.com/wp-content/uploads/2018/07/escolher-a-melhor-academia.jpg'}}/>
         </View>
     )
 }

@@ -11,7 +11,7 @@ create table alunos(
 );
 
 -- Importando os dados de academia.csv
-LOAD DATA INFILE 'D:/wellington/senai2021/2des/pwbe/aula10_node/BD/academia.csv'
+LOAD DATA INFILE 'C:/Users/wellington.martins/Desktop/github/senai2021/2des/pwbe/aula10_node/BD/academia.csv'
 INTO TABLE alunos
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
