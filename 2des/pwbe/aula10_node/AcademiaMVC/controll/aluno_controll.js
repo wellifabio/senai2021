@@ -5,7 +5,7 @@ const model = require('../model/aluno_model.js')
 // READ 4 Funções
 //Listar todos da maneira que está no BD
 const get_alunos = (req, res) => {
-    let string = 'select * from alunos'
+    let string = 'select * from alunos order by id desc'
     con.query(string, (err, result) => {
         res.json(result)
     })
@@ -24,7 +24,7 @@ const get_id = (req, res) => {
 
 //Listar todos utilizando o Model (MVC)
 const get_alunos_imc = (req, res) => {
-    let string = 'select * from alunos'
+    let string = 'select * from alunos order by id desc'
     con.query(string, (err, result) => {
         let array = []
         result.forEach(e => {
