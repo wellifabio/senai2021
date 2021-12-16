@@ -29,19 +29,19 @@ insert into entregadores VALUES
 
 insert into entregas VALUES
 (default, 1, "Jacinto Pena", "Rua que sobe e desce, 25, Jaguariúna","Pão de queijo",3.50,curdate(),null),
-(default, 2, "Jacinto Ódio", "Rua que do Amor, 19, Jaguariúna","Pão de mel",10.50,curdate(),null),
-(default, 3, "Jacinto Amor", "Rua que sobe e desce, 15, Jaguariúna","Pão de ló",13.50,curdate(),null),
+(default, 2, "Jacinto Ódio", "Rua do Amor, 19, Jaguariúna","Pão de mel",10.50,curdate(),null),
+(default, 3, "Jacinto Amor", "Rua da felicidade, 15, Jaguariúna","Pão de ló",13.50,curdate(),null),
 (default, 4, "Jacinto Pena", "Rua que some, 250, Jaguariúna","Pão de forma",5.50,curdate(),null),
-(default, 1, "Passos Dias aguiar", "Rua que sobe e desce, 258, Jaguariúna","Pão de queijo",3.50,curdate(),null),
-(default, 2, "Osmar Motta", "Rua que do Amor, 193, Jaguariúna","Pão de mel",8.50,curdate(),null),
-(default, 3, "Osmar Manjo", "Rua que sobe e desce, 151, Jaguariúna","Pão de ló",7.50,curdate(),null),
-(default, 4, "Tomas Quase Turbando", "Rua que some, 253, Jaguariúna","Pão de forma",3.50,curdate(),null),
-(default, 5, "Antônio Lobo", "Rua que some, 253, Jaguariúna","Pão de forma",8.50,curdate(),null),
-(default, 1, "Simone Silva", "Rua que sobe e desce, 258, Jaguariúna","Pão de queijo",3.50,curdate(),null),
-(default, 2, "Marta Motta", "Rua que do Amor, 193, Jaguariúna","Pão de mel",8.50,curdate(),null),
-(default, 3, "Ana Maria Manjo", "Rua que sobe e desce, 151, Jaguariúna","Pão de ló",7.50,curdate(),null),
-(default, 4, "Marcos Turbando", "Rua que some, 253, Jaguariúna","Pão de forma",3.50,curdate(),null),
-(default, 5, "Júlio Lobo", "Rua que some, 253, Jaguariúna","Pão de batata",8.50,curdate(),null);
+(default, 1, "Passos Dias aguiar", "Rua que aparece, 258, Jaguariúna","Pão de queijo",3.50,curdate(),null),
+(default, 2, "Osmar Motta", "Rua do Calor, 193, Jaguariúna","Pão de mel",8.50,curdate(),null),
+(default, 3, "Osmar Manjo", "Rua que vai e vem, 151, Jaguariúna","Pão de ló",7.50,curdate(),null),
+(default, 4, "Tomas Quase Turbando", "Rua que só vai, 253, Jaguariúna","Pão de forma",3.50,curdate(),null),
+(default, 5, "Antônio Lobo", "Rua que só vem, 253, Jaguariúna","Pão de forma",8.50,curdate(),null),
+(default, 1, "Simone Silva", "Rua dos Pelados, 258, Jaguariúna","Pão de queijo",3.50,curdate(),null),
+(default, 2, "Marta Motta", "Rua dos Bonitos, 193, Jaguariúna","Pão de mel",8.50,curdate(),null),
+(default, 3, "Ana Maria Manjo", "Rua do trem grande, 151, Jaguariúna","Pão de ló",7.50,curdate(),null),
+(default, 4, "Marcos Turbando", "Rua que vai, 253, Jaguariúna","Pão de forma",3.50,curdate(),null),
+(default, 5, "Júlio Lobo", "Rua que volta, 253, Jaguariúna","Pão de batata",8.50,curdate(),null);
 
 select * from entregadores;
 select * from entregas;
