@@ -4,7 +4,7 @@ import style from './style.js'
 
 export default function Entregas({ navigation, route }) {
 
-    const { id_entregador } = route.params;
+    const { id_entregador, nome } = route.params;
 
     const [entregas, setEntregas] = useState([{
         "id_entregador": 1,
@@ -12,7 +12,7 @@ export default function Entregas({ navigation, route }) {
     }])
 
     useEffect(() => {
-        fetch("http://10.87.202.131:3000/entregas/entregadores/"+id_entregador, {
+        fetch("http://localhost:3000/entregas/entregadores/" + id_entregador, {
             "method": "GET",
             "headers": {
                 Accept: 'application/json',
@@ -25,6 +25,8 @@ export default function Entregas({ navigation, route }) {
         }).catch(err => {
         });
     }, [entregas]);
+
+    navigation.setOptions({ title: 'Listar entregas do ' + nome })
 
     return (
         <View style={style.pag}>

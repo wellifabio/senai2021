@@ -9,7 +9,7 @@ export default function Home({ navigation }) {
     }])
 
     useEffect(() => {
-        fetch("http://10.87.202.131:3000/entregas/entregadores", {
+        fetch("http://localhost:3000/entregas/entregadores", {
             "method": "GET",
             "headers": {
                 Accept: 'application/json',

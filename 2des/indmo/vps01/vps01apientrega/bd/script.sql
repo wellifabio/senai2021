@@ -1,5 +1,6 @@
 drop database if exists vps01entrega;
-create database vps01entrega;
+create database vps01entrega character set utf8mb4 collate utf8mb4_bin;
+
 use vps01entrega;
 
 create table entregadores(

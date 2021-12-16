@@ -22,5 +22,14 @@ export default StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around'
+    },
+    botao: {
+        backgroundColor: '#777',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 5,
+        margin: 5,
+        padding: 10,
+        textAlign: 'center'
     }
 });
