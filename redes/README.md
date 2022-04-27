@@ -1,0 +1,32 @@
+.TÉCNICAS PARA INSTALAÇÃO DE REDES DE COMPUTADORES
+---------------
+- Objetivo
+	- Desenvolvimento de competências relativas à correta instalação de redes de cabeamento ópticos e metálicos, através do conhecimento, aplicação e utilização dos procedimentos de instalação, normas, teste e certificação.
+
+- ATIVOS
+	- Switches
+	- Roteadores
+	- APs
+
+- PASSIVOS
+	- Patch Panel
+	- Tomada fêmea keystone
+	- Conector RJ45
+	- Espelhos para keystone
+	- Canaletas
+	- Eletrodutos
+	- Eletrocalhas
+	- Tipos de cabos metálicos e categorias
+	- Comprimento máximo cabeamento primário / secundário
+	- Comprimento máximo patch cord / patch cable
+	- DIO
+	- CEO
+- Materiais de apoio (Fibra óptica)
+	- DIO https://transmitter.com.br/o-que-e-dio/
+	- CEO https://www.youtube.com/watch?v=BOAdy6DBqak
+	- Ramificações https://nextcable.com.br/entenda-as-ramificacoes-de-rede-da-fibra-optica/
+	- https://infranewstelecom.com.br/infra-produtos/redes-opticas-ceo-e-cto/
+	- Fusão Fibra Óptica:
+		- https://www.youtube.com/watch?v=QolkxqxuQJc
+		- https://www.youtube.com/watch?v=T-ltTGQVX5s
+		- https://www.youtube.com/watch?v=53Xvs0VDiXQ

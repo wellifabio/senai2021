@@ -87,7 +87,8 @@ Conhecimentos
 2.12. Subconsultas
 2.12.1. IN e NOT IN
 2.12.2. ALL e ANY
-2.12.3. EXISTS 2.13. TCL (transaction control language)
+2.12.3. EXISTS
+2.13. TCL (transaction control language)
 2.13.1. COMMIT
 2.13.2. ROLLBACK
 2.13.3. SAVEPOINT
