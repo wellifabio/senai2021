@@ -2,8 +2,11 @@ package views;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -36,12 +39,14 @@ public class ProdutoForm extends JDialog implements ActionListener {
 	private JTextField tfQuantidade = new JTextField();
 	private JTextField tfTotalItens = new JTextField();
 	private JTextField tfTotalDinheiro = new JTextField();
+	private String imgIco = ".\\assets\\icone.png";
 	private Produto produto;
 
 	ProdutoForm() {
 		// Propriedades do Formulário
 		setTitle("Cadastro de Produtos");
 		setBounds(250, 160, 597, 410);
+		setIconImage(new ImageIcon(imgIco).getImage());
 		panel = new JPanel();
 		setContentPane(panel);
 		setLayout(null);
@@ -81,15 +86,26 @@ public class ProdutoForm extends JDialog implements ActionListener {
 			for (Produto p : ProcessaProduto.getProdutos()) {
 				tableModel.addRow(p.getStringVetor());
 			}
-			tfTotalItens.setText(String.format("%d",ProcessaProduto.getTotalItens()));
-			tfTotalDinheiro.setText(String.format("%.2f", ProcessaProduto.getTotalDinheiro()));
 		}
 		table = new JTable(tableModel);
 		scroll = new JScrollPane(table);
 		scroll.setBounds(10, 55, 559, 275);
 		panel.add(scroll);
+		table.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				int lin = table.getSelectedRow();
+				int col = table.getSelectedColumn();
+				if (col == 0) {
+					ProdutoPropriedades pp = new ProdutoPropriedades(table.getValueAt(lin, col).toString());
+					pp.setModal(true);
+					pp.setVisible(true);
+				}
+			}
+		});
 		
 		//Totais
+		tfTotalItens.setText(String.format("%d",ProcessaProduto.getTotalItens()));
+		tfTotalDinheiro.setText(String.format("%.2f", ProcessaProduto.getTotalDinheiro()));
 		lbTotalItens.setBounds(10,330,80,30);
 		tfTotalItens.setBounds(90,335,50,25);
 		lbTotalDinheiro.setBounds(140,330,70,30);

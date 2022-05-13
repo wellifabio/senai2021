@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -12,9 +13,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import controllers.ProcessaCompra;
+import controllers.ProcessaVenda;
 import controllers.ProcessaRelatorio;
-import models.Compra;
+import models.Venda;
 
 public class RelatorioForm extends JDialog implements ActionListener {
 
@@ -24,22 +25,24 @@ public class RelatorioForm extends JDialog implements ActionListener {
 	private JScrollPane scroll;
 	private String dados;
 	private JButton btSalvar = new JButton("Salvar");
-
+	private String imgIco = ".\\assets\\icone.png";
+	
 	RelatorioForm() {
 		// Propriedades do Formulário
-		setTitle("Relatório de Compras");
+		setTitle("Relatório de Vendas");
 		setBounds(200, 149, 700, 450);
+		setIconImage(new ImageIcon(imgIco).getImage());
 		panel = new JPanel();
 		setContentPane(panel);
 		setLayout(null);
 
-		dados = "\n\t\t\tRelatório de Compras\n";
+		dados = "\n\t\t\tRelatório de Vendas\n";
 		dados += "\t-----------------------------------------------------------------------------------------------------------------------------------\n";
 		dados += "\tNumero\tHora\tProduto\tPreço\tQuantidade\tSubtotal\n";
 		dados += "\t-----------------------------------------------------------------------------------------------------------------------------------\n";
 		String ultimaData = "";
 		double total = 0;
-		for (Compra c : ProcessaCompra.getCompras()) {
+		for (Venda c : ProcessaVenda.getCompras()) {
 			if (!ultimaData.contentEquals(c.getData())) {
 				dados += "\t" + c.getData() + "\n";
 				ultimaData = c.getData();

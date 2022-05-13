@@ -20,6 +20,23 @@ public class ProcessaProduto {
 		pd.save(produtos);
 	}
 
+	public static ProdutoDAO getPd() {
+		return pd;
+	}
+
+	public static void setPd(ProdutoDAO pd) {
+		ProcessaProduto.pd = pd;
+	}
+
+	// Retorna apenas um produto a partir do código
+	public static Produto getProduto(int codigo) {
+		Produto produto = new Produto(codigo);
+		if (produtos.contains(produto)) {
+			return produtos.get(produtos.indexOf(produto));
+		}
+		return null;
+	}
+
 	// Retorna o código do produto adicionando 1 ao ultimo codigo da lista
 	public static int getAutoCodigo() {
 		if (ProcessaProduto.produtos.isEmpty())
@@ -43,5 +60,4 @@ public class ProcessaProduto {
 		}
 		return total;
 	}
-
 }

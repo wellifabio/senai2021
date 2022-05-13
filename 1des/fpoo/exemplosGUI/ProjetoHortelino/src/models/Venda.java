@@ -1,6 +1,6 @@
 package models;
 
-public class Compra {
+public class Venda {
 
 	private int num;
 	private String data;

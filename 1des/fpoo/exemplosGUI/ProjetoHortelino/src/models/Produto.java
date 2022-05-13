@@ -11,6 +11,10 @@ public class Produto {
 	public Produto() {
 	}
 
+	public Produto(int codigo) {
+		this.codigo = codigo;
+	}
+	
 	public Produto(int codigo, double preco) {
 		this.codigo = codigo;
 		this.preco = preco;

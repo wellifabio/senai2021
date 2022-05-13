@@ -8,23 +8,23 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import models.Compra;
+import models.Venda;
 import models.Produto;
 
-public class CompraDAO {
+public class VendaDAO {
 	
-	private Compra compra;
+	private Venda compra;
 	private BufferedReader br;
 	private BufferedWriter bw;
-	private String arquivo = ".\\bd\\compras.csv";
+	private String arquivo = System.getProperty("user.dir")+"\\bd\\vendas.csv";
 	private String[] campos;
 	
 	//Salva os dados de uma lista no arquivo
-	public boolean save(ArrayList<Compra> compras) {
+	public boolean save(ArrayList<Venda> compras) {
 		boolean retorno = false;
 		try {
 			bw = new BufferedWriter(new FileWriter(arquivo,false));
-			for(Compra c: compras) {
+			for(Venda c: compras) {
 				bw.write(c.toCSV());
 			}
 			bw.close();
@@ -36,14 +36,14 @@ public class CompraDAO {
 	}
 	
 	//Abre os dados do do arquivo e carrega em uma lista 
-	public ArrayList<Compra> open(){
-		ArrayList<Compra> compras = new ArrayList<>();
+	public ArrayList<Venda> open(){
+		ArrayList<Venda> compras = new ArrayList<>();
 		try {
 			br = new BufferedReader(new FileReader(arquivo));
 				String linha = br.readLine();
 				while(linha != null) {
 					campos = linha.split(";");					
-					compra =  new Compra();
+					compra =  new Venda();
 					compra.setNum(Integer.parseInt(campos[0]));
 					compra.setData(campos[1]);
 					compra.setHora(campos[2]);

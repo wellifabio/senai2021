@@ -17,14 +17,16 @@ public class MainForm extends JFrame implements ActionListener {
 	private JPanel panel;
 	private JMenuBar barraMenu = new JMenuBar();
 	private JMenu menuArquivo, menuSistema;
-	private JMenuItem itemProdutos, itemCompras, itemRelatorios, itemSair;
-	private ImageIcon fundo = new ImageIcon(".\\img\\fundo.jpeg");
+	private JMenuItem itemProdutos, itemVendas, itemRelatorios, itemSair;
+	private ImageIcon fundo = new ImageIcon(".\\assets\\fundo.jpeg");
+	private String imgIco = ".\\assets\\icone.png";
 	private JLabel lbFundo = new JLabel();
 
 	MainForm() {
 		// COnfigurações do Form principal
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Loja de Ferragens do Hortelino - Sistema de Compras");
+		setIconImage(new ImageIcon(imgIco).getImage());
 		setBounds(200, 100, 700, 500);
 		panel = new JPanel();
 		setJMenuBar(barraMenu);
@@ -37,11 +39,11 @@ public class MainForm extends JFrame implements ActionListener {
 		barraMenu.add(menuArquivo);
 		barraMenu.add(menuSistema);
 		itemProdutos = new JMenuItem("Produtos");
-		itemCompras = new JMenuItem("Compras");
+		itemVendas = new JMenuItem("Vendas");
 		itemRelatorios = new JMenuItem("Relatórios");
 		itemSair = new JMenuItem("Sair do Sistema");
 		menuArquivo.add(itemProdutos);
-		menuArquivo.add(itemCompras);
+		menuArquivo.add(itemVendas);
 		menuSistema.add(itemRelatorios);
 		menuSistema.add(itemSair);
 		
@@ -52,7 +54,7 @@ public class MainForm extends JFrame implements ActionListener {
 
 		// Ações do Menú
 		itemProdutos.addActionListener(this);
-		itemCompras.addActionListener(this);
+		itemVendas.addActionListener(this);
 		itemRelatorios.addActionListener(this);
 		itemSair.addActionListener(this);
 	}
@@ -64,8 +66,8 @@ public class MainForm extends JFrame implements ActionListener {
 			ProdutoForm pf = new ProdutoForm();
 			pf.setModal(true);
 			pf.setVisible(true);
-		} else if (e.getSource() == itemCompras) {
-			CompraForm cf = new CompraForm();
+		} else if (e.getSource() == itemVendas) {
+			VendaForm cf = new VendaForm();
 			cf.setModal(true);
 			cf.setVisible(true);
 		} else if (e.getSource() == itemRelatorios) {
